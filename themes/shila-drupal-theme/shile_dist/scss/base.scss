@@ -1,0 +1,14 @@
+/**
+ * @file
+ * sass/base.scss
+ *
+ * CSS rules that style HTML elements ("base" styles).
+ */
+
+@import 'partials/imports';
+@import '../_patterns/00-atoms/buttons';
+@import '../_patterns/00-atoms/elements';
+@import '../_patterns/00-atoms/forms';
+@import '../_patterns/00-atoms/lists';
+@import '../_patterns/00-atoms/tables';
+@import '../_patterns/00-atoms/typography';

@@ -1,0 +1,13 @@
+<div class="card-list">
+  {% block cards %}
+    {% for card in cards %}
+      {% include '@molecules/components/card/card.html.twig'
+        with {
+          'image': card.image,
+          'title': card.title,
+          'content': card.content
+        }
+      %}
+    {% endfor %}
+  {% endblock %}
+</div>

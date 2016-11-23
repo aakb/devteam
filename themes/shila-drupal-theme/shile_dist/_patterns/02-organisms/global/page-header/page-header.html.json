@@ -1,0 +1,10 @@
+{
+    "content": {
+        "join()" : [
+            "<div class=\"region region--header\">",
+            "organisms-branding-block.html",
+            "organisms-main-navigation-block.html",
+            "</div>"
+        ]
+    }
+}

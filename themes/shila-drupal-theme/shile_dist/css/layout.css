@@ -1,0 +1,236 @@
+/**
+ * @file
+ * sass/layout.scss
+ *
+ * CSS rules that layout a page.
+ */
+/**
+ * @file
+ * sass/partials/_imports.scss
+ *
+ * Global imports.
+ *
+ * Importing this file must not generate any CSS.
+ */
+/**
+ * @file
+ * sass/partials/_functions.scss
+ *
+ * Importing this file must not generate any CSS.
+ *
+ * Functions must not use global variables.
+ */
+/**
+ * @file
+ * dist/sass/partials/_variables.scss
+ *
+ * Originally based on http://bitters.bourbon.io/
+ *
+ * Importing this file must not generate any CSS.
+ */
+/**
+ * @file
+ * sass/partials/_placeholders.scss
+ *
+ * Importing this file must not generate any CSS.
+ */
+.page__content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.region--header,
+.region--content,
+.region--footer {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-container::after,
+.page::after,
+.page__header::after,
+.page__content::after,
+.page__footer::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/**
+ * @file
+ * sass/partials/_mixins.scss
+ *
+ * Importing this file must not generate any CSS.
+ */
+/**
+ * @file
+ * molecules/components/card/_card-layout.scss
+ */
+/**
+ * @file
+ * organisms/global/off-canvas/_off-canvas-layout.scss
+ *
+ * Pure CSS implementation (no JavaScript required).
+ */
+/**
+ * @file
+ * organisms/sections/card-list/_card-list-layout.scss
+ */
+/**
+ * @file
+ * templates/_global-layout.scss
+ */
+.page__content {
+  padding-top: 3.2em;
+  margin-bottom: 3.2em;
+}
+
+@media (min-width: 525px) {
+  #off-canvas-checkbox,
+  #off-canvas-label,
+  .off-canvas {
+    display: none;
+  }
+  .off-canvas-hidden {
+    display: block;
+  }
+}
+
+@media (max-width: 524px) {
+  .layout-container {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  #off-canvas-checkbox {
+    display: block;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #off-canvas-label {
+    transition-property: right;
+    transition-duration: .4s;
+    display: block;
+    position: fixed;
+    right: 0;
+    z-index: 501;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    background-position: 10px 10px;
+    background-size: 44px 44px;
+    background-repeat: no-repeat;
+    background-image: url("../images/menu.png");
+    background-image: url("../images/menu.svg");
+    cursor: pointer;
+  }
+  .off-canvas {
+    transition-property: right;
+    transition-duration: .4s;
+    display: block;
+    position: fixed;
+    min-height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 524px) and (max-width: 524px) {
+  .off-canvas {
+    right: -80%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 524px) and (min-width: 525px) {
+  .off-canvas {
+    right: -20rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 524px) and (min-width: 801px) {
+  .off-canvas {
+    right: -20rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 524px) and (min-width: 1025px) {
+  .off-canvas {
+    right: -20rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 524px) {
+  .off-canvas-hidden {
+    display: none;
+  }
+  .page {
+    transition-property: right;
+    transition-duration: .4s;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  .page__header {
+    position: fixed;
+    z-index: 500;
+    height: 64px;
+  }
+  .page__content {
+    margin-top: 64px;
+  }
+  #off-canvas-checkbox:checked ~ .page {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+  #off-canvas-checkbox:checked ~ .page .page__header {
+    position: static;
+  }
+  #off-canvas-checkbox:checked ~ .page .page__content {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 524px) and (max-width: 524px) {
+  #off-canvas-checkbox:checked ~ #off-canvas-label,
+  #off-canvas-checkbox:checked ~ .page {
+    right: 80%;
+  }
+}
+
+@media (max-width: 524px) and (min-width: 525px) {
+  #off-canvas-checkbox:checked ~ #off-canvas-label,
+  #off-canvas-checkbox:checked ~ .page {
+    right: 20rem;
+  }
+}
+
+@media (max-width: 524px) and (min-width: 801px) {
+  #off-canvas-checkbox:checked ~ #off-canvas-label,
+  #off-canvas-checkbox:checked ~ .page {
+    right: 20rem;
+  }
+}
+
+@media (max-width: 524px) and (min-width: 1025px) {
+  #off-canvas-checkbox:checked ~ #off-canvas-label,
+  #off-canvas-checkbox:checked ~ .page {
+    right: 20rem;
+  }
+}
+
+@media (max-width: 524px) {
+  #off-canvas-checkbox:checked ~ .off-canvas {
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */
