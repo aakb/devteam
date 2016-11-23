@@ -1,9 +1,0 @@
-{
-    "content": {
-        "join()": [
-            "<div class=\"region region--off_canvas\">",
-            "organisms-main-navigation-block.html",
-            "</div>"
-        ]
-    }
-}

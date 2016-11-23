@@ -1,0 +1,85 @@
+/* stylelint-disable color-no-hex */
+
+/**
+ *
+ * Variables
+ *
+ */
+
+
+/* Breakpoints
+   ================================================================================================================== */
+
+$breakpoint-lap:              481px;
+$breakpoint-tablet:           720px;
+$breakpoint-desk:             1024px;
+$breakpoint-largedesk:        1350px;
+$breakpoint-bigscreen:        2000px;
+$breakpoint-threshold:        60px;
+
+
+/* Z-index (inspired by https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/)
+   ================================================================================================================== */
+
+$z-index-elements: map, header-overlay, header, content, nav, logo, overlay, hamburger-menu, nav-toggle;
+
+
+/* Layout
+   ================================================================================================================== */
+
+$layout-spacing-tiny:   5px;
+$layout-spacing-small:  10px;
+$layout-spacing:        20px;
+$layout-spacing-medium: 40px;
+$layout-spacing-large:  60px;
+
+$header-underline:  3px solid;
+
+
+/* Colors
+   ================================================================================================================== */
+
+$theme-color:            #1a1919;
+$theme-color-secondary:  #e30613;
+$theme-color-erhverv:    #409cda;
+$theme-color-villa:      #f5c400;
+$theme-color-storparcel: #4e9d2d;
+
+$black:            #1A1919;
+$white:            #fff;
+
+$gray-lightest:    lighten($black, 85%);
+$gray-lighter:     lighten($black, 80%);
+$gray-light:       lighten($black, 70%);
+$gray:             lighten($black, 60%);
+$gray-dark:        lighten($black, 50%);
+$gray-darker:      lighten($black, 40%);
+$gray-darkest:     lighten($black, 30%);
+
+$link-color:       $theme-color;
+$link-color-hover: darken($link-color, 25%);
+
+$error-color:      #ffbaba;
+
+// Filters
+$color-available:   #4E9D2D;
+$color-reservered:  #F5C400;
+$color-sold:        #e30613;
+$color-future:      #409CDA;
+$color-offering:    #9fb6c9;
+$color-forrest:     #7c4088;
+$color-activities:  #F5A623;
+$color-daycare:     #16a085;
+$color-schools:     #34495e;
+
+
+
+
+/* Typography
+   ================================================================================================================== */
+
+$font-size-tiny:    12px;
+$font-size-small:   14px;
+$font-size-normal:  16px;
+$font-family:       "Open Sans", Arial, sans-serif;
+$font:              1em/1.5 $font-family;
