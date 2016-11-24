@@ -12,9 +12,9 @@
 @import "_base/mixins";
 
 /* Global */
-@import "_patterns/00-elements/00-global/links";
-@import "_patterns/00-elements/00-global/00-headings";
-@import "_patterns/00-elements/00-global/headings-with-link";
+@import "_patterns/00-elements/text/00-headings";
+@import "_patterns/00-elements/text/headings-with-link";
+@import "_patterns/00-elements/text/links";
 
 /* Elements */
 @import "_patterns/00-elements/buttons/button";
