@@ -83,7 +83,7 @@ legend {
 a {
   &:link {
     color: $link-color;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   &:visited {
