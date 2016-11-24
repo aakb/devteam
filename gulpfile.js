@@ -62,8 +62,8 @@ var configuration = {
       "dest": './js'
     },
     "sass": {
-      "paths": './source/**/*.scss',
-      'dest': './css'
+      "paths": './source/*.scss',
+      'dest': './source/css'
     },
     "twig": {
       "paths": './templates/**/*.twig'
