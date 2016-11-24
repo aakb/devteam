@@ -8,16 +8,21 @@
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
   max-width: 100%;
-  padding: 1.5em;
-}
-
-.sg-subtype {
-  margin-top: 2em;
+  padding: 2em;
 }
 
 .sg-subtype:not(:first-child) {
   border-top: 1px solid #ddd;
+  margin-top: 4em;
   padding-top: 2em;
+}
+
+.sg-subtype h2 a,
+.sg-subtype h2 a:link,
+.sg-subtype h2 a:visited,
+.sg-subtype h2 a:hover,
+.sg-subtype h2 a:focus {
+  color: #111;
 }
 
 .sg-pattern-body {
