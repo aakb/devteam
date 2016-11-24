@@ -11,6 +11,9 @@
 @import "_base/functions";
 @import "_base/mixins";
 
+/* Global */
+@import "_patterns/00-elements/00-global/links";
+
 /* Elements */
 @import "_patterns/00-elements/buttons/button";
 @import "_patterns/00-elements/buttons/button-action";
