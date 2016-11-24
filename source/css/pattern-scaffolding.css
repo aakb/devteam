@@ -11,17 +11,21 @@
   padding: 1.5em;
 }
 
-#sg-patterns h2 a {
-
+.sg-subtype {
+  margin-top: 2em;
 }
 
-.demo-animate {
-  background: #ddd;
-  padding: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  border-radius: 8px;
-  cursor: pointer;
+.sg-subtype:not(:first-child) {
+  border-top: 1px solid #ddd;
+  padding-top: 2em;
+}
+
+.sg-pattern-body {
+  margin-top: 1em;
+}
+
+.sg-pattern {
+  margin-top: 1em;
 }
 
 .sg-colors {
@@ -56,14 +60,4 @@
 .sg-label {
   font-size: 90%;
   line-height: 1;
-}
-
-#atoms-logo-reversed .sg-pattern-example {
-	background: #444444;
-	display: inline-block;
-}
-
-#molecules-logo-footer-link .sg-pattern-example {
-	background: #444444;
-	display: inline-block;
 }
