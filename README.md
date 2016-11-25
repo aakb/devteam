@@ -6,12 +6,6 @@ An [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) and [Patte
 
 Prerequisites: [git](https://git-scm.com/) and [Composer](https://getcomposer.org/) installed.
 
-In the root directory run:
-
-```sh
-git clone https://github.com/pattern-lab/edition-php-drupal-standard pattern-lab
-```
-
 In the `pattern-lab` directory run:
 
 ```sh
