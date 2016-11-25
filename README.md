@@ -6,10 +6,6 @@ An [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) and [Patte
 
 Prerequisites: [git](https://git-scm.com/) and [Composer](https://getcomposer.org/) installed.
 
-```sh
-composer create-project pattern-lab/edition-twig-standard pattern-lab && cd $_
-```
-
 In the `htdocs`directory run:
 
 ```sh
