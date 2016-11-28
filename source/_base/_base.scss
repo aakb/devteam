@@ -1,11 +1,3 @@
-/**
- *
- * Base
- *
- * Contains styling and reset of basic elements
- *
- */
-
 html {
   height: 100%;
 }
@@ -16,15 +8,6 @@ body {
   font: $font;
   height: 100%;
   margin: 0;
-  /* For absolute positioned hamburger menu to have 100 height */
   position: relative;
   width: 100%;
-}
-
-html,
-body {
-  &.is-locked {
-    overflow: hidden;
-    position: fixed;
-  }
 }
