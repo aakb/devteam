@@ -1,0 +1,15 @@
+fieldset {
+  border-color: $gray-lighter;
+  border-radius: 10px;
+}
+
+fieldset + fieldset {
+  margin-top: 3em;
+}
+
+legend {
+  font-size: $font-size-normal;
+  font-weight: 300;
+  padding-left: 5px;
+  padding-right: 5px;
+}
