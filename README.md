@@ -1,12 +1,10 @@
 # Dev Team Styleguide
 
-An [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) and [Pattern Lab](http://patternlab.io/) starting point.
-
-## Pattern Lab
-
-Prerequisites: [git](https://git-scm.com/) and [Composer](https://getcomposer.org/) installed.
+Styleguide for the Devteam website using [Pattern Lab](http://patternlab.io/).
 
 #### Installation
+
+Prerequisites: [git](https://git-scm.com/) and [Composer](https://getcomposer.org/) installed.
 
 In the `htdocs`directory run:
 
