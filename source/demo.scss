@@ -1,0 +1,57 @@
+/* stylelint-disable */
+
+@import "_base/vars";
+@import "_patterns/00-elements/01-helpers/breakpoint";
+@import "_patterns/00-elements/01-helpers/strip-link-styles";
+@import "_patterns/00-elements/01-helpers/word-wrap";
+@import "_patterns/00-elements/01-helpers/z-index";
+
+$border-radius: 8px;
+$z-index-elements: one, two, three;
+
+.demo-z-index {
+  background-color: $primary-color-orange;
+  border-radius: $border-radius;
+  color: white;
+  height: 350px;
+  position: relative;
+  width: 575px;
+
+  &--one,
+  &--two,
+  &--three {
+    border-radius: $border-radius;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 200px;
+
+    p {
+      flex: 0 1 auto;
+      margin: auto;
+    }
+  }
+
+  &--one {
+    background-color: $primary-color-green;
+    left: 25px;
+    top: 25px;
+    z-index: z($z-index-elements, one);
+  }
+
+  &--two {
+    background-color: $secondary-color-blue;
+    left: 175px;
+    top: 75px;
+    z-index: z($z-index-elements, two);
+  }
+
+  &--three {
+    background-color: $secondary-color-dark-blue;
+    left: 350px;
+    top: 125px;
+    z-index: z($z-index-elements, three);
+  }
+}
