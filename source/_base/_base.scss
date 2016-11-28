@@ -30,45 +30,6 @@ body {
 }
 
 
-strong {
-  font-weight: bold;
-}
-
-
-em {
-  font-style: italic;
-
-  strong {
-    font-weight: bold;
-  }
-}
-
-fieldset {
-  border-color: $gray-lighter;
-  border-radius: .85em;
-}
-
-fieldset + fieldset {
-  margin-top: 3em;
-}
-
-legend {
-  color: $gray-dark;
-  font-size: 1.25em;
-  font-weight: 600;
-  padding-left: .5em;
-  padding-right: .5em;
-}
-
-
-/* Paragraph
-   ================================================================================================================== */
-
-p {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
 
 /* Image
    ================================================================================================================== */
