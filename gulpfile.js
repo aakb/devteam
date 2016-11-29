@@ -99,7 +99,7 @@ function sassTask(theme, config) {
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(config.sass.dest));
 
-    // It's unknow why gulp-if don't work with browser-sync, so this if
+    // It's unknown why gulp-if don't work with browser-sync, so this if
     // statement is as little hack.
     if (argv.sync) {
       pipe.pipe(browserSync.stream());
@@ -153,7 +153,7 @@ function watchTasks(theme, config) {
 
   gulp.task(taskName, false, function() {
     gulp.watch(config.sass.paths, ['sass']);
-    gulp.watch(config.sass.paths, ['stylelint']);
+    // gulp.watch(config.sass.paths, ['stylelint']);
 
     if (config.hasOwnProperty('js')) {
       gulp.watch(config.js.paths, ['eslint']);
