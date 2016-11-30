@@ -17,9 +17,9 @@ $border-radius: 8px;
 $demo-z-index-elements: one, two, three;
 
 .demo-z-index {
-  background-color: $primary-color-orange;
+  background-color: $color-orange;
   border-radius: $border-radius;
-  color: white;
+  color: $color-white;
   height: 350px;
   position: relative;
   width: 575px;
@@ -42,25 +42,51 @@ $demo-z-index-elements: one, two, three;
   }
 
   &--one {
-    background-color: $primary-color-green;
+    background-color: $color-green;
     left: 25px;
     top: 25px;
     z-index: z($demo-z-index-elements, one);
   }
 
   &--two {
-    background-color: $secondary-color-blue;
+    background-color: $color-blue;
     left: 175px;
     top: 75px;
     z-index: z($demo-z-index-elements, two);
   }
 
   &--three {
-    background-color: $secondary-color-dark-blue;
+    background-color: $color-dark-blue;
     left: 350px;
     top: 125px;
     z-index: z($demo-z-index-elements, three);
   }
+}
+
+
+$demo-colors: (
+  "orange":       $color-orange,
+  "green":        $color-green,
+  "dark-blue":    $color-dark-blue,
+  "blue":         $color-blue,
+  "gray-white":   $color-white,
+  "gray-lighter": $color-gray-light,
+  "gray-light":   $color-gray-light,
+  "gray-dark":    $color-gray-dark,
+  "gray-darker":  $color-gray-darker,
+  "gray-darkest":  $color-gray-darkest,
+  "black":        $color-black,
+);
+
+@function demo-color($demo-color-key) {
+  $demo-color: map-get($demo-colors, $demo-color-key);
+
+  @if $demo-color {
+    @return $demo-color;
+  }
+
+  @warn "Key `#{$demo-color-key}` not found in $colors.";
+  @return null;
 }
 
 .demo-colors {
@@ -76,7 +102,7 @@ $demo-z-index-elements: one, two, three;
     margin: 0 0.5em 0.5em 0;
     min-width: 5em;
     max-width: 14em;
-    border: 1px solid #ddd;
+    border: 1px solid $color-gray-light;
     border-radius: 8px;
   }
 
@@ -97,21 +123,21 @@ $demo-z-index-elements: one, two, three;
     }
   }
 
-  @each $color-key, $color-value in $colors {
+  @each $color-key, $color-value in $demo-colors {
     &--swatch {
       &.is-#{$color-key} {
-        background-color: color(#{$color-key});
+        background-color: demo-color(#{$color-key});
       }
     }
 
     &--label {
       &.is-#{$color-key} {
         &:before {
-          content: "color(#{$color-key})";
+          content: "$color-#{$color-key}";
         }
 
         &:after {
-          content: "#{color($color-key)}";
+          content: "#{demo-color($color-key)}";
         }
       }
     }

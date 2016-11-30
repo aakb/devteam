@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
   a {
-    color: $black;
+    color: $color-black;
 
     &:link,
     &:visited,
@@ -15,16 +15,16 @@ h6 {
     }
 
     &:link {
-      color: $black;
+      color: $color-black;
     }
 
     &:visited {
-      color: darken($black, 5%);
+      color: $color-gray-dark;
     }
 
     &:hover,
     &:focus {
-      color: darken($black, 10%);
+      color: $color-gray-darkest;
     }
   }
 }
