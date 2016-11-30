@@ -7,12 +7,12 @@
 
 /* Base */
 @import "_base/vars";
+@import "_base/colors";
 @import "_base/normalize";
 @import "_base/base";
 
 
 /* Global */
-@import "_patterns/00-elements/00-colors/00-colors";
 @import "_patterns/00-elements/text/00-headings";
 @import "_patterns/00-elements/text/headings-with-link";
 @import "_patterns/00-elements/text/links";
@@ -23,6 +23,7 @@
 @import "_patterns/00-elements/01-helpers/strip-link-styles";
 @import "_patterns/00-elements/01-helpers/word-wrap";
 @import "_patterns/00-elements/01-helpers/z-index";
+@import "_patterns/00-elements/images/image";
 @import "_patterns/00-elements/buttons/button";
 @import "_patterns/00-elements/buttons/button-action";
 @import "_patterns/00-elements/text/00-headings";
