@@ -7,19 +7,15 @@
 
 /* Base */
 @import "_base/colors";
-@import "_patterns/00-elements/00-global/fonts";
+@import "_base/fonts";
 @import "_base/normalize";
 @import "_base/base";
 
 
-/* Global */
-@import "_patterns/00-elements/00-global/fonts";
+/* Elements */
 @import "_patterns/00-elements/text/00-headings";
 @import "_patterns/00-elements/text/headings-with-link";
 @import "_patterns/00-elements/text/links";
-
-
-/* Elements */
 @import "_patterns/00-elements/01-helpers/breakpoint";
 @import "_patterns/00-elements/01-helpers/strip-link-styles";
 @import "_patterns/00-elements/01-helpers/word-wrap";
