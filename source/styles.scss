@@ -6,13 +6,15 @@
 
 
 /* Base */
-@import "_base/vars";
 @import "_base/colors";
+@import "_patterns/00-elements/00-global/fonts";
 @import "_base/normalize";
 @import "_base/base";
 
 
 /* Global */
+@import "assets/fonts/raleway/Raleway";
+@import "_patterns/00-elements/00-global/fonts";
 @import "_patterns/00-elements/text/00-headings";
 @import "_patterns/00-elements/text/headings-with-link";
 @import "_patterns/00-elements/text/links";
