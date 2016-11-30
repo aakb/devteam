@@ -6,12 +6,7 @@
 
 /* stylelint-disable */
 
-@import "_base/colors";
-@import "_patterns/00-elements/00-global/fonts";
-@import "_patterns/00-elements/01-helpers/breakpoint";
-@import "_patterns/00-elements/01-helpers/strip-link-styles";
-@import "_patterns/00-elements/01-helpers/word-wrap";
-@import "_patterns/00-elements/01-helpers/z-index";
+@import "styles";
 
 $border-radius: 8px;
 $demo-z-index-elements: one, two, three;
