@@ -32,3 +32,11 @@
 .sg-pattern {
   margin-top: 1em;
 }
+
+.sg-pattern-extra-toggle span {
+  color: black;
+}
+
+.sg-tabs-panel {
+  min-height: 12em;
+}
