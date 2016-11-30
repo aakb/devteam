@@ -1,0 +1,18 @@
+$demo-fonts: (
+  "light":            $font-light,
+  "light-italic":     $font-light-italic,
+  "regular":          $font-regular,
+  "italic":           $font-italic,
+  "semibold":         $font-semibold,
+  "semibold-italic":  $font-semibold-italic,
+  "bold":             $font-bold,
+  "bold-italic":      $font-bold-italic,
+);
+
+.demo-font {
+  @each $font-key, $font-value in $demo-fonts {
+    &--#{$font-key} {
+      font-family: $font-value;
+    }
+  }
+}

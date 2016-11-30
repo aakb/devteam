@@ -1,0 +1,48 @@
+$demo-z-index-elements: one, two, three;
+
+.demo-z-index {
+  background-color: $color-orange;
+  border-radius: $demo-border-radius;
+  color: $color-white;
+  height: 350px;
+  position: relative;
+  width: 575px;
+
+  &--one,
+  &--two,
+  &--three {
+    border-radius: $demo-border-radius;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 200px;
+
+    p {
+      flex: 0 1 auto;
+      margin: auto;
+    }
+  }
+
+  &--one {
+    background-color: $color-green;
+    left: 25px;
+    top: 25px;
+    z-index: z($demo-z-index-elements, one);
+  }
+
+  &--two {
+    background-color: $color-blue;
+    left: 175px;
+    top: 75px;
+    z-index: z($demo-z-index-elements, two);
+  }
+
+  &--three {
+    background-color: $color-dark-blue;
+    left: 350px;
+    top: 125px;
+    z-index: z($demo-z-index-elements, three);
+  }
+}
