@@ -63,10 +63,7 @@ var configuration = {
     },
     "sass": {
       "paths": ['./source/**/*.scss'],
-      "srcs": [
-        './source/styles.scss',
-        './source/demo.scss'
-      ],
+      "srcs": ['./source/*.scss'],
       'dest': './source/css'
     },
     "twig": {
@@ -96,14 +93,12 @@ function sassTask(theme, config) {
       autoprefixer({browsers: ['last 2 versions']})
     ];
 
-    for (var src in config.sass.srcs) {
-      var pipe = gulp.src(config.sass.srcs[src])
-      .pipe(sourcemaps.init())
-      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-      .pipe(postcss(processors))
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest(config.sass.dest));
-    }
+    var pipe = gulp.src(config.sass.srcs)
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(config.sass.dest));
 
     // It's unknown why gulp-if don't work with browser-sync, so this if
     // statement is as little hack.
