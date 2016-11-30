@@ -6,8 +6,8 @@
 
 /* stylelint-disable */
 
-@import "_base/vars";
 @import "_base/colors";
+@import "_patterns/00-elements/00-global/fonts";
 @import "_patterns/00-elements/01-helpers/breakpoint";
 @import "_patterns/00-elements/01-helpers/strip-link-styles";
 @import "_patterns/00-elements/01-helpers/word-wrap";
@@ -140,6 +140,26 @@ $demo-colors: (
           content: "#{demo-color($color-key)}";
         }
       }
+    }
+  }
+}
+
+
+$demo-fonts: (
+  "light":            $font-light,
+  "light-italic":     $font-light-italic,
+  "regular":          $font-regular,
+  "italic":           $font-italic,
+  "semibold":         $font-semibold,
+  "semibold-italic":  $font-semibold-italic,
+  "bold":             $font-bold,
+  "bold-italic":      $font-bold-italic,
+);
+
+.demo-font {
+  @each $font-key, $font-value in $demo-fonts {
+    &--#{$font-key} {
+      font-family: $font-value;
     }
   }
 }
