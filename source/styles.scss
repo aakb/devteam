@@ -12,21 +12,30 @@
 @import "_base/base";
 
 
-/* Elements */
-@import "_patterns/00-elements/text/00-headings";
-@import "_patterns/00-elements/text/headings-with-link";
-@import "_patterns/00-elements/text/links";
+/* Helpers */
 @import "_patterns/00-elements/01-helpers/breakpoint";
 @import "_patterns/00-elements/01-helpers/strip-link-styles";
 @import "_patterns/00-elements/01-helpers/word-wrap";
 @import "_patterns/00-elements/01-helpers/z-index";
-@import "_patterns/00-elements/images/image";
-@import "_patterns/00-elements/buttons/button";
-@import "_patterns/00-elements/buttons/button-action";
-@import "_patterns/00-elements/text/00-headings";
-@import "_patterns/00-elements/text/fieldsets";
-@import "_patterns/00-elements/text/headings-with-link";
-@import "_patterns/00-elements/text/inline-elements";
+
+/* Buttons */
+@import "_patterns/00-elements/02-buttons/button";
+@import "_patterns/00-elements/02-buttons/button-action";
+
+
+/* Images */
+@import "_patterns/00-elements/03-images/image";
+
+
+/* Text */
+@import "_patterns/00-elements/04-text/00-headings";
+@import "_patterns/00-elements/04-text/headings-with-link";
+@import "_patterns/00-elements/04-text/fieldsets";
+@import "_patterns/00-elements/04-text/inline-elements";
+@import "_patterns/00-elements/04-text/links";
+
+
+@import "_patterns/00-elements/05-icons/00-arrow";
 
 
 /* Modules */
