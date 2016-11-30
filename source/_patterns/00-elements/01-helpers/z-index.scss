@@ -3,6 +3,15 @@
  * Inspired by https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/
 ================================================================================================================== */
 
+$z-index-elements:
+  header,
+  content,
+  nav,
+  logo,
+  overlay,
+  hamburger-menu,
+  nav-toggle;
+
 @function z($list, $element) {
   $z-index: index($list, $element);
   @if $z-index {
