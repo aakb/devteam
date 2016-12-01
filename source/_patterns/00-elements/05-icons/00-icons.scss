@@ -1,0 +1,31 @@
+$icon-size-small:  48px;
+$icon-size-medium: 64px;
+$icon-size-large:  96px;
+$icon-size-xlarge: 128px;
+
+$icon-colors: (
+  "is-black":   $color-black,
+);
+
+$icon-sizes: (
+  "is-medium":  $icon-size-medium,
+  "is-large":   $icon-size-large,
+  "is-xlarge":  $icon-size-xlarge,
+);
+
+.icon {
+  fill: $color-black;
+  width: $icon-size-medium;
+
+  @each $icon-colors-key, $icon-colors-value in $icon-colors {
+    &.#{$icon-colors-key} {
+      fill: $icon-colors-value;
+    }
+  }
+
+  @each $icon-size-key, $icon-size-value in $icon-sizes {
+    &.#{$icon-size-key} {
+      width: $icon-size-value;
+    }
+  }
+}
