@@ -1,0 +1,8 @@
+.frontpage-quote {
+  font-weight: $font-bold;
+  text-align: center;
+
+  @include breakpoint($breakpoint-largedesk) {
+    @include layout-wrapper(80%);
+  }
+}

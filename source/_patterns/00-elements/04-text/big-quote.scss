@@ -1,0 +1,7 @@
+.big-quote {
+  font-size: 40px;
+
+  @include breakpoint($breakpoint-lap) {
+    font-size: 60px;
+  }
+}

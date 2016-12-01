@@ -1,19 +1,19 @@
 a {
   &:link {
-    color: $color-orange;
+    color: $color-green;
     text-decoration: underline;
   }
 
   &:visited {
-    color: darken($color-orange, 5%);
+    color: darken($color-green, 5%);
   }
 
   &:hover {
-    color: darken($color-orange, 10%);
+    color: darken($color-green, 10%);
     text-decoration: none;
   }
 
   &:focus {
-    color: darken($color-orange, 15%);
+    color: darken($color-green, 15%);
   }
 }

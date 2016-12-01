@@ -1,0 +1,10 @@
+.logo {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 200px;
+
+  @include breakpoint($breakpoint-largedesk) {
+    width: 285px;
+  }
+}

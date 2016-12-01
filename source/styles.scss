@@ -14,10 +14,11 @@
 
 /* Helpers */
 @import "_patterns/00-elements/01-helpers/breakpoint";
-@import "_patterns/00-elements/01-helpers/icons";
+@import "_patterns/00-elements/01-helpers/layout-wrapper";
 @import "_patterns/00-elements/01-helpers/strip-link-styles";
 @import "_patterns/00-elements/01-helpers/word-wrap";
 @import "_patterns/00-elements/01-helpers/z-index";
+
 
 /* Buttons */
 @import "_patterns/00-elements/02-buttons/button";
@@ -34,10 +35,17 @@
 @import "_patterns/00-elements/04-text/fieldsets";
 @import "_patterns/00-elements/04-text/inline-elements";
 @import "_patterns/00-elements/04-text/links";
+@import "_patterns/00-elements/04-text/big-quote";
+
+/* Icons */
 @import "_patterns/00-elements/05-icons/00-icons";
 
 
 /* Modules */
+@import "_patterns/01-modules/frontpage-quote";
+@import "_patterns/01-modules/logo";
+@import "_patterns/01-modules/navigation";
 
 
 /* Components */
+@import "_patterns/02-components/header";
