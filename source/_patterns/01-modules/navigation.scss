@@ -1,4 +1,37 @@
 .navigation {
-  flex-grow: 1;
-  flex-shrink: 1;
+  display: none;
+
+  @include breakpoint($breakpoint-desk) {
+    align-items: stretch;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    height: 150px;
+    margin-left: auto;
+  }
+
+  &--item {
+    @include breakpoint($breakpoint-desk) {
+      @include strip-link-styles($color-green);
+
+      align-items: center;
+      display: flex;
+      padding-top: 2px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &:hover,
+    &.is-active {
+      @include breakpoint($breakpoint-desk) {
+        @include strip-link-styles(darken($color-green, 10%));
+      }
+    }
+
+    &.is-active {
+      @include breakpoint($breakpoint-desk) {
+        border-top: 3px solid $color-orange;
+      }
+    }
+  }
 }

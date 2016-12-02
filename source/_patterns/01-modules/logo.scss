@@ -1,8 +1,14 @@
 .logo {
-  display: block;
+  align-items: center;
+  display: flex;
   flex-grow: 0;
   flex-shrink: 0;
+  height: 100px;
   width: 200px;
+
+  @include breakpoint($breakpoint-desk) {
+    height: 150px;
+  }
 
   @include breakpoint($breakpoint-largedesk) {
     width: 285px;

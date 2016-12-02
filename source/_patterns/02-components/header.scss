@@ -1,8 +1,6 @@
 .header {
+  @include layout-wrapper($breakpoint-largedesk);
+
   display: flex;
   flex-wrap: wrap;
-
-  @include breakpoint($breakpoint-largedesk) {
-    @include layout-wrapper($breakpoint-largedesk);
-  }
 }
