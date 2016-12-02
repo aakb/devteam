@@ -1,12 +1,15 @@
 $demo-fonts: (
-  "light":            $font-light,
-  "light-italic":     $font-light-italic,
-  "regular":          $font-regular,
-  "italic":           $font-italic,
-  "semibold":         $font-semibold,
-  "semibold-italic":  $font-semibold-italic,
-  "bold":             $font-bold,
-  "bold-italic":      $font-bold-italic,
+  "light":              $font-light,
+  "light-italic":       $font-light-italic,
+  "regular":            $font-regular,
+  "italic":             $font-italic,
+  "semibold":           $font-semibold,
+  "semibold-italic":    $font-semibold-italic,
+  "bold":               $font-bold,
+  "bold-italic":        $font-bold-italic,
+  "secondary-regular":  $font-secondary-regular,
+  "secondary-italic":   $font-secondary-italic,
+  "secondary-bold":     $font-secondary-bold,
 );
 
 .demo-font {
