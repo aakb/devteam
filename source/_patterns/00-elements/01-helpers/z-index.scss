@@ -1,16 +1,9 @@
+// For debugging and getting an overview use @debug $z-index-elements after adding elements.
+
 /* Inspired by https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts */
-
-$z-index-elements:
-  header,
-  content,
-  nav,
-  logo,
-  overlay,
-  hamburger-menu,
-  nav-toggle;
-
 @function z($list, $element) {
   $z-index: index($list, $element);
+
   @if $z-index {
     @return $z-index;
   }
@@ -18,3 +11,20 @@ $z-index-elements:
   @warn "There is no item '#{$element}' in this list; choose one of: #{$list}";
   @return null;
 }
+
+// Additional function for adding items to the z-index.
+@function add-to-z-index($list, $element, $position) {
+  @if $position == 'first' {
+    @return prepend($list, $element);
+  }
+  @elseif $position == 'last' {
+    @return append($list, $element);
+  }
+}
+
+// Setting the z-index array.
+$z-index-elements:
+  header,
+  content,
+  nav,
+  logo;

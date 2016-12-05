@@ -39,3 +39,17 @@
   font-weight: 600;
   src: local('Raleway-SemiBold-Italic'), url(/assets/fonts/raleway/Raleway-SemiBoldItalic.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway-Bold'), url(/assets/fonts/raleway/Raleway-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Raleway-Bold-Italic'), url(/assets/fonts/raleway/Raleway-BoldItalic.ttf) format('truetype');
+}

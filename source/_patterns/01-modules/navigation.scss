@@ -16,6 +16,7 @@
 
       align-items: center;
       display: flex;
+      margin-top: 3px;
       padding-top: 2px;
       padding-left: 20px;
       padding-right: 20px;
@@ -24,14 +25,20 @@
     &:hover,
     &.is-active {
       @include breakpoint($breakpoint-desk) {
-        @include strip-link-styles(darken($color-green, 10%));
       }
     }
 
     &.is-active {
       @include breakpoint($breakpoint-desk) {
         border-top: 3px solid $color-orange;
+        font-family: $font-semibold;
+        margin-top: 0;
       }
+    }
+
+    &:not(.is-active):hover {
+      border-top: 3px solid $color-gray-light;
+      margin-top: 0;
     }
   }
 }
