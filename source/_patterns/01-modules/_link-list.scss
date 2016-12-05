@@ -1,0 +1,40 @@
+.link-list {
+  &--header {
+    font-size: $font-size-large;
+  }
+
+  &--links {
+    margin: 0;
+    padding: 0;
+
+    a {
+      @include strip-link-styles($color-green, none);
+
+      &:hover {
+        color: $color-orange;
+      }
+    }
+  }
+
+  &--group {
+    list-style: none;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-gray-light;
+    }
+  }
+
+  &--link {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+
+  // States.
+  &.is-centered {
+    text-align: center;
+  }
+}
