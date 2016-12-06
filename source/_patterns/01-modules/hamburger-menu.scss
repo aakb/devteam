@@ -44,6 +44,10 @@ body {
   width: $hamburger-menu-width;
   z-index: z($z-index-elements, hamburger-menu);
 
+  @include breakpoint($breakpoint-desk) {
+    display: none;
+  }
+
   &--inner {
     height: 100%;
     overflow-y: scroll;

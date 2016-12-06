@@ -1,0 +1,49 @@
+$box-spacing: 20px;
+
+.box {
+  box-sizing: border-box;
+  color: $color-black;
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: column nowrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+
+  @include breakpoint($breakpoint-desk) {
+    // It seems there are some rounding issues (at least in Chrome) that is why we multiply with 2.035.
+    // Not pretty but necessary.
+    flex-basis: calc(33.3333% - #{$box-spacing * 2.035});
+    margin: $box-spacing;
+  }
+
+  &:not(:first-child) {
+    margin-top: $box-spacing;
+  }
+
+  &--inner {
+    padding: $box-spacing;
+  }
+
+  &--header {
+    flex: 0 0 auto;
+    line-height: 40px;
+
+    a {
+      @include strip-link-styles($color-black);
+
+      color: $color-black;
+    }
+  }
+
+  &--content {
+    margin-top: $box-spacing;
+  }
+
+  &--link {
+    display: block;
+    margin-top: $box-spacing;
+  }
+}

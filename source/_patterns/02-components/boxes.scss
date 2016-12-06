@@ -1,0 +1,40 @@
+/**
+ *
+ * Box
+ *
+ */
+
+$boxes-spacing: 20px;
+
+
+/* Styles
+   ========================================================================== */
+
+.boxes {
+  @include layout-wrapper($breakpoint-largedesk);
+
+  margin-bottom: $boxes-spacing;
+  margin-left: $boxes-spacing;
+  margin-right: $boxes-spacing;
+  margin-top: 60px;
+
+  @include breakpoint($breakpoint-desk) {
+    margin-top: 140px;
+  }
+
+  &--inner {
+    display: flex;
+    flex-flow: row wrap;
+
+    @include breakpoint($breakpoint-desk) {
+      margin-left: -$boxes-spacing;
+      margin-right: -$boxes-spacing;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: $breakpoint-bigscreen;
+    }
+  }
+}
