@@ -1,7 +1,7 @@
 <div class="link-list {{ state }}">
   {% if header %}<h3 class="link-list--header">{{ header }}</h3> {% endif %}
   <ul class="link-list--links">
-  {% for group in list %}
+  {% for group in linkList %}
     <li class="link-list--group">
     {% for item in group %}
       <a href="{{ item.link }}" class="link-list--link">{{ item.title }}</a>

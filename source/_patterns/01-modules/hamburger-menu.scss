@@ -17,7 +17,7 @@ $hamburger-menu-width:              30em;
 $hamburger-menu-max-width:          90%;
 $hamburger-menu-animation-duration: .3s;
 $hamburger-menu-overlay-color:      transparentize($color-black, .15);
-$hamburger-menu-border-style:       1px solid $color-gray-lighter;
+$hamburger-menu-border-style:       1px solid;
 $hamburger-menu-border-color:       $color-gray-lighter;
 $hamburger-menu-link-color:         $color-gray-darkest;
 $hamburger-menu-link-color-hover:   $color-orange;
@@ -49,25 +49,13 @@ body {
     overflow-y: scroll;
   }
 
-  &--group {
-    margin-bottom: 1.75em;
-    padding-bottom: 1.5em;
-
-    &:not(:last-child) {
-      border-bottom: $hamburger-menu-border-style $hamburger-menu-border-color;
-    }
-  }
-
   &--links {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 5em;
+    margin: 90px 20px 0;
+    padding: 0;
     text-align: center;
 
     a {
-      @include strip-link-styles($color-gray-darkest, none);
-
-      font-weight: 600;
+      @include strip-link-styles($color-green, none);
 
       &:hover {
         color: $color-orange;
@@ -75,37 +63,43 @@ body {
     }
   }
 
-  &--link {
-    color: $color-gray-darker;
-    display: list-item;
-    font-size: 1.1em;
+  &--group {
     list-style: none;
-    margin-bottom: .25em;
-    text-decoration: none;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-gray-light;
+    }
   }
 
-  // States
-  &.is-open {
-    right: 0;
+  &--link {
+    border-top: $hamburger-menu-border-style $hamburger-menu-border-color;
+    display: block;
+    font-family: $font-semibold;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 
-
-  // Toggle
   &--toggle {
     cursor: pointer;
     height: 30px;
     position: absolute;
     right: 20px;
-    top: 33px;
+    top: 38px;
     transform: rotate(0deg);
     transition: $hamburger-menu-animation-duration;
     width: 32px;
     z-index: z($z-index-elements, hamburger-menu-toggle);
 
+    @include breakpoint($breakpoint-desk) {
+      display: none;
+    }
+
     span {
       background: $hamburger-menu-toggle-color;
       display: block;
-      height: 5px;
+      height: 3px;
       left: 0;
       opacity: 1;
       position: absolute;
@@ -127,7 +121,7 @@ body {
       top: 22px;
     }
 
-    &.open {
+    &.is-open {
       span {
         background: $hamburger-menu-toggle-color;
       }
@@ -156,7 +150,6 @@ body {
     }
   }
 
-
   // Overlay
   &--overlay {
     bottom: 0;
@@ -173,5 +166,10 @@ body {
       transition: background $hamburger-menu-animation-duration;
       visibility: visible;
     }
+  }
+
+  // States
+  &.is-open {
+    right: 0;
   }
 }

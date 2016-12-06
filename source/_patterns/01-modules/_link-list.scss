@@ -28,10 +28,10 @@
 
   &--link {
     display: block;
+    font-family: $font-semibold;
     padding-bottom: 10px;
     padding-top: 10px;
   }
-
 
   // States.
   &.is-centered {

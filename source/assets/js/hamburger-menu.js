@@ -11,7 +11,7 @@ $(document).ready(function () {
   var hamburger_body = $('body');
 
   // Create overlay element.
-  hamburger_body.prepend('<div class="hamburger-menu--overlay"></div>');
+  hamburger_body.prepend('<div class="hamburger-menu--overlay js-hamburger-menu-toggle"></div>');
 
   // Set remaining variables.
   var hamburger_html = $('html');
@@ -19,12 +19,10 @@ $(document).ready(function () {
   var hamburger_menu = $('.hamburger-menu');
   var hamburger_overlay = $('.hamburger-menu--overlay');
 
-  console.log(hamburger_overlay);
-
-  $('.js-menu-toggle').click(function() {
-    if (hamburger_button.hasClass("open")) {
+  $('.js-hamburger-menu-toggle').click(function() {
+    if (hamburger_button.hasClass("is-open")) {
       // Button animation 'back to hamburger'.
-      hamburger_button.removeClass("open");
+      hamburger_button.removeClass("is-open");
 
       // Closes hamburger menu.
       hamburger_menu.removeClass("is-open");
@@ -39,7 +37,7 @@ $(document).ready(function () {
     else
     {
       // Hamburger button animation to 'x'.
-      hamburger_button.addClass("open");
+      hamburger_button.addClass("is-open");
 
       // Open hamburger menu.
       hamburger_menu.addClass("is-open");

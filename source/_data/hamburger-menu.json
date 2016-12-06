@@ -1,25 +1,25 @@
 {
-  "list": {
-    "group": [
+  "hamburgerMenu": {
+    "group-1": [
       {
         "title": "Start",
-        "link": "#"
+        "link": "/"
       },
       {
         "title": "Det kan vi",
-        "link": "#"
+        "link": "/det-kan-vi/"
       },
       {
         "title": "Det får du",
-        "link": "#"
+        "link": "/det-faar-du/"
       },
       {
         "title": "Cases",
-        "link": "#"
+        "link": "/cases/"
       },
       {
         "title": "Om os",
-        "link": "#"
+        "link": "/om-os/"
       }
     ]
   }
