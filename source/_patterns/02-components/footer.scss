@@ -1,0 +1,64 @@
+.footer {
+  background-color: $color-gray-lighter;
+  border-top: 1px solid $color-gray-light;
+  padding-top: 50px;
+
+  @include breakpoint($breakpoint-desk) {
+    margin-top: 150px;
+  }
+
+  &--content {
+    @include layout-wrapper($breakpoint-largedesk);
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  &--column {
+    align-items: center;
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+
+    &:last-child {
+      margin-top: 40px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      flex: 1 0 50%;
+
+      &:last-child {
+        margin-top: 0;
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid rgba(255, 255, 255, .1);
+      }
+    }
+  }
+
+  &--column-inner {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  &--bottom {
+    @include layout-wrapper($breakpoint-largedesk);
+
+    border-top: 1px solid $color-gray-light;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  &--logo {
+    margin-top: 10px;
+  }
+}
