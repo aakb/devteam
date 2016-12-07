@@ -1,4 +1,6 @@
 {
+  "header": "Centered link list",
+  "state": "is-centered",
   "linkList": {
     "group-1": [
       {
