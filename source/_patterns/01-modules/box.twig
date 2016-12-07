@@ -1,6 +1,6 @@
 {% for box in boxes %}
 <article class="box">
-  <a href="{{ box.link }}" title="{{ box.title }}">{% include "elements-coffee" with {iconColor: 'black', iconSize: 'is-large'} %}</a>
+  <a href="{{ box.link }}" title="{{ box.title }}">{% include box.image with {iconColor: 'black', iconSize: 'is-large'} %}</a>
   <div class="box--inner">
     <h2 class="box--header"><a href="{{ box.link }}" title="{{ box.title }}">{{ box.title }}</a></h2>
     <p class="box--content">{{ box.content }}</p>
