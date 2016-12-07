@@ -20,6 +20,10 @@
 @import "_patterns/00-elements/01-helpers/z-index";
 
 
+/* Layouts */
+@import "_layouts/grid";
+
+
 /* Images */
 @import "_patterns/00-elements/03-images/image";
 
@@ -46,4 +50,3 @@
 
 /* Components */
 @import "_patterns/02-components/header";
-@import "_patterns/02-components/boxes";

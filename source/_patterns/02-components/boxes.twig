@@ -1,7 +1,6 @@
-<div class="boxes has-spacing">
-  <div class="boxes--inner">
+{% embed "grid.twig" %}
+  {% block content %}
     {% include "modules-box" %}
-    {% include "modules-box" %}
-    {% include "modules-box" %}
-  </div>
-</div>
+  {% endblock %}
+{% endembed %}
+

@@ -1,0 +1,22 @@
+{
+  "boxes": [
+    {
+      "image": "elements-tools",
+      "title": "Produkter",
+      "content": "Vi kan hjælpe med alt fra mindre formidlingssites, special website",
+      "link": "#"
+    },
+    {
+      "image": "elements-box",
+      "title": "Hvordan arbejder vi",
+      "content": "En professional sparringspartner, placeret internt i Aarhus Kommune",
+      "link": "#"
+    },
+    {
+      "image": "elements-coffee",
+      "title": "Hvem er vi",
+      "content": "Vi er en flok passionerede nørder, der ved hvad der rør’ sig i det digitale",
+      "link": "#"
+    }
+  ]
+}

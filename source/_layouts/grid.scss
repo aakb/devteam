@@ -4,18 +4,18 @@
  *
  */
 
-$boxes-spacing: 20px;
+$grid-spacing: 20px;
 
 
 /* Styles
    ========================================================================== */
 
-.boxes {
+.grid {
   @include layout-wrapper($breakpoint-largedesk);
 
-  margin-bottom: $boxes-spacing;
-  margin-left: $boxes-spacing;
-  margin-right: $boxes-spacing;
+  margin-bottom: $grid-spacing;
+  margin-left: $grid-spacing;
+  margin-right: $grid-spacing;
   margin-top: 60px;
 
   @include breakpoint($breakpoint-desk) {
@@ -27,8 +27,8 @@ $boxes-spacing: 20px;
     flex-flow: row wrap;
 
     @include breakpoint($breakpoint-desk) {
-      margin-left: -$boxes-spacing;
-      margin-right: -$boxes-spacing;
+      margin-left: -$grid-spacing;
+      margin-right: -$grid-spacing;
     }
 
     @include breakpoint($breakpoint-bigscreen) {
