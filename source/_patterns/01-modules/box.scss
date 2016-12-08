@@ -1,4 +1,5 @@
 $box-spacing: 20px;
+$box-spacing-large: 40px;
 
 .box {
   @include strip-link-styles($color-black);
@@ -12,8 +13,8 @@ $box-spacing: 20px;
   flex-grow: 0;
   flex-shrink: 0;
   justify-content: flex-start;
-  margin-top:40px;
-  padding: 40px;
+  margin-top: $box-spacing-large;
+  padding: $box-spacing-large;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -38,13 +39,13 @@ $box-spacing: 20px;
     // It seems there are some rounding issues (at least in Chrome) that is why we multiply with 2.035.
     // Not pretty but necessary.
     flex-basis: calc(33.3333% - #{$box-spacing * 2.035});
-    margin: $box-spacing * 3 $box-spacing $box-spacing;
+    margin: $box-spacing-large $box-spacing $box-spacing;
   }
 
   &--header {
     flex: 0 0 auto;
-    line-height: 40px;
-    margin-top: 20px;
+    line-height: $box-spacing-large;
+    margin-top: $box-spacing;
   }
 
   &--content {
@@ -58,7 +59,7 @@ $box-spacing: 20px;
 
   &:hover {
     .box--link {
-      margin-left: 40px;
+      margin-left: $box-spacing-large;
       transition: margin .25s;
     }
   }
