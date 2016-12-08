@@ -1,6 +1,7 @@
 .footer {
   background-color: $color-gray-lighter;
   border-top: 1px solid $color-gray-light;
+  margin-top: 40px;
   padding-top: 50px;
 
   @include breakpoint($breakpoint-desk) {
