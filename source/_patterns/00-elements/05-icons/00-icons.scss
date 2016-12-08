@@ -5,6 +5,7 @@ $icon-size-xlarge: 128px;
 
 $icon-colors: (
   "is-black":   $color-black,
+  "is-white":   $color-white
 );
 
 $icon-sizes: (
@@ -19,7 +20,8 @@ $icon-sizes: (
   width: $icon-size-medium;
 
   @each $icon-colors-key, $icon-colors-value in $icon-colors {
-    &.#{$icon-colors-key} {
+    &.#{$icon-colors-key},
+    &.#{$icon-colors-key} g {
       fill: $icon-colors-value;
     }
   }
