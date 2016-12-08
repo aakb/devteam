@@ -1,6 +1,9 @@
 $box-spacing: 20px;
 
 .box {
+  @include strip-link-styles($color-black);
+
+  align-items: center;
   box-sizing: border-box;
   color: $color-black;
   display: flex;
@@ -9,8 +12,27 @@ $box-spacing: 20px;
   flex-grow: 0;
   flex-shrink: 0;
   justify-content: flex-start;
+  margin-top:40px;
+  padding: 40px;
   position: relative;
   text-align: center;
+  text-decoration: none;
+  transition: background-color .25s;
+
+  &:hover {
+    background-color: $color-gray-lighter;
+  }
+
+  // States
+  &.is-cases {
+    @include strip-link-styles($color-white);
+    background-color: $color-green;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+  }
 
   @include breakpoint($breakpoint-desk) {
     // It seems there are some rounding issues (at least in Chrome) that is why we multiply with 2.035.
@@ -19,19 +41,10 @@ $box-spacing: 20px;
     margin: $box-spacing * 3 $box-spacing $box-spacing;
   }
 
-  &--inner {
-    padding: $box-spacing;
-  }
-
   &--header {
     flex: 0 0 auto;
     line-height: 40px;
-
-    a {
-      @include strip-link-styles($color-black);
-
-      color: $color-black;
-    }
+    margin-top: 20px;
   }
 
   &--content {
@@ -41,5 +54,12 @@ $box-spacing: 20px;
   &--link {
     display: block;
     margin-top: $box-spacing;
+  }
+
+  &:hover {
+    .box--link {
+      margin-left: 40px;
+      transition: margin .25s;
+    }
   }
 }

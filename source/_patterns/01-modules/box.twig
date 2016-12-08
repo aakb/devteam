@@ -1,10 +1,10 @@
 {% for box in boxes %}
-<article class="box">
-  <a href="{{ box.link }}" title="{{ box.title }}">{% include box.image with {iconColor: 'black', iconSize: 'is-large'} %}</a>
+<a href="{{ box.link }}" title="{{ box.title }}" class="box {{ class }}">
+  {% include box.image with {iconColor: iconColor, iconSize: 'is-large'} %}
   <div class="box--inner">
-    <h2 class="box--header"><a href="{{ box.link }}" title="{{ box.title }}">{{ box.title }}</a></h2>
+    <h2 class="box--header {{ class }}">{{ box.title }}</h2>
     <p class="box--content">{{ box.content }}</p>
-    <a href="{{ box.link }}" title="{{ box.title }}" class="box--link">{% include "elements-arrow-right" with {iconColor: 'black', iconSize: 'is-small'} %}</a>
+    <span class="box--link">{% include "elements-arrow-right" with {iconColor: iconColor, iconSize: 'is-small'} %}</span>
   </div>
-</article>
+</a>
 {% endfor %}

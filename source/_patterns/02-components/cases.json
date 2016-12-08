@@ -1,0 +1,22 @@
+{
+  "boxes": [
+    {
+      "image": "elements-tools",
+      "title": "OS2display",
+      "content": "Fictum,  deserunt mollit anim laborum astutumque!",
+      "link": "#"
+    },
+    {
+      "image": "elements-box",
+      "title": "Grundsalg Aarhus",
+      "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
+      "link": "#"
+    },
+    {
+      "image": "elements-coffee",
+      "title": "OS2loop",
+      "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+      "link": "#"
+    }
+  ]
+}
