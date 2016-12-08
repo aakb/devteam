@@ -1,6 +1,8 @@
 {% embed "grid.twig" %}
   {% block content %}
     <h2 class="is-big">Cases</h2>
-    {% include "modules-box" with {class: "is-cases", iconColor: "is-white"} %}
+    {% for box in cases %}
+      {% include "modules-box" %}
+    {% endfor %}
   {% endblock %}
 {% endembed %}

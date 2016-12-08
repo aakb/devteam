@@ -1,10 +1,10 @@
 {
-  "boxes": [
-    {
-      "image": "elements-tools",
-      "title": "Box",
-      "content": "Fictum,  deserunt mollit anim laborum astutumque!",
-      "link": "#"
-    }
-  ]
+  "box": {
+    "class": "",
+    "iconColor": "",
+    "image": "elements-tools",
+    "title": "Box",
+    "content": "Fictum,  deserunt mollit anim laborum astutumque!",
+    "link": "#"
+  }
 }

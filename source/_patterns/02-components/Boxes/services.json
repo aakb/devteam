@@ -1,18 +1,24 @@
 {
-  "boxes": [
+  "services": [
     {
+      "class": "",
+      "iconColor": "is-black",
       "image": "elements-tools",
       "title": "Box 1",
       "content": "Fictum,  deserunt mollit anim laborum astutumque!",
       "link": "#"
     },
     {
+      "class": "",
+      "iconColor": "is-black",
       "image": "elements-box",
       "title": "Box 2",
       "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
       "link": "#"
     },
     {
+      "class": "",
+      "iconColor": "is-black",
       "image": "elements-coffee",
       "title": "Box 3",
       "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",

@@ -8,25 +8,56 @@
       }
     ]
   },
-  "boxes": [
+  "services": [
     {
+      "class": "",
+      "iconColor": "is-black",
       "image": "elements-tools",
       "title": "Produkter",
-      "content": "Vi kan hjælpe med alt fra mindre formidlingssites, special website",
+      "content": "Fictum,  deserunt mollit anim laborum astutumque!",
       "link": "#"
     },
     {
+      "class": "",
+      "iconColor": "is-black",
       "image": "elements-box",
       "title": "Hvordan arbejder vi",
-      "content": "En professional sparringspartner, placeret internt i Aarhus Kommune",
+      "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
       "link": "#"
     },
     {
+      "class": "",
+      "iconColor": "is-black",
       "image": "elements-coffee",
       "title": "Hvem er vi",
-      "content": "Vi er en flok passionerede nørder, der ved hvad der rør’ sig i det digitale",
+      "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
       "link": "#"
     }
   ],
-  "quote": "Vi laver brugervenlige open source løsninger til Aarhus Kommune"
+  "cases": [
+    {
+      "class": "is-cases",
+      "iconColor": "is-white",
+      "image": "",
+      "title": "OS2display",
+      "content": "Fictum,  deserunt mollit anim laborum astutumque!",
+      "link": "#"
+    },
+    {
+      "class": "is-cases",
+      "iconColor": "is-white",
+      "image": "",
+      "title": "Grundsalg Aarhus",
+      "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
+      "link": "#"
+    },
+    {
+      "class": "is-cases",
+      "iconColor": "is-white",
+      "image": "",
+      "title": "OS2loop",
+      "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+      "link": "#"
+    }
+  ]
 }

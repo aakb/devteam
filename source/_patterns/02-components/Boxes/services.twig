@@ -1,0 +1,8 @@
+{% embed "grid.twig" %}
+  {% block content %}
+    {% for box in services %}
+      {% include "modules-box" %}
+    {% endfor %}
+  {% endblock %}
+{% endembed %}
+
