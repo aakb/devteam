@@ -1,13 +1,22 @@
 html {
   height: 100%;
+  overflow-y: scroll;
 }
 
 body {
   background-color: $color-white;
   color: $color-black;
+  display: flex;
+  flex-direction: column;
   font: $font;
   height: 100%;
   margin: 0;
   position: relative;
+  width: 100%;
+}
+
+
+main[role=main] {
+  flex: 1 0 auto;
   width: 100%;
 }
