@@ -2,5 +2,7 @@
   @include layout-wrapper($breakpoint-largedesk);
 
   display: flex;
+  flex: 0 0 auto;
   flex-wrap: wrap;
+  width: 100%;
 }

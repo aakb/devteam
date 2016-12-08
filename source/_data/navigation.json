@@ -1,0 +1,23 @@
+{
+  "navigation": {
+    "isActive": 0,
+    "items": [
+      {
+        "link": "link.pages-frontpage",
+        "title": "Start"
+      },
+      {
+        "link": "/",
+        "title": "Det kan vi"
+      },
+      {
+        "link": "/",
+        "title": "Cases"
+      },
+      {
+        "link": "link.pages-om-os",
+        "title": "Om os"
+      }
+    ]
+  }
+}

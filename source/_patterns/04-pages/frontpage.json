@@ -1,4 +1,7 @@
 {
+  "navigation": {
+    "isActive": 1
+  },
   "headings": {
     "class": "is-quote",
     "headings": [

@@ -1,6 +1,7 @@
 <nav class="navigation">
-  <a href="#" title="Start" class="navigation--item {{ active }}"><span>Start</span></a>
-  <a href="#" title="Det kan vi" class="navigation--item"><span>Det kan vi</span></a>
-  <a href="#" title="Cases" class="navigation--item"><span>Cases</span></a>
-  <a href="#" title="Om os" class="navigation--item"><span>Om os</span></a>
+  {% for item in navigation.items %}
+    <a href="{{ item.link }}" title="{{ item.title }}" class="navigation--item {{ loop.index == navigation.isActive ? "is-active" }}">
+      <span>{{ item.title }}</span>
+    </a>
+  {% endfor %}
 </nav>

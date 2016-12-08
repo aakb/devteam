@@ -1,5 +1,7 @@
-{% include "components-header" %}
-{% include "components-frontpage-quote" %}
-{% include "components-services" %}
-{% include "components-cases" %}
-{% include "components-footer" %}
+{% embed "base.twig" %}
+  {% block content %}
+    {% include "components-frontpage-quote" %}
+    {% include "components-services" %}
+    {% include "components-cases" %}
+  {% endblock %}
+{% endembed %}
