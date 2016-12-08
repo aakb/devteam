@@ -13,4 +13,40 @@ h6 {
 
   /* Voodoo to enable ligatures and kerning */
   text-rendering: optimizeLegibility;
+
+  &.is-big,
+  &.is-quote {
+    color: $color-dark-blue;
+    flex-basis: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &.is-big {
+    @include breakpoint($breakpoint-lap) {
+      font-size: 24px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 32px;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      font-size: 48px;
+    }
+  }
+
+  &.is-quote {
+    @include breakpoint($breakpoint-lap) {
+      font-size: 32px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 48px;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      font-size: 60px;
+    }
+  }
 }

@@ -1,4 +1,13 @@
 {
+  "headings": {
+    "class": "is-quote",
+    "headings": [
+      {
+        "type": "h2",
+        "heading": "Vi laver brugervenlige open source løsninger til Aarhus Kommune"
+      }
+    ]
+  },
   "boxes": [
     {
       "image": "elements-tools",
