@@ -22,7 +22,13 @@ $box-spacing-large: 40px;
   }
 
   &.has-color {
-    @include strip-link-styles($color-white, underline);
+    a {
+      @include strip-link-styles($color-white, underline);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
 
     background-color: $color-green;
     color: $color-white;
