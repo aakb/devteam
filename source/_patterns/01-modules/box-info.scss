@@ -1,0 +1,50 @@
+$box-spacing: 20px;
+$box-spacing-large: 40px;
+
+.box-info {
+  align-items: center;
+  color: $color-black;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: $box-spacing-large;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .25s;
+
+  // States.
+  &:hover {
+    background-color: $color-gray-lighter;
+  }
+
+  &.has-spacing {
+    margin-top: $box-spacing;
+  }
+
+  &.has-color {
+    @include strip-link-styles($color-white, underline);
+
+    background-color: $color-green;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+  }
+
+  &--image {
+    border-radius: 100%;
+    overflow: hidden;
+    max-width: 96px;
+  }
+
+  &--header {
+    flex: 0 0 auto;
+    line-height: $box-spacing-large;
+    margin-top: $box-spacing;
+  }
+
+  &--content {
+    margin-top: $box-spacing;
+  }
+}

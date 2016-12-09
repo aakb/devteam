@@ -1,0 +1,9 @@
+{
+  "box": {
+    "class": "has-color",
+    "image": "/assets/styleguide/sg-1-1-500x500.png",
+    "title": "Box info",
+    "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus.",
+    "email": "mail@example.com"
+  }
+}
