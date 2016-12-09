@@ -6,7 +6,6 @@
 
 $grid-spacing: 20px;
 
-
 /* Styles
    ========================================================================== */
 
@@ -16,10 +15,15 @@ $grid-spacing: 20px;
   margin-bottom: $grid-spacing;
   margin-left: $grid-spacing;
   margin-right: $grid-spacing;
-  margin-top: 60px;
+  margin-top: $grid-spacing;
 
-  @include breakpoint($breakpoint-desk) {
-    margin-top: 140px;
+  // States.
+  &.has-spacing {
+    margin-top: 60px;
+
+    @include breakpoint($breakpoint-desk) {
+      margin-top: 120px;
+    }
   }
 
   &--inner {
@@ -35,6 +39,20 @@ $grid-spacing: 20px;
       margin-left: auto;
       margin-right: auto;
       max-width: $breakpoint-bigscreen;
+    }
+  }
+
+  &--item {
+    box-sizing: border-box;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    @include breakpoint($breakpoint-desk) {
+      // It seems there are some rounding issues (at least in Chrome) that is why we multiply with 2.035.
+      // Not pretty but necessary.
+      flex-basis: calc(33.3333% - #{$grid-spacing * 2.035});
+      margin: $grid-spacing;
     }
   }
 }
