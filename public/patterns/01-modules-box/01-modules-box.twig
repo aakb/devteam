@@ -1,0 +1,8 @@
+<a href="{{ box.link }}" title="{{ box.title }}" class="box {{ box.class }}">
+  {% include box.icon with {iconColor: box.iconColor, iconSize: 'is-large'} %}
+  <div class="box--inner">
+    <h2 class="box--header {{ box.class }}">{{ box.title }}</h2>
+    <p class="box--content">{{ box.content }}</p>
+    <span class="box--link">{% include "elements-arrow-right" with {iconColor: box.iconColor, iconSize: 'is-small'} %}</span>
+  </div>
+</a>

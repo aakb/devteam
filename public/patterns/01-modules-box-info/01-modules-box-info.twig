@@ -1,0 +1,14 @@
+<article class="box-info {{ box.class }}">
+  {% if box.image %}
+    <div class="box-info--image">
+      <img src="{{ box.image }}" alt="{{ box.title }}">
+    </div>
+  {% endif %}
+  <div class="box-info--inner">
+    <h2 class="box-info--header {{ box.class }}">{{ box.title }}</h2>
+    <p class="box-info--content">{{ box.content }}</p>
+    {% if box.email %}
+      <a href="mailto:{{ box.email }}">{{ box.email }}</a>
+    {% endif %}
+  </div>
+</article>
