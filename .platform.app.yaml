@@ -1,0 +1,25 @@
+# The name of this app. Must be unique within a project.
+name: 'app'
+
+# The type key specifies the language and version for your application.
+type: 'php:7.0'
+
+# On PHP, there are multiple build flavors available. Pretty much everyone except
+# Drupal 7 users will want the composer flavor.
+build:
+  flavor: 'composer'
+
+# The configuration of app when it is exposed to the web.
+web:
+    locations:
+        '/':
+            # The public directory of the app, relative to its root.
+            root: 'pattern-lab/public'
+            # The front-controller script to send non-static requests to.
+            passthru: '/index.html'
+
+# The size of the persistent disk of the application (in MB).
+disk: 2048
+
+hooks:
+    build: |
