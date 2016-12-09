@@ -7,7 +7,7 @@
     "headings": [
       {
         "type": "h2",
-        "heading": "Vi laver brugervenlige open source løsninger til Aarhus Kommune"
+        "heading": "Vi laver brugervenlige open source løsninger i Aarhus Kommune"
       }
     ]
   },
@@ -15,7 +15,7 @@
     {
       "class": "",
       "iconColor": "is-black",
-      "image": "elements-tools",
+      "icon": "elements-tools",
       "title": "Produkter",
       "content": "Fictum,  deserunt mollit anim laborum astutumque!",
       "link": "#"
@@ -23,7 +23,7 @@
     {
       "class": "",
       "iconColor": "is-black",
-      "image": "elements-box",
+      "icon": "elements-box",
       "title": "Hvordan arbejder vi",
       "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
       "link": "#"
@@ -31,7 +31,7 @@
     {
       "class": "",
       "iconColor": "is-black",
-      "image": "elements-coffee",
+      "icon": "elements-coffee",
       "title": "Hvem er vi",
       "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
       "link": "#"
@@ -39,25 +39,25 @@
   ],
   "cases": [
     {
-      "class": "is-cases",
+      "class": "has-color has-spacing",
       "iconColor": "is-white",
-      "image": "",
+      "icon": "",
       "title": "OS2display",
       "content": "Fictum,  deserunt mollit anim laborum astutumque!",
       "link": "#"
     },
     {
-      "class": "is-cases",
+      "class": "has-color has-spacing",
       "iconColor": "is-white",
-      "image": "",
+      "icon": "",
       "title": "Grundsalg Aarhus",
       "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
       "link": "#"
     },
     {
-      "class": "is-cases",
+      "class": "has-color has-spacing",
       "iconColor": "is-white",
-      "image": "",
+      "icon": "",
       "title": "OS2loop",
       "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
       "link": "#"

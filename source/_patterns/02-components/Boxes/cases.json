@@ -3,7 +3,7 @@
     {
       "class": "has-color has-spacing",
       "iconColor": "is-white",
-      "image": "elements-tools",
+      "icon": "elements-tools",
       "title": "OS2display",
       "content": "Fictum,  deserunt mollit anim laborum astutumque!",
       "link": "#"
@@ -11,7 +11,7 @@
     {
       "class": "has-color has-spacing",
       "iconColor": "is-white",
-      "image": "elements-box",
+      "icon": "elements-box",
       "title": "Grundsalg Aarhus",
       "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
       "link": "#"
@@ -19,7 +19,7 @@
     {
       "class": "has-color has-spacing",
       "iconColor": "is-white",
-      "image": "elements-coffee",
+      "icon": "elements-coffee",
       "title": "OS2loop",
       "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
       "link": "#"
