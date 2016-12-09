@@ -1,7 +1,6 @@
 {
   "services": [
     {
-      "class": "",
       "iconColor": "is-black",
       "image": "elements-tools",
       "title": "Box 1",
@@ -9,7 +8,6 @@
       "link": "#"
     },
     {
-      "class": "",
       "iconColor": "is-black",
       "image": "elements-box",
       "title": "Box 2",
@@ -17,7 +15,6 @@
       "link": "#"
     },
     {
-      "class": "",
       "iconColor": "is-black",
       "image": "elements-coffee",
       "title": "Box 3",

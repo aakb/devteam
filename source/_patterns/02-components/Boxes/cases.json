@@ -1,7 +1,7 @@
 {
   "cases": [
     {
-      "class": "is-cases",
+      "class": "has-color has-spacing",
       "iconColor": "is-white",
       "image": "elements-tools",
       "title": "OS2display",
@@ -9,7 +9,7 @@
       "link": "#"
     },
     {
-      "class": "is-cases",
+      "class": "has-color has-spacing",
       "iconColor": "is-white",
       "image": "elements-box",
       "title": "Grundsalg Aarhus",
@@ -17,7 +17,7 @@
       "link": "#"
     },
     {
-      "class": "is-cases",
+      "class": "has-color has-spacing",
       "iconColor": "is-white",
       "image": "elements-coffee",
       "title": "OS2loop",

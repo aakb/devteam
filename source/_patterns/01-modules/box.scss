@@ -24,8 +24,8 @@ $box-spacing-large: 40px;
     background-color: $color-gray-lighter;
   }
 
-  // States
-  &.is-cases {
+  // States.
+  &.has-color {
     @include strip-link-styles($color-white);
     background-color: $color-green;
     color: $color-white;
@@ -36,10 +36,14 @@ $box-spacing-large: 40px;
   }
 
   @include breakpoint($breakpoint-desk) {
-    // It seems there are some rounding issues (at least in Chrome) that is why we multiply with 2.035.
-    // Not pretty but necessary.
-    flex-basis: calc(33.3333% - #{$box-spacing * 2.035});
-    margin: $box-spacing-large $box-spacing $box-spacing;
+
+    // Box layouts.
+    &.is-thirds {
+      // It seems there are some rounding issues (at least in Chrome) that is why we multiply with 2.035.
+      // Not pretty but necessary.
+      flex-basis: calc(33.3333% - #{$box-spacing * 2.035});
+      margin: $box-spacing-large $box-spacing $box-spacing;
+    }
   }
 
   &--header {
