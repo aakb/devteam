@@ -1,5 +1,14 @@
 {
   "navigation": {
     "isActive": 4
-   }
+  },
+  "employees": [
+    {
+      "class": "has-color",
+      "image": "http://1.gravatar.com/avatar/13879748aa52335b157743472e007543?s=500",
+      "title": "Brian Jensen",
+      "content": "Team Lead, Frontend Designer",
+      "email": "brstj@aarhus.dk"
+    }
+  ]
 }
