@@ -1,0 +1,11 @@
+.demo-content-separator {
+  @include content-separator(100px, $color-black, 20px);
+
+  &.is-centered {
+    @include content-separator(200px, $color-green, 40px, center);
+  }
+
+  &.is-right {
+    @include content-separator(300px, $color-dark-blue, 60px, right);
+  }
+}

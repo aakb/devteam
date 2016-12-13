@@ -1,7 +1,10 @@
+$box-spacing-small: 10px;
 $box-spacing: 20px;
 $box-spacing-large: 40px;
 
 .box-info {
+  @include content-separator(25%, $color-white, $box-spacing, center);
+
   align-items: center;
   color: $color-black;
   display: flex;
@@ -23,11 +26,6 @@ $box-spacing-large: 40px;
 
   &.has-color {
     a {
-      @include strip-link-styles($color-white, underline);
-
-      &:hover {
-        text-decoration: none;
-      }
     }
 
     background-color: $color-green;
@@ -50,7 +48,23 @@ $box-spacing-large: 40px;
     margin-top: $box-spacing;
   }
 
-  &--content {
-    margin-top: $box-spacing;
+  &--about {
+    color: transparentize($color-white, .25);
+    position: relative;
+  }
+
+  &--email {
+    @include strip-link-styles($color-white, underline);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--phone {
+    @include strip-link-styles($color-white);
+
+    display: block;
+    margin-top: $box-spacing-small;
   }
 }

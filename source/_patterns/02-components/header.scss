@@ -4,5 +4,8 @@
   display: flex;
   flex: 0 0 auto;
   flex-wrap: wrap;
-  width: 100%;
+
+  @include breakpoint($breakpoint-largedesk) {
+    width: 100%;
+  }
 }

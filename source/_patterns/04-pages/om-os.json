@@ -5,10 +5,93 @@
   "employees": [
     {
       "class": "has-color",
-      "image": "http://1.gravatar.com/avatar/13879748aa52335b157743472e007543?s=500",
-      "title": "Brian Jensen",
-      "content": "Team Lead, Frontend Designer",
-      "email": "brstj@aarhus.dk"
+      "image": "https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/13987539_10153607680682522_9107240510979814397_o.jpg?oh=f009e7589d6eef160abdb593ba22342b&oe=58F6ED4D",
+      "title": "Brian Stefan Jensen",
+      "position": "Team Lead, Frontend Designer",
+      "about": "Brian Jensen er Team, og har ansvar for den overordnede strategi for Dev Team. Desuden er han vores lead på design UX fronten, og har den indgående viden om hvad der virker for brugeren.",
+      "email": "brstj@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/13233078_10153785908624983_3700368423991362986_n.jpg?oh=175108ca568b2f53d3d38e5b7c022f1b&oe=58F1C3E7",
+      "title": "Pernille Thorsen",
+      "position": "Projektleder",
+      "about": "Pernille Thorsen er teknisk projektleder I Dev Team. Med en baggrund fra Aarhus Universitet har hun stor ekspertise I forhold til store og komplekse opgaver. Hun kender Aarhus kommunes systemer ud og ind.",
+      "email": "perth@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-0/p206x206/14695305_1252058648188547_6352994602320460945_n.jpg?oh=7e4b1e3d833a164a9dd690e40cc487e3&oe=58E756E6",
+      "title": "Mikkel Staadsen-Boesen",
+      "position": "Projektleder",
+      "about": "Mikkel Staadsen-Boesen er Projektleder i Dev Team. Han er blandt andet lead på opgaven med at byde på Aarhu.dk. Mikkel har en baggrund som konceptudvikler og formidler og er ofte med i opstarten af nye projekter.",
+      "email": "mikst@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://api.adorable.io/avatars/285/abott@adorable.io.png",
+      "title": "Navn Efternavm",
+      "position": "Backend udvikler",
+      "about": "Curabitur est gravida et libero vitae dictum. Quis aute iure reprehenderit in voluptate velit esse. Excepteur sint obcaecat cupiditat non proident culpa. At nos hinc posthac, sitientis piros Afros. Praeterea iter est quasdam res quas ex communi.",
+      "email": "mail@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://api.adorable.io/avatars/285/abott@adorable.io.png",
+      "title": "Navn Efternavm",
+      "position": "Backend udvikler",
+      "about": "Curabitur est gravida et libero vitae dictum. Quis aute iure reprehenderit in voluptate velit esse. Excepteur sint obcaecat cupiditat non proident culpa. At nos hinc posthac, sitientis piros Afros. Praeterea iter est quasdam res quas ex communi.",
+      "email": "mail@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://api.adorable.io/avatars/285/abott@adorable.io.png",
+      "title": "Navn Efternavm",
+      "position": "Backend udvikler",
+      "about": "Curabitur est gravida et libero vitae dictum. Quis aute iure reprehenderit in voluptate velit esse. Excepteur sint obcaecat cupiditat non proident culpa. At nos hinc posthac, sitientis piros Afros. Praeterea iter est quasdam res quas ex communi.",
+      "email": "mail@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://api.adorable.io/avatars/285/abott@adorable.io.png",
+      "title": "Navn Efternavm",
+      "position": "Backend udvikler",
+      "about": "Curabitur est gravida et libero vitae dictum. Quis aute iure reprehenderit in voluptate velit esse. Excepteur sint obcaecat cupiditat non proident culpa. At nos hinc posthac, sitientis piros Afros. Praeterea iter est quasdam res quas ex communi.",
+      "email": "mail@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://api.adorable.io/avatars/285/abott@adorable.io.png",
+      "title": "Navn Efternavm",
+      "position": "Backend udvikler",
+      "about": "Curabitur est gravida et libero vitae dictum. Quis aute iure reprehenderit in voluptate velit esse. Excepteur sint obcaecat cupiditat non proident culpa. At nos hinc posthac, sitientis piros Afros. Praeterea iter est quasdam res quas ex communi.",
+      "email": "mail@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://api.adorable.io/avatars/285/abott@adorable.io.png",
+      "title": "Navn Efternavm",
+      "position": "Backend udvikler",
+      "about": "Curabitur est gravida et libero vitae dictum. Quis aute iure reprehenderit in voluptate velit esse. Excepteur sint obcaecat cupiditat non proident culpa. At nos hinc posthac, sitientis piros Afros. Praeterea iter est quasdam res quas ex communi.",
+      "email": "mail@aarhus.dk",
+      "phone": "+45 41 85 80 55"
+    },
+    {
+      "class": "has-color",
+      "image": "https://api.adorable.io/avatars/285/abott@adorable.io.png",
+      "title": "Navn Efternavm",
+      "position": "Backend udvikler",
+      "about": "Curabitur est gravida et libero vitae dictum. Quis aute iure reprehenderit in voluptate velit esse. Excepteur sint obcaecat cupiditat non proident culpa. At nos hinc posthac, sitientis piros Afros. Praeterea iter est quasdam res quas ex communi.",
+      "email": "mail@aarhus.dk",
+      "phone": "+45 41 85 80 55"
     }
   ]
 }
