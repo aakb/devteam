@@ -10,8 +10,8 @@
   &--content {
     border-top: 1px solid $color-gray-light;
     flex-basis: 100%;
-    margin-top: $spacing-pixel-small;
-    padding-top: $spacing-pixel-small;
+    margin-top: $spacing-pixel-medium;
+    padding-top: $spacing-pixel-medium;
 
     p + p {
       margin-top: $spacing-pixel-small;
