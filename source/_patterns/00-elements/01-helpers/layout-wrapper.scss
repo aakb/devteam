@@ -1,4 +1,4 @@
-@mixin layout-wrapper($breakpoint, $margin: $spacing-large) {
+@mixin layout-wrapper($breakpoint, $margin: $spacing-percent-large) {
   margin-left: $margin;
   margin-right: $margin;
 

@@ -2,11 +2,10 @@
   @include layout-wrapper($breakpoint-largedesk);
 
   border-bottom: 1px solid $color-gray-light;
-  padding-bottom: 50px;
-  padding-top: 5px;
+  padding-bottom: $spacing-pixel-medium;
 
   @include breakpoint($breakpoint-desk) {
-    padding-bottom: 150px;
-    padding-top: 65px;
+    padding-bottom: $spacing-pixel-xlarge;
+    padding-bottom: $spacing-pixel-large;
   }
 }

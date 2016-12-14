@@ -9,7 +9,7 @@ h6 {
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: $spacing-pixel-medium;
 
   /* Voodoo to enable ligatures and kerning */
   text-rendering: optimizeLegibility;
@@ -18,17 +18,17 @@ h6 {
   &.is-quote {
     color: $color-dark-blue;
     flex-basis: 100%;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
   }
 
   &.is-big {
     @include breakpoint($breakpoint-lap) {
-      font-size: 24px;
+      font-size: 30px;
     }
 
     @include breakpoint($breakpoint-tablet) {
-      font-size: 32px;
+      font-size: 36px;
     }
 
     @include breakpoint($breakpoint-desk) {

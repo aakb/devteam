@@ -14,6 +14,7 @@ $hamburger-menu-z-index:
 
 $hamburger-menu-bg-color:           $color-white;
 $hamburger-menu-width:              30em;
+$hamburger-menu-spacing:            $spacing-percent-large;
 $hamburger-menu-max-width:          90%;
 $hamburger-menu-animation-duration: .3s;
 $hamburger-menu-overlay-color:      transparentize($color-black, .15);
@@ -89,7 +90,7 @@ body {
     cursor: pointer;
     height: 30px;
     position: absolute;
-    right: $spacing-large;
+    right: $hamburger-menu-spacing;
     top: 38px;
     transform: rotate(0deg);
     transition: $hamburger-menu-animation-duration;

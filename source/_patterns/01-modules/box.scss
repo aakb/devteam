@@ -1,5 +1,6 @@
-$box-spacing: 20px;
-$box-spacing-large: 40px;
+$box-spacing-small: $spacing-pixel-small;
+$box-spacing-medium: $spacing-pixel-medium;
+$box-spacing-large: $spacing-pixel-large;
 
 .box {
   @include strip-link-styles($color-black);
@@ -13,12 +14,15 @@ $box-spacing-large: 40px;
   flex-grow: 0;
   flex-shrink: 0;
   justify-content: flex-start;
-  margin-top: $box-spacing-large;
-  padding: $box-spacing-large;
+  padding: $box-spacing-small;
   position: relative;
   text-align: center;
   text-decoration: none;
   transition: background-color .25s;
+
+  &:not(:first-child) {
+    margin-top: $box-spacing-large;
+  }
 
   &:hover {
     background-color: $color-gray-lighter;
@@ -27,6 +31,7 @@ $box-spacing-large: 40px;
   // States.
   &.has-color {
     @include strip-link-styles($color-white);
+
     background-color: $color-green;
     color: $color-white;
 
@@ -35,30 +40,18 @@ $box-spacing-large: 40px;
     }
   }
 
-  @include breakpoint($breakpoint-desk) {
-
-    // Box layouts.
-    &.is-thirds {
-      // It seems there are some rounding issues (at least in Chrome) that is why we multiply with 2.035.
-      // Not pretty but necessary.
-      flex-basis: calc(33.3333% - #{$box-spacing * 2.035});
-      margin: $box-spacing-large $box-spacing $box-spacing;
-    }
-  }
-
   &--header {
     flex: 0 0 auto;
-    line-height: $box-spacing-large;
-    margin-top: $box-spacing;
+    margin-top: $box-spacing-medium;
   }
 
   &--content {
-    margin-top: $box-spacing;
+    margin-top: $box-spacing-medium;
   }
 
   &--link {
     display: block;
-    margin-top: $box-spacing;
+    margin-top: $box-spacing-medium;
   }
 
   &:hover {

@@ -4,8 +4,10 @@
  *
  */
 
-$grid-spacing: $spacing;
-$grid-spacing-large: $spacing-large;
+$grid-spacing-pixel-medium:   $spacing-pixel-medium;
+$grid-spacing-pixel-large:    $spacing-pixel-large;
+$grid-spacing-percent-medium: $spacing-percent-medium;
+$grid-spacing-percent-large:  $spacing-percent-large;
 
 /* Styles
    ========================================================================== */
@@ -13,32 +15,35 @@ $grid-spacing-large: $spacing-large;
 .grid {
   @include layout-wrapper($breakpoint-largedesk);
 
-  margin-bottom: $grid-spacing-large;
-  margin-top: $grid-spacing-large;
-
   // States.
   &.has-spacing {
-    margin-top: 60px;
+    margin-top: $grid-spacing-pixel-medium;
 
     @include breakpoint($breakpoint-desk) {
-      margin-top: 120px;
+      margin-top: $grid-spacing-pixel-large;
     }
   }
 
   &--inner {
     display: flex;
     flex-wrap: wrap;
+
+    &.has-header {
+      margin-top: $spacing-pixel-medium;
+    }
   }
 
   // Equal Height and Width Columns using Flexbox: https://codepen.io/imohkay/pen/gpard
   &--item {
     align-items: stretch;
     display: flex;
-    margin-bottom: $grid-spacing-large;
-    margin-left: $grid-spacing;
-    margin-right: $grid-spacing;
+    margin-bottom: $grid-spacing-pixel-medium;
+    margin-left: $grid-spacing-percent-medium;
+    margin-right: $grid-spacing-percent-medium;
 
     @include breakpoint($breakpoint-tablet) {
+      margin-bottom: $grid-spacing-percent-large;
+
       // Set margins for 2 columns.
       &:nth-of-type(2n) {
         margin-right: 0;
@@ -48,7 +53,7 @@ $grid-spacing-large: $spacing-large;
         margin-left: 0;
       }
 
-      width: 50% - $grid-spacing;
+      width: 50% - $grid-spacing-percent-medium;
     }
 
     @include breakpoint($breakpoint-desk) {
@@ -58,11 +63,11 @@ $grid-spacing-large: $spacing-large;
 
       // Set margins from smaller breakpoint.
       &:nth-of-type(2n) {
-        margin-right: $grid-spacing;
+        margin-right: $grid-spacing-percent-medium;
       }
 
       &:nth-of-type(2n+1) {
-        margin-left: $grid-spacing;
+        margin-left: $grid-spacing-percent-medium;
       }
 
       // Set margins for 3 columns.

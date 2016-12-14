@@ -1,5 +1,6 @@
 <div class="grid {{ state }}">
-  <div class="grid--inner">
+  {% block header %}{% endblock %}
+  <div class="grid--inner {{ header ? "has-header" }}">
     {% block content %}{% endblock %}
   </div>
 </div>

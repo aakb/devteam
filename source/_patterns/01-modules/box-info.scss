@@ -1,15 +1,15 @@
-$box-spacing-small: 10px;
-$box-spacing: 20px;
-$box-spacing-large: 40px;
+$box-spacing-small: $spacing-pixel-small;
+$box-spacing-medium: $spacing-pixel-medium;
+$box-spacing-large: $spacing-pixel-large;
 
 .box-info {
-  @include content-separator(25%, $color-white, $box-spacing, center);
+  @include content-separator(25%, $color-white, $box-spacing-medium, center);
 
   align-items: center;
   color: $color-black;
   display: flex;
   flex-flow: column nowrap;
-  padding: $box-spacing-large;
+  padding: $box-spacing-medium;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -18,10 +18,6 @@ $box-spacing-large: 40px;
   // States.
   &:hover {
     background-color: $color-gray-lighter;
-  }
-
-  &.has-spacing {
-    margin-top: $box-spacing;
   }
 
   &.has-color {
@@ -41,8 +37,7 @@ $box-spacing-large: 40px;
 
   &--header {
     flex: 0 0 auto;
-    line-height: $box-spacing-large;
-    margin-top: $box-spacing;
+    margin-top: $box-spacing-small;
   }
 
   &--about {
