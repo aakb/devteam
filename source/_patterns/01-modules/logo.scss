@@ -4,9 +4,10 @@
   flex-grow: 0;
   flex-shrink: 0;
   height: 100px;
-  width: 200px;
+  width: 230px;
 
   @include breakpoint($breakpoint-desk) {
+    width: 285px;
     height: 150px;
   }
 
