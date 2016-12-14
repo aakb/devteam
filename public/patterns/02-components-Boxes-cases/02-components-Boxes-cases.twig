@@ -1,6 +1,8 @@
-{% embed "grid.twig" with {state: "has-spacing" } %}
-  {% block content %}
+{% embed "grid.twig" with {state: "has-spacing", header: true } %}
+  {% block header %}
     <h2 class="is-big">Cases</h2>
+  {% endblock %}
+  {% block content %}
     {% for box in cases %}
       <article class="grid--item">
         {% include "modules-box" %}
