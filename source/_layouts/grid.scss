@@ -4,8 +4,8 @@
  *
  */
 
-$grid-spacing: 20px;
-$grid-spacing-large: 40px;
+$grid-spacing: 1%;
+$grid-spacing-large: 2%;
 
 /* Styles
    ========================================================================== */
@@ -13,8 +13,8 @@ $grid-spacing-large: 40px;
 .grid {
   @include layout-wrapper($breakpoint-largedesk);
 
-  margin-bottom: $grid-spacing;
-  margin-top: $grid-spacing;
+  margin-bottom: $grid-spacing-large;
+  margin-top: $grid-spacing-large;
 
   // States.
   &.has-spacing {
@@ -28,20 +28,29 @@ $grid-spacing-large: 40px;
   &--inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   &--item {
     align-items: stretch;
     display: flex;
     margin-bottom: $grid-spacing-large;
+    margin-left: $grid-spacing;
+    margin-right: $grid-spacing;
 
     @include breakpoint($breakpoint-tablet) {
-      width: 47.5%;
+      width: 48%;
     }
 
     @include breakpoint($breakpoint-desk) {
-      width: 31%;
+      width: 32%;
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(3n+1) {
+        margin-left: 0;
+      }
     }
   }
 }

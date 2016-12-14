@@ -1,6 +1,6 @@
-@mixin layout-wrapper($breakpoint) {
-  margin-left: 20px;
-  margin-right: 20px;
+@mixin layout-wrapper($breakpoint, $margin: 2%) {
+  margin-left: $margin;
+  margin-right: $margin;
 
   @include breakpoint($breakpoint) {
     margin-left: auto;
