@@ -7,11 +7,7 @@
   width: 230px;
 
   @include breakpoint($breakpoint-desk) {
-    width: 285px;
+    width: 320px;
     height: 150px;
-  }
-
-  @include breakpoint($breakpoint-largedesk) {
-    width: 285px;
   }
 }
