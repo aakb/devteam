@@ -3,18 +3,18 @@
     font-family: $font-bold;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: $spacing-pixel-small;
     text-align: center;
   }
 
   &--content {
     border-top: 1px solid $color-gray-light;
     flex-basis: 100%;
-    margin-top: 60px;
-    padding-top: 60px;
+    margin-top: $spacing-pixel-small;
+    padding-top: $spacing-pixel-small;
 
     p + p {
-      margin-top: 30px;
+      margin-top: $spacing-pixel-small;
     }
   }
 }
