@@ -3,23 +3,23 @@
     "group-1": [
       {
         "title": "Start",
-        "link": "/"
+        "link": "link.pages-frontpage"
       },
       {
         "title": "Det kan vi",
-        "link": "/det-kan-vi/"
+        "link": "link.pages-det-kan-vi"
       },
       {
         "title": "Det får du",
-        "link": "/det-faar-du/"
+        "link": "link.pages-det-faar-du"
       },
       {
         "title": "Cases",
-        "link": "/cases/"
+        "link": "link.pages-cases"
       },
       {
         "title": "Om os",
-        "link": "/om-os/"
+        "link": "link.pages-om-os"
       }
     ]
   }
