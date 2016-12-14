@@ -4,20 +4,24 @@
     "isActive": 0,
     "items": [
       {
-        "link": "link.pages-frontpage",
-        "title": "Start"
+        "title": "Start",
+        "link": "link.pages-frontpage"
       },
       {
-        "link": "/",
-        "title": "Det kan vi"
+        "title": "Det kan vi",
+        "link": "link.pages-det-kan-vi"
       },
       {
-        "link": "/",
-        "title": "Cases"
+        "title": "Det får du",
+        "link": "link.pages-produkter"
       },
       {
-        "link": "link.pages-om-os",
-        "title": "Om os"
+        "title": "Cases",
+        "link": "link.pages-cases"
+      },
+      {
+        "title": "Om os",
+        "link": "link.pages-om-os"
       }
     ]
   }

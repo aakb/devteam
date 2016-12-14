@@ -1,6 +1,6 @@
 {
   "hamburgerMenu": {
-    "group-1": [
+    "group": [
       {
         "title": "Start",
         "link": "link.pages-frontpage"
@@ -11,7 +11,7 @@
       },
       {
         "title": "Det får du",
-        "link": "link.pages-det-faar-du"
+        "link": "link.pages-produkter"
       },
       {
         "title": "Cases",
