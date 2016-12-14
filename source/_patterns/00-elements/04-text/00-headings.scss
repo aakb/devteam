@@ -37,6 +37,8 @@ h6 {
   }
 
   &.is-quote {
+    margin-top: 0;
+
     @include breakpoint($breakpoint-lap) {
       font-size: 32px;
     }
