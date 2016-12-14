@@ -89,7 +89,7 @@ body {
     cursor: pointer;
     height: 30px;
     position: absolute;
-    right: 20px;
+    right: $spacing-large;
     top: 38px;
     transform: rotate(0deg);
     transition: $hamburger-menu-animation-duration;

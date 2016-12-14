@@ -4,8 +4,8 @@
  *
  */
 
-$grid-spacing: 1%;
-$grid-spacing-large: 2%;
+$grid-spacing: $spacing;
+$grid-spacing-large: $spacing-large;
 
 /* Styles
    ========================================================================== */
@@ -30,6 +30,7 @@ $grid-spacing-large: 2%;
     flex-wrap: wrap;
   }
 
+  // Equal Height and Width Columns using Flexbox: https://codepen.io/imohkay/pen/gpard
   &--item {
     align-items: stretch;
     display: flex;
@@ -38,12 +39,33 @@ $grid-spacing-large: 2%;
     margin-right: $grid-spacing;
 
     @include breakpoint($breakpoint-tablet) {
-      width: 48%;
+      // Set margins for 2 columns.
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2n+1) {
+        margin-left: 0;
+      }
+
+      width: 50% - $grid-spacing;
     }
 
     @include breakpoint($breakpoint-desk) {
-      width: 32%;
+      // 2 columns = 2 margins, 3 columns = 4 margins, 4 columns = 6 margins.
+      // Calculate width: <width> - <number of margins> / <number of columns>.
+      width: (100% - 8%) / 3;
 
+      // Set margins from smaller breakpoint.
+      &:nth-of-type(2n) {
+        margin-right: $grid-spacing;
+      }
+
+      &:nth-of-type(2n+1) {
+        margin-left: $grid-spacing;
+      }
+
+      // Set margins for 3 columns.
       &:nth-of-type(3n) {
         margin-right: 0;
       }

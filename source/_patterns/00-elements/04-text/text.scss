@@ -1,7 +1,4 @@
 .text {
-  @include layout-wrapper($breakpoint-largedesk);
-
-
   &--lead {
     font-family: $font-bold;
     margin-left: auto;
@@ -16,7 +13,7 @@
     margin-top: 60px;
     padding-top: 60px;
 
-    p+p {
+    p + p {
       margin-top: 30px;
     }
   }
