@@ -42,16 +42,16 @@ $box-spacing-large: $spacing-pixel-large;
 
   &--header {
     flex: 0 0 auto;
-    margin-top: $box-spacing-medium;
+    margin-top: $box-spacing-small;
   }
 
   &--content {
-    margin-top: $box-spacing-medium;
+    margin-top: $box-spacing-small;
   }
 
   &--link {
     display: block;
-    margin-top: $box-spacing-medium;
+    margin-top: $box-spacing-small;
   }
 
   &:hover {

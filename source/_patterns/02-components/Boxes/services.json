@@ -1,25 +1,27 @@
 {
-  "services": [
-    {
-      "iconColor": "is-black",
-      "icon": "elements-tools",
-      "title": "Box 1",
-      "content": "Fictum,  deserunt mollit anim laborum astutumque!",
-      "link": "#"
-    },
-    {
-      "iconColor": "is-black",
-      "icon": "elements-box",
-      "title": "Box 2",
-      "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
-      "link": "#"
-    },
-    {
-      "iconColor": "is-black",
-      "icon": "elements-coffee",
-      "title": "Box 3",
-      "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
-      "link": "#"
-    }
-  ]
+  "services": {
+    "service": [
+      {
+        "class": "has-color has-spacing",
+        "iconColor": "is-white",
+        "title": "Udvikling",
+        "content": "Fictum, deserunt mollit anim laborum astutumque!",
+        "link": "link.pages-service-udvikling"
+      },
+      {
+        "class": "has-color has-spacing",
+        "iconColor": "is-white",
+        "title": "Design",
+        "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+        "link": "link.pages-service-design"
+      },
+      {
+        "class": "has-color has-spacing",
+        "iconColor": "is-white",
+        "title": "Konsulent",
+        "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+        "link": "link.pages-service-konsulent"
+      }
+    ]
+  }
 }

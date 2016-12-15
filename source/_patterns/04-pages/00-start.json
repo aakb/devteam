@@ -11,30 +11,30 @@
       }
     ]
   },
-  "services": [
+  "shortcuts": [
     {
       "class": "",
       "iconColor": "is-black",
       "icon": "elements-tools",
-      "title": "Produkter",
+      "title": "Services",
       "content": "Fictum,  deserunt mollit anim laborum astutumque!",
-      "link": "#"
+      "link": "link.pages-services"
     },
     {
       "class": "",
       "iconColor": "is-black",
       "icon": "elements-box",
-      "title": "Hvordan arbejder vi",
+      "title": "Produkter",
       "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
-      "link": "#"
+      "link": "link.pages-produkter"
     },
     {
       "class": "",
       "iconColor": "is-black",
       "icon": "elements-coffee",
-      "title": "Hvem er vi",
+      "title": "Om os",
       "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
-      "link": "#"
+      "link": "link.pages-om-os"
     }
   ],
   "cases": {
@@ -44,22 +44,22 @@
         "class": "has-color has-spacing",
         "iconColor": "is-white",
         "title": "OS2display",
-        "content": "Fictum,  deserunt mollit anim laborum astutumque!",
-        "link": "#"
+        "content": "Fictum, deserunt mollit anim laborum astutumque!",
+        "link": "link.pages-case-os2display"
       },
       {
         "class": "has-color has-spacing",
         "iconColor": "is-white",
         "title": "Grundsalg Aarhus",
         "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
-        "link": "#"
+        "link": "link.pages-case-grundsalg-aarhus"
       },
       {
         "class": "has-color has-spacing",
         "iconColor": "is-white",
         "title": "OS2loop",
         "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
-        "link": "#"
+        "link": "link.pages-case-os2loop"
       }
     ]
   }

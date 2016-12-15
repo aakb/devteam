@@ -4,6 +4,7 @@
       {
         "class": "has-color has-spacing",
         "iconColor": "is-white",
+        "icon": "elements-box",
         "title": "OS2display",
         "content": "Fictum,  deserunt mollit anim laborum astutumque!",
         "link": "#"
@@ -11,6 +12,7 @@
       {
         "class": "has-color has-spacing",
         "iconColor": "is-white",
+        "icon": "elements-box",
         "title": "Grundsalg Aarhus",
         "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
         "link": "#"
@@ -18,6 +20,7 @@
       {
         "class": "has-color has-spacing",
         "iconColor": "is-white",
+        "icon": "elements-box",
         "title": "OS2loop",
         "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
         "link": "#"
