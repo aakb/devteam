@@ -9,14 +9,6 @@
         {% endembed %}
       {% endblock %}
     {% endembed %}
-    {% embed "grid.twig" with {state: "has-spacing" } %}
-      {% block content %}
-        {% for box in employees %}
-          <article class="grid--item">
-            {% include "modules-box-info" %}
-          </article>
-        {% endfor %}
-      {% endblock %}
-    {% endembed %}
+    {% include "components-cases" %}
   {% endblock %}
 {% endembed %}
