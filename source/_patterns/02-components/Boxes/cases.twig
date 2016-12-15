@@ -1,9 +1,11 @@
 {% embed "grid.twig" with {state: "has-spacing", header: true } %}
   {% block header %}
-    <h2 class="is-big">Cases</h2>
+    {% if cases.header %}
+      <h2 class="is-big">{{ cases.header }}</h2>
+    {% endif %}
   {% endblock %}
   {% block content %}
-    {% for box in cases %}
+    {% for box in cases.case %}
       <article class="grid--item">
         {% include "modules-box" %}
       </article>

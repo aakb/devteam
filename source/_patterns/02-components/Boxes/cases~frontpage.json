@@ -1,5 +1,6 @@
 {
   "cases": {
+    "header": "Cases",
     "case": [
       {
         "class": "has-color has-spacing",

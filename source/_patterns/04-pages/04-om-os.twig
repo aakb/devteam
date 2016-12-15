@@ -2,30 +2,11 @@
   {% block content %}
     {% embed "grid.twig" %}
       {% block content %}
-        <h1 class="is-big">Om os</h1>
-        <div class="text">
-          <p class="text--lead">
-            Vi er et dedikeret hold af digitale eksperter med meget høje standarder for vores arbejde. Vi er et digitalt
-            bureau men vi er en del af Aarhus Kommune
-          </p>
-          <div class="text--content">
-            <p>
-              Etiam habebis sem dicantur magna mollis euismod. Pellentesque habitant morbi tristique senectus et netus.
-              Gallia est omnis divisa in partes tres, quarum. Quo usque tandem abutere, Catilina, patientia nostra?
-              Tu quoque, Brute, fili mi, nihil timor populi, nihil!
-            </p>
-            <p>
-              Quam temere in vitiis, legem sancimus haerentia. Contra legem facit qui id facit quod lex prohibet.
-              Petierunt uti sibi concilium totius Galliae in diem certam indicere. Etiam habebis sem dicantur magna mollis
-              euismod. Quid securi etiam tamquam eu fugiat nulla pariatur. Gallia est omnis divisa in partes tres, quarum.
-            </p>
-            <p>
-              Salutantibus vitae elit libero, a pharetra augue. Etiam habebis sem dicantur magna mollis euismod. Curabitur
-              est gravida et libero vitae dictum. Ab illo tempore, ab est sed immemorabili. Idque Caesaris facere
-              voluntate liceret: sese habere.
-            </p>
-          </div>
-        </div>
+        {% embed "page-content.twig" %}
+          {% block header %}{{ content.title }}{% endblock %}
+          {% block lead %}{{ content.lead }}{% endblock %}
+          {% block content %}{{ content.content|raw }}{% endblock %}
+        {% endembed %}
       {% endblock %}
     {% endembed %}
     {% embed "grid.twig" with {state: "has-spacing" } %}

@@ -37,30 +37,30 @@
       "link": "#"
     }
   ],
-  "cases": [
-    {
-      "class": "has-color has-spacing",
-      "iconColor": "is-white",
-      "icon": "",
-      "title": "OS2display",
-      "content": "Fictum,  deserunt mollit anim laborum astutumque!",
-      "link": "#"
-    },
-    {
-      "class": "has-color has-spacing",
-      "iconColor": "is-white",
-      "icon": "",
-      "title": "Grundsalg Aarhus",
-      "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
-      "link": "#"
-    },
-    {
-      "class": "has-color has-spacing",
-      "iconColor": "is-white",
-      "icon": "",
-      "title": "OS2loop",
-      "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
-      "link": "#"
-    }
-  ]
+  "cases": {
+    "header": "Cases",
+    "case": [
+      {
+        "class": "has-color has-spacing",
+        "iconColor": "is-white",
+        "title": "OS2display",
+        "content": "Fictum,  deserunt mollit anim laborum astutumque!",
+        "link": "#"
+      },
+      {
+        "class": "has-color has-spacing",
+        "iconColor": "is-white",
+        "title": "Grundsalg Aarhus",
+        "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
+        "link": "#"
+      },
+      {
+        "class": "has-color has-spacing",
+        "iconColor": "is-white",
+        "title": "OS2loop",
+        "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+        "link": "#"
+      }
+    ]
+  }
 }
