@@ -1,0 +1,22 @@
+{% embed "base.twig" %}
+  {% block content %}
+    {% embed "grid.twig" %}
+      {% block content %}
+        {% embed "page-content.twig" %}
+          {% block header %}{{ content.title }}{% endblock %}
+          {% block lead %}{{ content.lead }}{% endblock %}
+          {% block content %}{{ content.content|raw }}{% endblock %}
+        {% endembed %}
+      {% endblock %}
+    {% endembed %}
+    {% embed "grid.twig" with {state: "has-spacing" } %}
+      {% block content %}
+        {% for box in employees %}
+          <article class="grid--item">
+            {% include "modules-box-info" %}
+          </article>
+        {% endfor %}
+      {% endblock %}
+    {% endembed %}
+  {% endblock %}
+{% endembed %}

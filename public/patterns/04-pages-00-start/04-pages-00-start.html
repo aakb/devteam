@@ -25,42 +25,203 @@
   </head>
   <body class="">
 
-<!-- View All Patterns in a Pattern Sub-Type -->
-<div class="sg-main" role="main">
-  <!-- Patterns -->
-  <div id="sg-patterns">
-                  <div id="viewall-elements-images" class="sg-subtype">
-  <h2>
-    <a href="../../patterns/00-elements-03-images/index.html" class="patternLink" data-patternpartial="viewall-elements-images">
-      Images
+<header class="header" role="banner">
+  <a href="../../patterns/04-pages-00-start/04-pages-00-start.html" title="ITK Devteam" aria-label="ITK Devteam" class="logo"><img src="/assets/logo/logo.svg" alt="Logo"></a>
+  <nav class="navigation">
+      <a href="../../patterns/04-pages-00-start/04-pages-00-start.html" title="Start" class="navigation--item is-active">
+      <span>Start</span>
     </a>
-  </h2>
-  
-  <div class="sg-pattern-body">
-    
+      <a href="../../patterns/04-pages-02-services/04-pages-02-services.html" title="Services" class="navigation--item ">
+      <span>Services</span>
+    </a>
+      <a href="../../patterns/04-pages-01-produkter/04-pages-01-produkter.html" title="Produkter" class="navigation--item ">
+      <span>Produkter</span>
+    </a>
+      <a href="../../patterns/04-pages-03-cases/04-pages-03-cases.html" title="Cases" class="navigation--item ">
+      <span>Cases</span>
+    </a>
+      <a href="../../patterns/04-pages-04-om-os/04-pages-04-om-os.html" title="Om os" class="navigation--item ">
+      <span>Om os</span>
+    </a>
+  </nav>
+  <div class="hamburger-menu--toggle js-hamburger-menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<nav class="hamburger-menu">
+  <ul class="hamburger-menu--links">
+      <li class="hamburger-menu--group">
+          <a href="../../patterns/04-pages-00-start/04-pages-00-start.html" class="hamburger-menu--link">Start</a>
+          <a href="../../patterns/04-pages-02-services/04-pages-02-services.html" class="hamburger-menu--link">Services</a>
+          <a href="../../patterns/04-pages-01-produkter/04-pages-01-produkter.html" class="hamburger-menu--link">Produkter</a>
+          <a href="../../patterns/04-pages-03-cases/04-pages-03-cases.html" class="hamburger-menu--link">Cases</a>
+          <a href="../../patterns/04-pages-04-om-os/04-pages-04-om-os.html" class="hamburger-menu--link">Om os</a>
+        </li>
+    </ul>
+</nav>
+</header>
+<main role="main">
+      <div class="frontpage-quote">
+    <h2 class="is-quote">Vi laver brugervenlige open source løsninger i Aarhus Kommune</h2>
+</div>    <div class="grid has-spacing">
+    <div class="grid--inner ">
+              <article class="grid--item">
+        <a href="#" title="Produkter" class="box ">
+  <svg class="icon is-black is-large" viewBox="0 0 174 174" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M87 170c-45.764 0-83-37.236-83-83S41.236 4 87 4c45.765 0 83 37.235 83 83s-37.235 83-83 83zm0 4c47.974 0 87-39.026 87-87S134.974 0 87 0 0 39.026 0 87s39.026 87 87 87z"/>
+    <path d="M42.48 45.45l9.775 2.886 1.342 1.34 2.826-2.83-2.06-2.058L36.56 39.53l5.262 17.8 2.06 2.06 2.827-2.83-1.34-1.34"/>
+    <path d="M55.143 51.1l67.657 67.657-7.01 7.01-67.658-67.66 7.01-7.008zm0-5.657L42.475 58.108l73.316 73.315 12.667-12.666-73.314-73.314zM123.415 133.28l-.004-.004.005.005zm4.108-9.685l2.79 2.787c-.372-.37-.332-.757-.202-.887l-7.587 7.59c.135-.136.52-.175.888.19l-2.785-2.783-2.828 2.828 2.787 2.786c1.33 1.336 3.453 1.123 4.768-.195l7.585-7.585c1.32-1.315 1.54-3.435.203-4.772l-2.79-2.788-2.827 2.83z"/>
+    <path d="M87.67 103.164c1.562-1.562 1.562-4.095 0-5.657L75.885 85.72c-1.564-1.56-4.095-1.558-5.656.003L35.04 120.91c-1.56 1.563-1.56 4.095 0 5.658l11.786 11.785c1.56 1.563 4.094 1.56 5.656 0l35.188-35.19zm-49.8 20.577l35.187-35.19 11.785 11.785-35.188 35.19L37.87 123.74z"/>
+    <path d="M80.49 80.41l-4.95 4.95c-1.485 1.485-1.846 3.814-.38 5.28l7.594 7.593c1.467 1.465 3.795 1.104 5.278-.38l3.534-3.534 1.414-1.415L80.49 80.41zm6.834 12.495l-2.12 2.12-6.837-6.835 2.123-2.122 6.834 6.837z"/>
+    <path d="M85.498 90.724L120.38 55.84l-2.827-2.83L82.67 87.897"/>
+    <path d="M117.79 56.5l.023-5.644 6.957-4.002 1.77 1.77-4.002 6.956-5.644.022.008 2 1.414-1.414-1.11-1.11-1.415 1.413 2 .01zm-3.967-7.962l-.035 8.778 2.29 2.29 8.778-.034 6.68-11.61-6.106-6.104-11.607 6.68zM72.346 92.976l-30.05 30.053 2.827 2.827 30.05-30.053M77.588 98.22l-30.05 30.05 2.827 2.828 30.05-30.05"/>
+  </g>
+</svg>
+  <div class="box--inner">
+    <h2 class="box--header ">Produkter</h2>
+    <p class="box--content">Fictum,  deserunt mollit anim laborum astutumque!</p>
+    <span class="box--link"><svg class="icon is-black is-small" viewBox="0 0 125 102" xmlns="http://www.w3.org/2000/svg">
+  <g fill-rule="evenodd">
+    <path d="M124.094 52.64L74.47 0 63.984 10.935 101.53 52.64 63.928 90.578l10.477 10.942"/>
+    <path d="M112.813 60.16V45.12H0v15.04"/>
+  </g>
+</svg>
+</span>
   </div>
-</div>                        <div id="elements-aarhus-logo" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/00-elements-03-images-aarhus-logo/00-elements-03-images-aarhus-logo.html" class="patternLink" data-patternpartial="elements-aarhus-logo" title="Link to Pattern">
-        aarhus logo
-        
-              </a>
-    </h3>
-    
-    <div class="sg-pattern-breadcrumb">
-      
+</a>
+      </article>
+          <article class="grid--item">
+        <a href="#" title="Hvordan arbejder vi" class="box ">
+  <svg class="icon is-black is-large" viewBox="0 0 174 174" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M87 170c-45.764 0-83-37.236-83-83S41.236 4 87 4s83 37.236 83 83-37.236 83-83 83zm0 4c47.974 0 87-39.026 87-87S134.974 0 87 0 0 39.026 0 87s39.026 87 87 87z"/>
+    <path d="M86.062 135.923l-35.36-20.417V87.69h4v25.507l31.36 18.107 31.365-18.107V87.69h4v27.816"/>
+    <path d="M84.063 88.586h4v42.273h-4z"/>
+    <path d="M101.71 100.102l-19.65-11.35 39.002-22.493 19.655 11.346-39.006 22.496zM90.063 88.755l11.65 6.73 31-17.88-11.652-6.727-30.998 17.877z"/>
+    <path d="M70.414 100.102l-39-22.496L51.06 66.26l39.006 22.493-19.652 11.35zm-31-22.498l30.998 17.88 11.652-6.73-31-17.877-11.65 6.727z"/>
+    <path d="M51.062 70.834l-19.65-11.347L70.415 36.99 90.067 48.34 51.062 70.834zM39.415 59.49l11.65 6.726 30.998-17.88-11.65-6.726-30.998 17.88z"/>
+    <path d="M121.062 70.834L82.06 48.34l19.65-11.348 39.007 22.496-19.655 11.346zm-31-22.497l31 17.88 11.65-6.728-31-17.88-11.65 6.727z"/>
+  </g>
+</svg>
+  <div class="box--inner">
+    <h2 class="box--header ">Hvordan arbejder vi</h2>
+    <p class="box--content">Curabitur blandit tempus ardua ridiculus sed magna.</p>
+    <span class="box--link"><svg class="icon is-black is-small" viewBox="0 0 125 102" xmlns="http://www.w3.org/2000/svg">
+  <g fill-rule="evenodd">
+    <path d="M124.094 52.64L74.47 0 63.984 10.935 101.53 52.64 63.928 90.578l10.477 10.942"/>
+    <path d="M112.813 60.16V45.12H0v15.04"/>
+  </g>
+</svg>
+</span>
+  </div>
+</a>
+      </article>
+          <article class="grid--item">
+        <a href="#" title="Hvem er vi" class="box ">
+  <svg class="icon is-black is-large" viewBox="0 0 174 174" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M87 170c-45.764 0-83-37.236-83-83S41.236 4 87 4s83 37.236 83 83-37.236 83-83 83zm0 4c47.974 0 87-39.026 87-87S134.974 0 87 0 0 39.026 0 87s39.026 87 87 87z" />
+    <path d="M115.034 84.368h4v23.996h-4z"/>
+    <path d="M107.396 132.593h-44.64c-6.42 0-11.64-5.22-11.64-11.64v-59.32h67.918v9.73h-4v-5.73H55.116v55.32c0 4.213 3.427 7.64 7.64 7.64h44.64c4.212 0 7.64-3.427 7.64-7.64h4c-.002 6.42-5.223 11.64-11.64 11.64z" />
+    <path d="M123.915 116.667H106.71v-4h17.205c1.974 0 3.58-1.605 3.58-3.578V83.723c0-1.974-1.606-3.58-3.58-3.58H106.71v-4h17.205c4.18 0 7.58 3.4 7.58 7.58v25.365c0 4.178-3.4 7.577-7.58 7.577zM97.28 55.934l-3.108-2.518c1.818-2.244 1.11-4.322-.3-7.8-1.375-3.4-3.088-7.632.3-11.817l3.11 2.517c-1.817 2.243-1.11 4.32.3 7.798 1.376 3.4 3.09 7.632-.3 11.82zM86.627 55.934l-3.107-2.518c1.817-2.244 1.11-4.322-.3-7.8-1.376-3.4-3.09-7.632.3-11.817l3.108 2.517c-1.816 2.243-1.108 4.32.3 7.798 1.377 3.4 3.09 7.632-.3 11.82zM75.978 55.934l-3.11-2.518c1.818-2.243 1.11-4.32-.3-7.8-1.376-3.4-3.09-7.632.302-11.817l3.107 2.517c-1.817 2.244-1.11 4.32.3 7.8 1.376 3.4 3.09 7.63-.3 11.817zM53.286 120.792h26.252v4H53.286zM82.788 120.792h3.498v4h-3.498zM58.122 74.545h4v22h-4zM58.122 101.765h4v6.56h-4z" />
+  </g>
+</svg>
+  <div class="box--inner">
+    <h2 class="box--header ">Hvem er vi</h2>
+    <p class="box--content">Phasellus laoreet lorem vel dolor tempus vehicula.</p>
+    <span class="box--link"><svg class="icon is-black is-small" viewBox="0 0 125 102" xmlns="http://www.w3.org/2000/svg">
+  <g fill-rule="evenodd">
+    <path d="M124.094 52.64L74.47 0 63.984 10.935 101.53 52.64 63.928 90.578l10.477 10.942"/>
+    <path d="M112.813 60.16V45.12H0v15.04"/>
+  </g>
+</svg>
+</span>
+  </div>
+</a>
+      </article>
+        </div>
+</div>
+
+    <div class="grid has-spacing">
+            <h2 class="is-big">Cases</h2>
+        <div class="grid--inner has-header">
+              <article class="grid--item">
+        <a href="#" title="OS2display" class="box has-color has-spacing">
+    <div class="box--inner">
+    <h2 class="box--header has-color has-spacing">OS2display</h2>
+    <p class="box--content">Fictum,  deserunt mollit anim laborum astutumque!</p>
+    <span class="box--link"><svg class="icon is-white is-small" viewBox="0 0 125 102" xmlns="http://www.w3.org/2000/svg">
+  <g fill-rule="evenodd">
+    <path d="M124.094 52.64L74.47 0 63.984 10.935 101.53 52.64 63.928 90.578l10.477 10.942"/>
+    <path d="M112.813 60.16V45.12H0v15.04"/>
+  </g>
+</svg>
+</span>
+  </div>
+</a>
+      </article>
+          <article class="grid--item">
+        <a href="#" title="Grundsalg Aarhus" class="box has-color has-spacing">
+    <div class="box--inner">
+    <h2 class="box--header has-color has-spacing">Grundsalg Aarhus</h2>
+    <p class="box--content">Curabitur blandit tempus ardua ridiculus sed magna.</p>
+    <span class="box--link"><svg class="icon is-white is-small" viewBox="0 0 125 102" xmlns="http://www.w3.org/2000/svg">
+  <g fill-rule="evenodd">
+    <path d="M124.094 52.64L74.47 0 63.984 10.935 101.53 52.64 63.928 90.578l10.477 10.942"/>
+    <path d="M112.813 60.16V45.12H0v15.04"/>
+  </g>
+</svg>
+</span>
+  </div>
+</a>
+      </article>
+          <article class="grid--item">
+        <a href="#" title="OS2loop" class="box has-color has-spacing">
+    <div class="box--inner">
+    <h2 class="box--header has-color has-spacing">OS2loop</h2>
+    <p class="box--content">Phasellus laoreet lorem vel dolor tempus vehicula.</p>
+    <span class="box--link"><svg class="icon is-white is-small" viewBox="0 0 125 102" xmlns="http://www.w3.org/2000/svg">
+  <g fill-rule="evenodd">
+    <path d="M124.094 52.64L74.47 0 63.984 10.935 101.53 52.64 63.928 90.578l10.477 10.942"/>
+    <path d="M112.813 60.16V45.12H0v15.04"/>
+  </g>
+</svg>
+</span>
+  </div>
+</a>
+      </article>
+        </div>
+</div>
+  </main>
+<footer class="footer">
+  <div class="footer--content">
+    <div class="footer--column">
+      <h3>Kontakt</h3>
+      <div class="footer--column-inner">
+        <p>ITK DEVTEAM</p>
+        <p>Dokk1, niveau 2.2</p>
+        <p>Hack Kampmanns Plads 2</p>
+        <p>8000 Aarhus C</p>
+        <p><a href="#">Se hvem vi er</a></p>
+      </div>
     </div>
-    
-    <a href="#" data-patternpartial="elements-aarhus-logo" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-aarhus-logo" class="sg-pattern-extra-toggle">
-      <span>&#9660;</span>
-    </a>
+    <div class="footer--column">
+      <h3>Cases</h3>
+      <div class="footer--column-inner">
+        <p><a href="#" title="Grundsalg Aarhus">Grundsalg Aarhus</a></p>
+        <p><a href="#" title="OS2loop">OS2loop</a></p>
+        <p><a href="#" title="Grundsalg">OS2display</a></p>
+        <p><a href="#" title="ULF i Aarhus">ULF i Aarhus</a></p>
+        <p><a href="#" title="Dokk1">Dokk1</a></p>
+      </div>
+    </div>
   </div>
-  
-  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-aarhus-logo"></div>
-    
-  <div class="sg-pattern-example">
-    <svg width="136" height="70" viewBox="0 0 136 70" xmlns="http://www.w3.org/2000/svg">
+  <div class="footer--bottom">
+    <p>- en del af Aarhus Kommune</p>
+    <div class="footer--logo"><svg width="136" height="70" viewBox="0 0 136 70" xmlns="http://www.w3.org/2000/svg">
   <g class="aarhus-logo" fill="#000" fill-rule="evenodd">
     <path d="M15.818 44.23c-.018-.04-.042-.076-.062-.107-.025-.033-.053-.064-.088-.096 0 0-.248.11-.35.258-.203.285.2.92.2.92-.337-.11-.546-.394-.555-.588-.008-.26.236-.842.236-.842.073-.232.153-.564.233-.908.08-.336.155-.68.268-1.086.23-.79.564-1.684.753-2.483.143-.588.25-1.105.285-1.455.085-.856.19-2.47.247-3.526.033-.567.023-.424.023-.47 0-.138.08-1.57.762-2.17.45-.39.875-.323 1.392-.57 0 0-.74-.303-1.65-.1 0 0-1.575 1.236-2.323 6.75 0 0-.917 5.134-.948 5.657-.013.273.242 1.57.242 1.57s.8.347.967.314c.106-.037.246-.045.483-.11.234-.068.38-.083.783.05-.96-.43-.768-.762-.897-1.002m6.69-18.42l.945.035c.282.01.453-.074.437-.26-.014-.15-.414-.23-.414-.23l-.69.108s-.08.292-.28.347m8.952 5.003c0-.078-.14-1.244-.14-2.133-.004-.456-.01-.837-.014-.964-.013-.27-.28-.145-.333-.04-.132.24-.19.19-.19.19s-.082-.015-.098.22c-.035-.17-.054-.157-.105-.208-.194-.188-.3.46-.3.46s-.018.133-.028.455c-.002.067-.006.15-.006.235 0 .33.03.942.23 1.39.04.075.085.102.145.107 0 0-.063.455.08.677.27.417.415.32.415.32.48-.396.348-.544.345-.71m-11.25-1.09c0 .24.09.465.23.653-.24.225-.52.528-.573.598-.106.135-.32.196-.32.196s-.23 1.385.29 1.2c0 0 .08-.332.36-.272.467.102.592-.076.78-.22.127-.096.504-.018.504-.018.295-.065.643.08.703-.188-.002-.037-.01-.066-.01-.066-.236-.195-.903-.102-.903-.102s.103-.04.246-.06c.046-.01.14.002.147-.076 0 0 .058.002.363.093.247.08.263-.044.28-.093-.007-.094-.077-.158-.077-.158s-.324-.134-.478-.16c-.152-.025-.574.032-.574.032s.015-.018.26-.07c.09-.02.177-.02.17-.095 0 0 .175.016.41.13.164.08.244.078.29.053.014-.027.053-.06.06-.084v-.057c-.02-.137-.147-.19-.147-.19s-.502-.18-.64-.193c-.133-.018-.572.093-.572.093.11-.08.234-.09.376-.114.198-.04.173-.148.173-.148s.044.063.44.18c.11.034.395.18.31-.08-.02-.034-.07-.093-.123-.138.126-.178.206-.393.21-.63.012-.612-.472-1.12-1.076-1.135-.073 0-.143.03-.217.04h.003c-.286.402-.637.78-.89 1.073m.702-.408c.107-.102.246-.16.396-.158.308.007.55.266.547.576-.004.183-.095.334-.228.435-.055-.02-.1-.028-.11-.037-.05-.03-.334-.01-.6-.002l-.02-.016c-.102-.108-.157-.252-.155-.4.006-.15.062-.294.17-.398m.044 15.122c-.545-.397-1.987.28-1.987.28s-.262.608.27.598c.29-.005.785.026 1.178-.06.315-.065.8.06 1.215.064.625-.17-.676-.882-.676-.882m-8.466-3.163c-.116.69-.378 1.89-.42 2.325-.036.433-.052 1.203-.052 1.203.163.098.368.173.442.21l.805-6.582s-.657 2.158-.776 2.845"/>
     <path d="M22.816 25.37l.663-.012c.47.034.612-.167.434-.36-.093-.102-.766-.095-.766-.095l-.446.156s.225.045.11.31"/>
@@ -73,72 +234,14 @@
     <path d="M15.25 26.405c-.273-.052-.19.127-.102.217.538.538 1.368 1.62 1.403 2.58 0 0 .628.234.737-.675.065-.544-.123-1.462-.22-1.713 0 0 .068.132.265.642.275.723.17.98.29 1.638.05-.137.073-.307.09-.477.008-.165.02-.34.025-.488.024-.495.006-.92-.076-1.106-.1-.234-.154-.347-.2-.402-.043-.06-.685-.877-.685-.877-.036.192-.12.332-.23.432-.244.298-.766.328-1.293.225l-.002.003zm16.768-.208c.23.064.54.13.82.142.292-.03.59-.093.768-.213.14-.093.302-.255.438-.434.062-.076.112-.16.157-.24.016-.027.02-.054.03-.083.036-.117.047-.34-.283-.592-.13-.093-.28-.424-.293-.45-.136.046-.258-.054-.258-.054-.174.05-.26-.06-.26-.06-.062.017-.2-.017-.263-.2.072.27-.486.538-.69.795-.17.214-.286-.057-.393.07 0 .165.07.22.065.31 0 0-.006.285-.024.37-.036.177-.1.57.186.64l.002-.003zm3.888 18.665c-.04-.193-.12-.17-.32-.09-.146.063-.42-.066-.585-.103-.16-.038-.182.015-.322.044-.14.03-.34-.022-.34-.022-.405-.052-.372.397-.372.397.014.052.04.1.068.142.098.074.187.09.25.123.055.03.047.062.076.113 0 0 .52.375.813.05.068-.15-.317-.394-.276-.37 0 0 .197.09.315.234.12.142.308.24.432.113.11-.17-.298-.445-.298-.445s.192.096.31.24c.124.154.232.205.28.004-.074-.178-.267-.32-.267-.32s.09.047.183.138c.12.112.217.078.188-.12-.026-.052-.14-.132-.14-.132l.006.002zM63.1 22.194l-1.215 3.826h2.448L63.1 22.194zm2.61 8.148l-.832-2.61h-3.54l-.864 2.61H58.36l3.83-10.562h1.808l3.826 10.564H65.71v-.002zm7.353-8.148l-1.215 3.826h2.446l-1.233-3.826h.003zm2.61 8.148l-.832-2.61h-3.537l-.865 2.61h-2.114L72.15 19.78h1.81l3.826 10.563h-2.113zm6.644-8.852h-1.312v2.913h1.312c1.282 0 1.84-.448 1.84-1.504 0-1.008-.527-1.408-1.84-1.408v-.002zm2.114 8.852l-2.416-4.226h-1.01v4.226H78.99V19.78h3.52c1.538 0 2.242.192 2.866.784.576.528.864 1.296.864 2.29 0 .815-.192 1.47-.576 1.983-.4.513-.768.737-1.648.977l2.625 4.53h-2.206l-.003-.002zm11.17 0v-4.53h-5.425v4.53H88.16V19.78h2.016v4.225h5.427V19.78h2.016v10.564H95.6v-.002zm11.804-.558c-.767.528-1.664.768-2.976.768-1.33 0-2.194-.224-2.993-.768-1.09-.753-1.44-1.633-1.44-3.57V19.78h2v6.546c0 1.57.816 2.353 2.496 2.353 1.538 0 2.355-.835 2.355-2.356V19.78h2.016v6.434c0 1.937-.35 2.8-1.456 3.57zm9.75-7.49c-1.12-.498-2.032-.754-2.736-.754-.944 0-1.553.384-1.553.977 0 .448.256.72 1.01 1.12 1.615.865 2.672 1.537 3.168 2.033.448.448.72 1.152.72 1.89 0 1.887-1.376 2.992-3.713 2.992-.32 0-.64-.016-.945-.064-.752-.096-1.104-.224-2.21-.736-.143-.064-.382-.176-.687-.32l.85-1.857c.767.416 1.086.576 1.503.736.53.195 1.106.307 1.52.307.93 0 1.538-.416 1.538-1.056 0-.45-.24-.753-.928-1.137l-1.632-.928c-1.873-1.073-2.45-1.777-2.45-2.93 0-.527.16-1.072.416-1.472.176-.272.45-.544.785-.784.77-.53 1.425-.705 2.66-.705.702 0 1.33.08 1.983.272.512.16.8.272 1.504.608l-.8 1.81h-.003zM63.9 45.344l-3.52-5.025v5.025h-2.017V34.78h2.017v4.93l3.315-4.93h2.322l-3.634 5.138 3.825 5.426H63.9zm7.896-9.012c-2 0-3.474 1.6-3.474 3.73 0 2.145 1.473 3.73 3.474 3.73 1.985 0 3.458-1.585 3.458-3.73 0-2.13-1.473-3.73-3.458-3.73zm0 9.22c-3.297 0-5.618-2.273-5.618-5.49 0-3.265 2.273-5.474 5.618-5.474 3.33 0 5.602 2.21 5.602 5.473 0 3.22-2.32 5.49-5.602 5.49v.002zm16.46-.208v-7.748c-.08.545-.065.625-.4 1.506l-2.417 6.242h-1.81l-2.21-6.13c-.226-.608-.24-.784-.4-1.68v7.81h-1.827V34.78h2.417l2.82 7.538c.11.305.16.416.207.817.064-.496.096-.56.192-.817l2.93-7.54h2.414v10.566h-1.92.002zm13.615 0v-7.748c-.08.545-.063.625-.4 1.506l-2.416 6.242h-1.81l-2.208-6.13c-.225-.608-.24-.784-.4-1.68v7.81H92.81V34.78h2.418l2.815 7.538c.112.305.16.416.208.817.065-.496.098-.56.193-.817l2.93-7.54h2.416v10.566h-1.92zm11.764-.56c-.768.527-1.664.767-2.977.767-1.33 0-2.193-.22-2.993-.765-1.09-.752-1.44-1.633-1.44-3.57V34.78h2v6.546c0 1.57.816 2.354 2.497 2.354 1.538 0 2.354-.834 2.354-2.354V34.78h2.017v6.433c0 1.937-.352 2.803-1.456 3.57zm10.83.656l-4.53-6.834c-.033-.05-.097-.194-.225-.416-.065-.13-.113-.21-.13-.225-.063-.13-.095-.193-.143-.37v7.75h-1.92V34.778h2.32l4.433 6.947c.02.03.067.11.115.222.048.113.08.177.095.208l.096.272.096.193v-7.84h1.905v10.66h-2.113zm4.7-.096V34.78h6.436v1.712h-4.418v2.61h3.618v1.713h-3.618v2.816h4.626v1.716h-6.643v-.002z"/>
   </g>
 </svg>
+</div>
+  </div>
+</footer>
 
-  </div>
   
-  <script type="text/json" id="sg-pattern-data-elements-aarhus-logo" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[{"lineagePattern":"components-footer","lineagePath":"..\/..\/patterns\/02-components-footer\/02-components-footer.html"}],"patternBreadcrumb":{"patternType":"elements","patternSubtype":"images"},"patternDesc":"","patternExtension":"twig","patternName":"aarhus logo","patternPartial":"elements-aarhus-logo","patternState":""}
-  </script>
-</div><!--end .sg-pattern-->                        <div id="elements-image" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/00-elements-03-images-image/00-elements-03-images-image.html" class="patternLink" data-patternpartial="elements-image" title="Link to Pattern">
-        image
-        
-              </a>
-    </h3>
-    
-    <div class="sg-pattern-breadcrumb">
-      
-    </div>
-    
-    <a href="#" data-patternpartial="elements-image" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-image" class="sg-pattern-extra-toggle">
-      <span>&#9660;</span>
-    </a>
-  </div>
-  
-  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-image"></div>
-    
-  <div class="sg-pattern-example">
-    <img src="/assets/styleguide/sg-1-1-500x500.png" alt="sg-1-1-500x500.png">
-
-  </div>
-  
-  <script type="text/json" id="sg-pattern-data-elements-image" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"elements","patternSubtype":"images"},"patternDesc":"<p>Scalable responsive image.<\/p>","patternExtension":"twig","patternName":"image","patternPartial":"elements-image","patternState":""}
-  </script>
-</div><!--end .sg-pattern-->                        <div id="elements-logo" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/00-elements-03-images-logo/00-elements-03-images-logo.html" class="patternLink" data-patternpartial="elements-logo" title="Link to Pattern">
-        logo
-        
-              </a>
-    </h3>
-    
-    <div class="sg-pattern-breadcrumb">
-      
-    </div>
-    
-    <a href="#" data-patternpartial="elements-logo" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-logo" class="sg-pattern-extra-toggle">
-      <span>&#9660;</span>
-    </a>
-  </div>
-  
-  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-logo"></div>
-    
-  <div class="sg-pattern-example">
-    <img src="/assets/logo/logo.svg" alt="Logo">
-  </div>
-  
-  <script type="text/json" id="sg-pattern-data-elements-logo" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[{"lineagePattern":"modules-logo","lineagePath":"..\/..\/patterns\/01-modules-logo\/01-modules-logo.html"}],"patternBreadcrumb":{"patternType":"elements","patternSubtype":"images"},"patternDesc":"<p>Scalable responsive logo in svg format.<\/p>","patternExtension":"twig","patternName":"logo","patternPartial":"elements-logo","patternState":""}
-  </script>
-</div><!--end .sg-pattern-->            </div> <!--end #sg-patterns-->
-</div><!--end .sg-main-->  
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
-  {"patternPartial":"viewall-elements-images"}
+  {"cssEnabled":false,"lineage":[{"lineagePattern":"components-frontpage-quote","lineagePath":"..\/..\/patterns\/04-pages-00-start\/04-pages-00-start.html"},{"lineagePattern":"components-services","lineagePath":"..\/..\/patterns\/04-pages-00-start\/04-pages-00-start.html"},{"lineagePattern":"components-cases","lineagePath":"..\/..\/patterns\/04-pages-00-start\/04-pages-00-start.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages"},"patternDesc":"","patternExtension":"twig","patternName":"start","patternPartial":"pages-start","patternState":"","extraOutput":[]}
 </script>
 
 <script>
