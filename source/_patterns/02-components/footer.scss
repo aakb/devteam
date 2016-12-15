@@ -34,7 +34,7 @@
     }
 
     @include breakpoint($breakpoint-tablet) {
-      flex: 1 0 50%;
+      flex: 1 0 49%;
 
       &:last-child {
         margin-top: 0;
