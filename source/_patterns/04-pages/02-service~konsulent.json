@@ -10,15 +10,17 @@
   "services": {
     "service": [
       {
-        "class": "has-color has-spacing",
-        "iconColor": "is-white",
+        "class": "has-spacing",
+        "iconColor": "is-black",
+        "icon": "elements-tools",
         "title": "Udvikling",
         "content": "Fictum, deserunt mollit anim laborum astutumque!",
         "link": "link.pages-service-udvikling"
       },
       {
-        "class": "has-color has-spacing",
-        "iconColor": "is-white",
+        "class": "has-spacing",
+        "iconColor": "is-black",
+        "icon": "elements-box",
         "title": "Design",
         "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
         "link": "link.pages-service-design"

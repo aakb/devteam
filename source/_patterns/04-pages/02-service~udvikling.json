@@ -1,27 +1,29 @@
 {
   "navigation": {
-    "isActive": 4
+    "isActive": 2
   },
   "content": {
-    "title": "OS2display",
+    "title": "Udvikling",
     "lead": "Idque Caesaris facere voluntate liceret: sese habere. Ab illo tempore, ab est sed immemorabili. Plura mihi bona sunt, inclinet, amari petere vellent.",
     "content": "<p>Etiam habebis sem dicantur magna mollis euismod. Pellentesque habitant morbi tristique senectus et netus. Gallia est omnis divisa in partes tres, quarum. Quo usque tandem abutere, Catilina, patientia nostra? Tu quoque, Brute, fili mi, nihil timor populi, nihil!</p><p>Quam temere in vitiis, legem sancimus haerentia. Contra legem facit qui id facit quod lex prohibet. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Etiam habebis sem dicantur magna mollis euismod. Quid securi etiam tamquam eu fugiat nulla pariatur. Gallia est omnis divisa in partes tres, quarum. </p><p>Salutantibus vitae elit libero, a pharetra augue. Etiam habebis sem dicantur magna mollis euismod. Curabitur est gravida et libero vitae dictum. Ab illo tempore, ab est sed immemorabili. Idque Caesaris facere voluntate liceret: sese habere.</p>"
   },
-  "cases": {
-    "case": [
+  "services": {
+    "service": [
       {
-        "class": "has-color has-spacing",
-        "iconColor": "is-white",
-        "title": "Grundsalg Aarhus",
-        "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
-        "link": "link.pages-case-grundsalg-aarhus"
+        "class": "has-spacing",
+        "iconColor": "is-black",
+        "icon": "elements-box",
+        "title": "Design",
+        "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+        "link": "link.pages-service-design"
       },
       {
-        "class": "has-color has-spacing",
-        "iconColor": "is-white",
-        "title": "OS2loop",
+        "class": "has-spacing",
+        "iconColor": "is-black",
+        "icon": "elements-lightbulb",
+        "title": "Konsulent",
         "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
-        "link": "link.pages-case-os2loop"
+        "link": "link.pages-service-konsulent"
       }
     ]
   }
