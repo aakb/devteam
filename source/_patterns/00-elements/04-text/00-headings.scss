@@ -54,6 +54,8 @@ h6 {
   }
 
   &.is-quote {
+    line-height: 90px;
+
     @include breakpoint($breakpoint-lap) {
       font-size: 32px;
     }
