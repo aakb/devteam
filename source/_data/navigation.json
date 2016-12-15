@@ -1,11 +1,11 @@
 {
   "navigation": {
-    "logoLink": "link.pages-frontpage",
+    "logoLink": "link.pages-start",
     "isActive": 0,
     "items": [
       {
         "title": "Start",
-        "link": "link.pages-frontpage"
+        "link": "link.pages-start"
       },
       {
         "title": "Det kan vi",
