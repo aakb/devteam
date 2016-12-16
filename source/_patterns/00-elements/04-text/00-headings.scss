@@ -20,6 +20,7 @@ h6 {
     color: $color-dark-blue;
     flex-basis: 100%;
     font-size: 24px;
+    line-height: 36px;
     text-align: center;
   }
 
@@ -54,18 +55,19 @@ h6 {
   }
 
   &.is-quote {
-    line-height: 90px;
-
     @include breakpoint($breakpoint-lap) {
       font-size: 32px;
+      line-height: 48px;
     }
 
     @include breakpoint($breakpoint-tablet) {
       font-size: 48px;
+      line-height: 72px;
     }
 
     @include breakpoint($breakpoint-desk) {
       font-size: 60px;
+      line-height: 90px;
     }
   }
 }
