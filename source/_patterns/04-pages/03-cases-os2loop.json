@@ -15,14 +15,14 @@
         "iconColor": "is-white",
         "title": "OS2display",
         "content": "Fictum, deserunt mollit anim laborum astutumque!",
-        "link": "link.pages-case-os2display"
+        "link": "link.pages-cases-os2display"
       },
       {
         "class": "has-color has-spacing",
         "iconColor": "is-white",
         "title": "Grundsalg Aarhus",
         "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
-        "link": "link.pages-case-grundsalg-aarhus"
+        "link": "link.pages-cases-grundsalg-aarhus"
       }
     ]
   }
