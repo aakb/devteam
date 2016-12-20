@@ -1,0 +1,7 @@
+<nav class="navigation">
+  {% for item in navigation.items %}
+    <a href="{{ item.link }}" title="{{ item.title }}" class="navigation--item {{ loop.index == navigation.isActive ? "is-active" }}">
+      <span>{{ item.title }}</span>
+    </a>
+  {% endfor %}
+</nav>
