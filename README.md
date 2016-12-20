@@ -1,6 +1,6 @@
-# Dev Team Styleguide
+# Dev Team website
 
-Styleguide for the Devteam website using [Pattern Lab](http://patternlab.io/).
+Devteam website and styleguide using Drupal and [Pattern Lab](http://patternlab.io/).
 
 #### Installation
 
@@ -12,12 +12,10 @@ In the `htdocs`directory run:
 composer create-project pattern-lab/edition-twig-standard pattern-lab
 ```
 
-When prompted for suggested starterkit choose `1: pattern-lab/starterkit-twig-base`.
+When prompted for suggested starterkit choose:
 
-In the `pattern-lab` directory run:
-
-```sh
-composer install
+```
+1: pattern-lab/starterkit-twig-base
 ```
 
 In the file `pattern-lab/config/config.yml` change sourceDir to:
