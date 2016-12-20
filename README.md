@@ -2,7 +2,20 @@
 
 Devteam website and styleguide using Drupal and [Pattern Lab](http://patternlab.io/).
 
-#### Installation
+#### Install Drupal
+
+Prerequisites: Assuming you are using [https://github.com/aakb/vagrant](https://github.com/aakb/vagrant). 
+
+In the `htdocs`directory run:
+
+```sh
+vagrant up
+vagrant ssh
+cd /vagrant/htdocs
+composer install
+```
+
+#### Install Pattern Lab
 
 Prerequisites: [git](https://git-scm.com/) and [Composer](https://getcomposer.org/) installed.
 
