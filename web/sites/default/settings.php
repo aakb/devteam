@@ -16,6 +16,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 $settings['file_scan_ignore_directories'] = [
   'node_modules',
   'bower_components',
+  '_patterns'
 ];
 // Install with the 'standard' profile for this example.
 //
@@ -42,14 +43,3 @@ if (file_exists(__DIR__ . '/settings.platformsh.php')) {
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'vagrant',
-  'username' => 'root',
-  'password' => 'vagrant',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['hash_salt'] = 'fOa2JGKn3KEV8ronm0lA8wPPooeH8LBQw1Vtckserb8MBoN7Ll02kqZqHK-Ij4ilaabiRXCrew';

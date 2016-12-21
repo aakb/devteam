@@ -1,0 +1,9 @@
+styling:
+  version: VERSION
+  css:
+    theme:
+      source/css/styles.css: { media: screen }
+hamburger-menu:
+  version: VERSION
+  js:
+    source/js/hamburger-menu.js: {}
