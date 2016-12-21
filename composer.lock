@@ -1738,16 +1738,16 @@
         },
         {
             "name": "drupal/itkore",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aakb/itkore-profile.git",
-                "reference": "932e1ce2ee5297150922c1d11030cdb31255d306"
+                "reference": "1cd6c59aa33e54c72b6b004acaeb06d494153645"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aakb/itkore-profile/zipball/932e1ce2ee5297150922c1d11030cdb31255d306",
-                "reference": "932e1ce2ee5297150922c1d11030cdb31255d306",
+                "url": "https://api.github.com/repos/aakb/itkore-profile/zipball/1cd6c59aa33e54c72b6b004acaeb06d494153645",
+                "reference": "1cd6c59aa33e54c72b6b004acaeb06d494153645",
                 "shasum": ""
             },
             "require": {
@@ -1782,7 +1782,7 @@
             "keywords": [
                 "Drupal"
             ],
-            "time": "2016-11-29 09:19:22"
+            "time": "2016-12-21 12:38:12"
         },
         {
             "name": "drupal/metatag",
