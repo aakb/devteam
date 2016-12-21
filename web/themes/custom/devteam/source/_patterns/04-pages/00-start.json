@@ -7,7 +7,7 @@
     "headings": [
       {
         "type": "h2",
-        "heading": "Vi laver brugervenlige open source løsninger i Aarhus Kommune"
+        "heading": "Vi laver brugervenlige open source løsninger til OS2 og Aarhus Kommune"
       }
     ]
   },
@@ -17,7 +17,7 @@
       "iconColor": "is-black",
       "icon": "elements-tools",
       "title": "Services",
-      "content": "Fictum,  deserunt mollit anim laborum astutumque!",
+      "content": "Se hvad vores hold af dedikerede nørder kan hjælpe dig med!",
       "link": "link.pages-services"
     },
     {
@@ -25,7 +25,7 @@
       "iconColor": "is-black",
       "icon": "elements-box",
       "title": "Produkter",
-      "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
+      "content": "Vi har en række gennemtestede produkter på hylden. Klar til at blive taget i brug!",
       "link": "link.pages-produkter"
     },
     {
@@ -33,7 +33,7 @@
       "iconColor": "is-black",
       "icon": "elements-coffee",
       "title": "Om os",
-      "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+      "content": "Mød menneskerne bag koden, se girafferne og besøg os til en kop kaffe.",
       "link": "link.pages-om-os"
     }
   ],
@@ -44,21 +44,21 @@
         "class": "has-color has-spacing",
         "iconColor": "is-white",
         "title": "OS2display",
-        "content": "Fictum, deserunt mollit anim laborum astutumque!",
+        "content": "styring af indhold til infoskærme. Udviklet til Aarhus, delt med alle andre.",
         "link": "link.pages-case-os2display"
       },
       {
         "class": "has-color has-spacing",
         "iconColor": "is-white",
         "title": "Grundsalg Aarhus",
-        "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
+        "content": "Design og udvikling af en hjemmeside til salg af grunde i Aarhus Kommune.",
         "link": "link.pages-case-grundsalg-aarhus"
       },
       {
         "class": "has-color has-spacing",
         "iconColor": "is-white",
         "title": "OS2loop",
-        "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+        "content": "Et brugervenligt videndelingsværktøj, hvor alle hjælper alle.",
         "link": "link.pages-case-os2loop"
       }
     ]
