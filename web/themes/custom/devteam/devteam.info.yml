@@ -11,6 +11,9 @@ regions:
   content: 'Content'
 
 component-libraries:
+  layouts:
+    paths:
+      - source/_layouts
   elements:
     paths:
       - source/_patterns/00-elements
