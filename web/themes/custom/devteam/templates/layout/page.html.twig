@@ -47,6 +47,7 @@
 {% if page.header %}
   {% embed "@layouts/header.twig" %}
     {% block content %}
+      {% include "@modules/logo.twig" with {"logoLink": "/", "logoAlt": "ITK DEVTEAM - en del af Aarhus Kommune"} %}
       {{ page.header }}
     {% endblock %}
   {% endembed %}
