@@ -6,12 +6,10 @@
 </div>
 <nav class="hamburger-menu">
   <ul class="hamburger-menu--links">
-  {% for group in hamburgerMenu %}
     <li class="hamburger-menu--group">
-    {% for item in group %}
-      <a href="{{ item.link }}" class="hamburger-menu--link">{{ item.title }}</a>
+    {% for item in hamburgermenuItems %}
+      <a href="{{ item.url }}" class="hamburger-menu--link{{ item.in_active_trail ? " is-active" }}">{{ item.title }}</a>
     {% endfor %}
     </li>
-  {% endfor %}
   </ul>
 </nav>
