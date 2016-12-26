@@ -1,7 +1,21 @@
 {
-  "navigation": {
-    "isActive": 1
-  },
+  "navigationItems": [
+    {
+      "in_active_trail": true
+    },
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": false
+    }
+  ],
   "headings": {
     "class": "is-quote",
     "headings": [

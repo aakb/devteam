@@ -1,28 +1,32 @@
 {
   "navigation": {
-    "logoLink": "link.pages-start",
-    "isActive": 0
+    "logoLink": "link.pages-start"
   },
   "navigationItems": [
     {
       "title": "Start",
-      "link": "link.pages-start"
+      "url": "link.pages-start",
+      "in_active_trail": false
     },
     {
       "title": "Services",
-      "link": "link.pages-services"
+      "url": "link.pages-services",
+      "in_active_trail": false
     },
     {
       "title": "Produkter",
-      "link": "link.pages-produkter"
+      "url": "link.pages-produkter",
+      "in_active_trail": false
     },
     {
       "title": "Cases",
-      "link": "link.pages-cases"
+      "url": "link.pages-cases",
+      "in_active_trail": false
     },
     {
       "title": "Om os",
-      "link": "link.pages-om-os"
+      "url": "link.pages-om-os",
+      "in_active_trail": false
     }
   ]
 }

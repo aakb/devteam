@@ -1,7 +1,21 @@
 {
-  "navigation": {
-    "isActive": 5
-  },
+  "navigationItems": [
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": true
+    }
+  ],
   "content": {
     "title": "Om os",
     "lead": "Vi er et dedikeret hold af digitale eksperter med meget høje standarder for vores arbejde. Vi er et digitalt bureau men vi er en del af Aarhus Kommune",

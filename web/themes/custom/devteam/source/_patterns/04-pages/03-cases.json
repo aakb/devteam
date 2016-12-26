@@ -1,7 +1,21 @@
 {
-  "navigation": {
-    "isActive": 4
-  },
+  "navigationItems": [
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": false
+    },
+    {
+      "in_active_trail": true
+    },
+    {
+      "in_active_trail": false
+    }
+  ],
   "content": {
     "title": "Cases",
     "lead": "Idque Caesaris facere voluntate liceret: sese habere. Ab illo tempore, ab est sed immemorabili. Plura mihi bona sunt, inclinet, amari petere vellent.",
