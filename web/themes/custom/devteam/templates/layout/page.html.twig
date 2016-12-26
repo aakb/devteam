@@ -44,12 +44,13 @@
  */
 #}
 
-{% embed "@layouts/header.twig" %}
-  {% block content %}
-    {% if page.navigation %}
-      {{ page.navigation }}
-    {% endif %}
-  {% endblock %}
-{% endembed %}
+{% if page.header %}
+  {% embed "@layouts/header.twig" %}
+    {% block content %}
+      {{ page.header }}
+    {% endblock %}
+  {% endembed %}
+{% endif %}
+
 
 

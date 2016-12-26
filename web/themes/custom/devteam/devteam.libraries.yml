@@ -6,4 +6,4 @@ styling:
 hamburger-menu:
   version: VERSION
   js:
-    source/js/hamburger-menu.js: {}
+    source/assets/js/hamburger-menu.js: {}

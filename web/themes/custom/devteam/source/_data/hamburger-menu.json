@@ -1,26 +1,29 @@
 {
-  "hamburgerMenu": {
-    "group": [
-      {
-        "title": "Start",
-        "link": "link.pages-start"
-      },
-      {
-        "title": "Services",
-        "link": "link.pages-services"
-      },
-      {
-        "title": "Produkter",
-        "link": "link.pages-produkter"
-      },
-      {
-        "title": "Cases",
-        "link": "link.pages-cases"
-      },
-      {
-        "title": "Om os",
-        "link": "link.pages-om-os"
-      }
-    ]
-  }
+  "hamburgermenuItems": [
+    {
+      "title": "Start",
+      "url": "link.pages-start",
+      "in_active_trail": false
+    },
+    {
+      "title": "Services",
+      "url": "link.pages-services",
+      "in_active_trail": false
+    },
+    {
+      "title": "Produkter",
+      "url": "link.pages-produkter",
+      "in_active_trail": false
+    },
+    {
+      "title": "Cases",
+      "url": "link.pages-cases",
+      "in_active_trail": false
+    },
+    {
+      "title": "Om os",
+      "url": "link.pages-om-os",
+      "in_active_trail": false
+    }
+  ]
 }

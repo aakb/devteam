@@ -4,10 +4,10 @@ description: 'The ITK DEVTEAM theme.'
 
 libraries:
   - devteam/styling
-  - devteam/scripts
+  - devteam/hamburger-menu
 
 regions:
-  navigation: 'Navigation'
+  header: 'Header'
   content: 'Content'
 
 component-libraries:
