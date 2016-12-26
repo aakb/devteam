@@ -7,3 +7,5 @@ hamburger-menu:
   version: VERSION
   js:
     source/assets/js/hamburger-menu.js: {}
+  dependencies:
+      - core/jquery

@@ -1,0 +1,20 @@
+uuid: 64dd273a-38c3-4894-9a76-3a5dd20bbf8d
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - devteam
+id: content
+theme: devteam
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: Content
+  provider: system
+  label_display: '0'
+visibility: {  }
