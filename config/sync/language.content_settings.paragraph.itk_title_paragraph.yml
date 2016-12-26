@@ -1,0 +1,11 @@
+uuid: 51e189a0-26a6-4950-acbc-fcda4c3631ed
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.itk_title_paragraph
+id: paragraph.itk_title_paragraph
+target_entity_type_id: paragraph
+target_bundle: itk_title_paragraph
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: b6b9cf1f-1b73-4bd3-aba2-e07aed2e0204
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.itk_youtube
+id: paragraph.itk_youtube
+target_entity_type_id: paragraph
+target_bundle: itk_youtube
+default_langcode: site_default
+language_alterable: false

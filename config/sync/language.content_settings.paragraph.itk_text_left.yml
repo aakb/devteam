@@ -1,0 +1,11 @@
+uuid: bbc5d573-c7c0-4c5d-91fa-195e344518c1
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.itk_text_left
+id: paragraph.itk_text_left
+target_entity_type_id: paragraph
+target_bundle: itk_text_left
+default_langcode: site_default
+language_alterable: false
