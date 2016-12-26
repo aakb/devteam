@@ -16,7 +16,7 @@ web/sites/simpletest
 .idea
 
 # Local setup files
-development.services.yml
+web/sites/development.services.yml
 services.local.yml
 settings.local.php
 
