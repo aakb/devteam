@@ -1,0 +1,22 @@
+uuid: 5888f2ab-dcc8-4ed3-bc24-04e491fdd6f2
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.footer_contact_block.body
+field_name: body
+entity_type: block_content
+bundle: footer_contact_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

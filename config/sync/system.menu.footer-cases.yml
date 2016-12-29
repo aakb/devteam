@@ -1,0 +1,8 @@
+uuid: 1c219cf1-ca63-4ac3-8548-daf2d0e3a45b
+langcode: da
+status: true
+dependencies: {  }
+id: footer-cases
+label: 'Footer: Cases'
+description: ''
+locked: false

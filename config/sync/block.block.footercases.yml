@@ -1,0 +1,24 @@
+uuid: 28db9242-5082-467f-a34a-21883162370a
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.footer-cases
+  module:
+    - system
+  theme:
+    - devteam
+id: footercases
+theme: devteam
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-cases'
+settings:
+  id: 'system_menu_block:footer-cases'
+  label: 'Footer: Cases'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

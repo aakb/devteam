@@ -1,0 +1,30 @@
+uuid: 86e22725-2947-4666-8c4f-db497daedc34
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact_block
+    - field.field.block_content.footer_contact_block.body
+    - field.field.block_content.footer_contact_block.field_footer_block_title
+  module:
+    - text
+id: block_content.footer_contact_block.default
+targetEntityType: block_content
+bundle: footer_contact_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_footer_block_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true
