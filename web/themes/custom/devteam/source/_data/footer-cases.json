@@ -1,0 +1,24 @@
+{
+  "footerCases": [
+    {
+      "title": "Grundsalg Aarhus",
+      "link": "link.pages-cases-grundsalg-aarhus"
+    },
+    {
+      "title": "OS2loop",
+      "link": "link.pages-cases-os2loop"
+    },
+    {
+      "title": "OS2display",
+      "link": "link.pages-cases-os2display"
+    },
+    {
+      "title": "ULF i Aarhus",
+      "link": "link.pages-cases-ulf-i-aarhus"
+    },
+    {
+      "title": "Dokk1",
+      "link": "link.pages-cases-dokk1"
+    }
+  ]
+}
