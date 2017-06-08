@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Cleanup deleted modules.
+ */
+function devteam_setup_update_8001() {
+  $module_array = array(
+    'itkore',
+    'itkore_admin',
+    'itkore_content_types',
+    'itkore_fields',
+    'itkore_footer',
+    'itkore_frontpage_header',
+    'itkore_user_roles',
+    'itkore_user_theme',
+    'itk_admin_links',
+    'itk_hamburger_menu',
+    'itk_paragraph'
+
+  );
+  foreach ($module_array as $module_name) {
+    $query = \Drupal::database()->delete('key_value')
+      ->condition('collection', 'system.schema')
+      ->condition('name', $module_name)
+      ->execute();
+  }
+}
