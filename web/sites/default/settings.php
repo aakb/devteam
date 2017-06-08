@@ -32,6 +32,7 @@ $settings['install_profile'] = 'minimal';
 // local development.
 // $settings['hash_salt'] = 'change_me';
 // Set up a config sync directory.
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
 //
 // This is defined inside the read-only "config" directory, deployed via Git.
 // Automatic Platform.sh settings.
