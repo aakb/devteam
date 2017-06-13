@@ -1,9 +1,0 @@
-uuid: 0a1c66d1-218e-4d1d-ab14-a6a3bc2205b9
-langcode: da
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: WQWP6MfkobBuQYDERD7TOOKOT1I7fnqtrUIxiYlB6Sc
-id: itk_internal_link
-label: 'Liste element/link'
-behavior_plugins: {  }

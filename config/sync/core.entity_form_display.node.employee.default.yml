@@ -1,22 +1,21 @@
-uuid: 42e069f3-5ce0-4e20-8d9b-71fd45f420a1
+uuid: b1e83cdc-62e5-4169-8e25-993e4222e080
 langcode: da
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_icon
-    - field.field.node.page.field_lead
-    - field.field.node.page.field_reference
+    - field.field.node.employee.body
+    - field.field.node.employee.field_email
+    - field.field.node.employee.field_field_phone
+    - field.field.node.employee.field_job_title
+    - field.field.node.employee.field_profile_image
     - image.style.thumbnail
-    - node.type.page
+    - node.type.employee
   module:
     - image
     - text
-_core:
-  default_config_hash: tT301fI1PUepYWhzNMNq9tR_Pk203i4yH-gWE0ZOno4
-id: node.page.default
+id: node.employee.default
 targetEntityType: node
-bundle: page
+bundle: employee
 mode: default
 content:
   body:
@@ -28,49 +27,50 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_icon:
+  field_email:
     weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_field_phone:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: '+45 01 23 45 67'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_job_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_image:
+    weight: 1
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
-  field_lead:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_reference:
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 3
-    third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   langcode: true
   path: true
+  promote: true
   sticky: true
   uid: true

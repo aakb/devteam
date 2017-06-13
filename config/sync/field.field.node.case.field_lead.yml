@@ -1,0 +1,19 @@
+uuid: e032a0c8-2aaf-4915-92e3-8810eaea2441
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lead
+    - node.type.case
+id: node.case.field_lead
+field_name: field_lead
+entity_type: node
+bundle: case
+label: Lead
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

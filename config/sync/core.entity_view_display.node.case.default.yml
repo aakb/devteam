@@ -1,32 +1,29 @@
-uuid: dd9b077d-38b4-4c6d-a04e-b41a9f8e1ee5
+uuid: 8f7522e1-3349-4490-a4e6-5490288a6bdf
 langcode: da
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_icon
-    - field.field.node.page.field_lead
-    - field.field.node.page.field_reference
-    - node.type.page
+    - field.field.node.case.body
+    - field.field.node.case.field_lead
+    - field.field.node.case.field_reference
+    - node.type.case
   module:
     - text
     - user
-_core:
-  default_config_hash: 0OMwscRy-FptZzG3Qevpw24ln4QvUSo2pSqovfH0Xjw
-id: node.page.default
+id: node.case.default
 targetEntityType: node
-bundle: page
+bundle: case
 mode: default
 content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content
   field_lead:
-    weight: 1
+    weight: 102
     label: hidden
     settings:
       link_to_entity: false
@@ -34,7 +31,7 @@ content:
     type: string
     region: content
   field_reference:
-    weight: 2
+    weight: 103
     label: hidden
     settings:
       view_mode: teaser
@@ -42,7 +39,10 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_icon: true
   langcode: true
-  links: true

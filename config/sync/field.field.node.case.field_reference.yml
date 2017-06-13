@@ -1,0 +1,31 @@
+uuid: d1149e44-a75e-4e5e-b8cb-c90920f91ee9
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference
+    - node.type.case
+    - node.type.employee
+    - node.type.page
+id: node.case.field_reference
+field_name: field_reference
+entity_type: node
+bundle: case
+label: Indholdsreferencer
+description: 'Titlen på et eksisterende indholdselement'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      case: case
+      employee: employee
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: case
+field_type: entity_reference
