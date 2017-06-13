@@ -25,6 +25,7 @@ module:
   path: 0
   redirect: 0
   role_delegation: 0
+  svg_image_field: 0
   system: 0
   text: 0
   token: 0

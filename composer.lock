@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a937759b82288d014cb613a52eb7c979",
+    "content-hash": "931a9fccf4d5c4f19f44df33faac6863",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1144,7 +1144,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/components-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "adb1872a655466d575c2d3396f7ca2daba0a2918"
             },
             "require": {
@@ -2095,7 +2095,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce-8.x-1.5.zip",
-                "reference": null,
+                "reference": "8.x-1.5",
                 "shasum": "b6ea0b74e9f1d37bf7acab10fdf0c1d1b3441464"
             },
             "require": {
@@ -2792,6 +2792,53 @@
             }
         },
         {
+            "name": "drupal/svg_image_field",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/svg_image_field",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image_field-8.x-1.0.zip",
+                "reference": null,
+                "shasum": "c2a17a3b17d6d042a4ccec585f7636603ac415ca"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1490366583"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "romychvk",
+                    "homepage": "https://www.drupal.org/user/361734"
+                },
+                {
+                    "name": "shmel210",
+                    "homepage": "https://www.drupal.org/user/2600028"
+                }
+            ],
+            "description": "Provides svg image field",
+            "homepage": "https://www.drupal.org/project/svg_image_field",
+            "support": {
+                "source": "http://cgit.drupalcode.org/svg_image_field"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.0.0",
             "source": {
@@ -2908,7 +2955,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/youtube-8.x-1.0-beta3.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta3",
                 "shasum": "bea118474961f0e89d3aae29a20e97c6bdb6128b"
             },
             "require": {

@@ -1,4 +1,4 @@
-uuid: aa000847-a155-4daa-808c-9b53a5638e98
+uuid: 6b411146-12e0-4fb2-b8e8-2b04b5de436c
 langcode: da
 status: true
 dependencies:
@@ -6,13 +6,13 @@ dependencies:
     - field.storage.node.field_icon
     - node.type.page
   module:
-    - image
+    - svg_image_field
 id: node.page.field_icon
 field_name: field_icon
 entity_type: node
 bundle: page
 label: Ikon
-description: 'Et ikon der vises når indholdet præsenteres som teaser/link'
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -21,18 +21,14 @@ settings:
   file_directory: icons
   file_extensions: svg
   max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: true
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
+  alt_field: 1
+  alt_field_required: 1
+  title_field: 0
+  title_field_required: 0
   default_image:
     uuid: ''
     alt: ''
     title: ''
-    width: null
-    height: null
   handler: 'default:file'
   handler_settings: {  }
-field_type: image
+field_type: svg_image_field

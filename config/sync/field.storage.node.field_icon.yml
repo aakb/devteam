@@ -1,27 +1,25 @@
-uuid: 94673158-349a-4100-ab90-971a4c50fcfb
+uuid: 9f2c5f09-0b51-4b6f-a0ee-eccb898a0abf
 langcode: da
 status: true
 dependencies:
   module:
     - file
-    - image
     - node
+    - svg_image_field
 id: node.field_icon
 field_name: field_icon
 entity_type: node
-type: image
+type: svg_image_field
 settings:
   uri_scheme: public
   default_image:
     uuid: ''
     alt: ''
     title: ''
-    width: null
-    height: null
   target_type: file
   display_field: false
   display_default: false
-module: image
+module: svg_image_field
 locked: false
 cardinality: 1
 translatable: true

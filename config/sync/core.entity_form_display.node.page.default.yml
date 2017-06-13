@@ -7,10 +7,9 @@ dependencies:
     - field.field.node.page.field_icon
     - field.field.node.page.field_lead
     - field.field.node.page.field_reference
-    - image.style.thumbnail
     - node.type.page
   module:
-    - image
+    - svg_image_field
     - text
 _core:
   default_config_hash: tT301fI1PUepYWhzNMNq9tR_Pk203i4yH-gWE0ZOno4
@@ -21,7 +20,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -29,12 +28,13 @@ content:
     third_party_settings: {  }
     region: content
   field_icon:
-    weight: 4
+    weight: 2
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_max_width: 300
+      preview_image_max_height: 300
     third_party_settings: {  }
-    type: image_image
+    type: svg_image_field_widget
     region: content
   field_lead:
     weight: 1
@@ -57,7 +57,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 4
     third_party_settings: {  }
     region: content
   title:

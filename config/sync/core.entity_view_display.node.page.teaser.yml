@@ -8,10 +8,9 @@ dependencies:
     - field.field.node.page.field_icon
     - field.field.node.page.field_lead
     - field.field.node.page.field_reference
-    - image.style.thumbnail
     - node.type.page
   module:
-    - image
+    - svg_image_field
     - user
 _core:
   default_config_hash: QHfVobt8gB5zkg2g9MOwKn4fHZGl0lwypo1ROrbONj4
@@ -21,13 +20,17 @@ bundle: page
 mode: teaser
 content:
   field_icon:
-    type: image
+    type: svg_image_field_formatter
     weight: 0
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
-      image_link: ''
+      inline: '1'
+      apply_dimensions: '1'
+      width: '96'
+      height: '96'
+      enable_alt: '1'
+      enable_title: 0
     third_party_settings: {  }
   field_lead:
     type: string
