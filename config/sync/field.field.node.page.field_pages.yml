@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_pages
-    - node.type.news
-    - node.type.overview_page
     - node.type.page
 _core:
   default_config_hash: fQt3NxgdYGopkZfF2ZZ3WPRJbj2T22nccLwOEAbbx8U
@@ -23,8 +21,6 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      news: news
-      overview_page: overview_page
       page: page
     sort:
       field: _none

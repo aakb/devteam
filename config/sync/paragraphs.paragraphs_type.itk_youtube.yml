@@ -6,3 +6,4 @@ _core:
   default_config_hash: Zv0A-pcjyBrXh3u_S0mH2N701bXav2N5EA46Ci6EUgE
 id: itk_youtube
 label: 'Youtube video'
+behavior_plugins: {  }

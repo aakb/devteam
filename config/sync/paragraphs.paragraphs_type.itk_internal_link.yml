@@ -6,3 +6,4 @@ _core:
   default_config_hash: WQWP6MfkobBuQYDERD7TOOKOT1I7fnqtrUIxiYlB6Sc
 id: itk_internal_link
 label: 'Liste element/link'
+behavior_plugins: {  }

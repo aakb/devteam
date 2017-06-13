@@ -31,6 +31,7 @@ content:
       image_style: related_page_image
       image_link: content
     third_party_settings: {  }
+    region: content
   field_related_page_teaser:
     type: string
     weight: 1
@@ -38,6 +39,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden:
   body: true
   field_lead: true

@@ -1,7 +1,5 @@
 name: Devteam setup
 type: module
 description: Simple site setup
-package: itk
-version: '8.x-1.0'
+package: ITK
 core: '8.x'
-project: 'devteam'

@@ -6,3 +6,4 @@ _core:
   default_config_hash: ZI9dFZLbLuQMAGU6cb0DoFSSXL61W4z2P6UGVmDgTDc
 id: itk_text_left
 label: 'Text left'
+behavior_plugins: {  }
