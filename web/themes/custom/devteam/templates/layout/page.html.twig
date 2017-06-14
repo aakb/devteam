@@ -45,14 +45,14 @@
 #}
 
 {% if page.header %}
-  {% embed "@base/layouts/header.twig" %}
+  {% embed "@organisms/header.twig" %}
     {% block content %}
       {% include "@molecules/logo.twig" with {"logoLink": "/", "logoAlt": "ITK DEVTEAM - en del af Aarhus Kommune"} %}
       {{ page.header }}
     {% endblock %}
   {% endembed %}
 {% endif %}
-{% embed "@base/layouts/base.twig" %}
+{% embed "@base/layouts/main.twig" %}
   {% block content %}
     {% if page.frontpage_quote %}
       {{ page.frontpage_quote }}
@@ -66,7 +66,7 @@
   {% endblock %}
 {% endembed %}
 {% if page.footer %}
-  {% embed "@base/layouts/footer.twig" %}
+  {% embed "@organisms/footer.twig" %}
     {% block content %}
       {{ page.footer }}
     {% endblock %}

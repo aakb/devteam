@@ -1,10 +1,14 @@
-{% embed "footer.twig" %}
-  {% block content %}
-    {% include "molecules-footer-contact" %}
-    {% include "molecules-footer-cases" %}
-  {% endblock %}
-  {% block bottom %}
-    <p>- en del af Aarhus Kommune</p>
-    <div class="footer--logo">{% include "atoms-aarhus-logo" %}</div>
-  {% endblock %}
-{% endembed %}
+<footer class="footer">
+  <div class="footer--content">
+    {% block content %}
+      {% include "@molecules/footer-contact.twig" %}
+      {% include "@molecules/footer-cases.twig" %}
+    {% endblock %}
+  </div>
+  <div class="footer--bottom">
+    {% block bottom %}
+      <p>- en del af Aarhus Kommune</p>
+      <div class="footer--logo">{% include "@atoms/03-images/aarhus-logo.twig" %}</div>
+    {% endblock %}
+  </div>
+</footer>

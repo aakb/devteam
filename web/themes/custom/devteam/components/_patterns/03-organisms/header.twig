@@ -1,7 +1,7 @@
-{% embed "header.twig" %}
+<header class="header" role="banner">
   {% block content %}
-    {% include "molecules-logo" %}
-    {% include "molecules-navigation" %}
-    {% include "molecules-hamburger-menu" %}
+    {% include "@molecules/logo.twig" %}
+    {% include "@molecules/navigation.twig" %}
+    {% include "@molecules/hamburger-menu.twig" %}
   {% endblock %}
-{% endembed %}
+</header>

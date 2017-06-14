@@ -1,5 +1,3 @@
-{% include "organisms-header" %}
-  <main role="main">
-    {% block content %}{% endblock %}
-  </main>
-{% include "organisms-footer" %}
+{% include "@organisms/header.twig" %}
+{% include "@base/layouts/main.twig" %}
+{% include "@organisms/footer.twig" %}

@@ -1,7 +1,9 @@
-{% embed "@base/layouts/base.twig" %}
+{% include "@organisms/header.twig" %}
+{% embed "@base/layouts/main.twig" %}
   {% block content %}
     {% include "organisms-frontpage-quote" %}
     {% include "organisms-frontpage-shortcuts" %}
     {% include "organisms-cases" %}
   {% endblock %}
 {% endembed %}
+{% include "@organisms/footer.twig" %}
