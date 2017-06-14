@@ -1,0 +1,57 @@
+uuid: 83c6023f-85db-4e3c-8c45-d3a883633cf6
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.case.body
+    - field.field.node.case.field_lead
+    - field.field.node.case.field_reference
+    - node.type.case
+  module:
+    - text
+id: node.case.default
+targetEntityType: node
+bundle: case
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_lead:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reference:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

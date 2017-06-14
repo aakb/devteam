@@ -1,0 +1,23 @@
+uuid: dfe67d37-d4a4-4234-af60-ac5b1428a2e7
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: indhold
+label: Indhold
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parent]/[node:title]'
+selection_criteria:
+  42066b32-fe21-411c-b432-2ad9037c215e:
+    id: node_type
+    bundles:
+      case: case
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 42066b32-fe21-411c-b432-2ad9037c215e
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -5,16 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_icon
     - field.field.node.page.field_lead
-    - field.field.node.page.field_main_image
-    - field.field.node.page.field_pages
-    - field.field.node.page.field_paragraphs
-    - field.field.node.page.field_related_page_image
-    - field.field.node.page.field_related_page_teaser
-    - image.style.related_page_image
+    - field.field.node.page.field_reference
     - node.type.page
   module:
-    - image
+    - svg_image_field
     - user
 _core:
   default_config_hash: QHfVobt8gB5zkg2g9MOwKn4fHZGl0lwypo1ROrbONj4
@@ -23,26 +19,29 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
-  field_related_page_image:
-    type: image
+  field_icon:
+    type: svg_image_field_formatter
     weight: 0
+    region: content
     label: hidden
     settings:
-      image_style: related_page_image
-      image_link: content
+      inline: '1'
+      apply_dimensions: '1'
+      width: '96'
+      height: '96'
+      enable_alt: '1'
+      enable_title: 0
     third_party_settings: {  }
-  field_related_page_teaser:
+  field_lead:
     type: string
     weight: 1
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
   body: true
-  field_lead: true
-  field_main_image: true
-  field_pages: true
-  field_paragraphs: true
+  field_reference: true
   langcode: true
   links: true

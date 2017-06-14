@@ -1,0 +1,22 @@
+uuid: 0cc8b8c2-7459-4509-9347-c52f7492591d
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.case
+  module:
+    - text
+id: node.case.body
+field_name: body
+entity_type: node
+bundle: case
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

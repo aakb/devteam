@@ -1,27 +1,20 @@
 module:
   block: 0
-  block_content: 0
   breakpoint: 0
   ckeditor: 0
   components: 0
   config: 0
-  config_translation: 0
   ctools: 0
-  datetime: 0
   dblog: 0
   devteam_setup: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference: 0
-  entity_reference_revisions: 0
   field: 0
-  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
-  help: 0
   image: 0
-  imce: 0
   language: 0
   link: 0
   locale: 0
@@ -29,12 +22,11 @@ module:
   metatag: 0
   node: 0
   page_cache: 0
-  paragraphs: 0
   path: 0
   redirect: 0
   role_delegation: 0
+  svg_image_field: 0
   system: 0
-  taxonomy: 0
   text: 0
   token: 0
   toolbar: 0
@@ -57,3 +49,4 @@ theme:
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 langcode: da
+profile: minimal

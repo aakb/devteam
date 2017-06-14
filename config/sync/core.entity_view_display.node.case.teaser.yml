@@ -1,0 +1,30 @@
+uuid: ebb08d67-f92d-456c-86d8-ca5a5a836d89
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.case.body
+    - field.field.node.case.field_lead
+    - field.field.node.case.field_reference
+    - node.type.case
+  module:
+    - user
+id: node.case.teaser
+targetEntityType: node
+bundle: case
+mode: teaser
+content:
+  field_lead:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_reference: true
+  langcode: true
+  links: true

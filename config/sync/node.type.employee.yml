@@ -1,0 +1,17 @@
+uuid: 4c7faeab-d243-47cc-b3b6-8f1868550dce
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Medarbejder
+type: employee
+description: 'En medarbejder ved ITK'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

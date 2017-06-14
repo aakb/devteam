@@ -1,0 +1,48 @@
+uuid: 8f7522e1-3349-4490-a4e6-5490288a6bdf
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.case.body
+    - field.field.node.case.field_lead
+    - field.field.node.case.field_reference
+    - node.type.case
+  module:
+    - text
+    - user
+id: node.case.default
+targetEntityType: node
+bundle: case
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_lead:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_reference:
+    weight: 103
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

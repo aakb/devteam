@@ -1,0 +1,22 @@
+uuid: 0f4b3ec3-c2b8-4622-a645-27d5be08f5fb
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.employee
+  module:
+    - text
+id: node.employee.body
+field_name: body
+entity_type: node
+bundle: employee
+label: Beskrivelse
+description: 'En beskrivelse af medarbejderen'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
