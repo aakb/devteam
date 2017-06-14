@@ -30,7 +30,7 @@
     },
     cssConfig: {
       enabled: true,
-      src: themeDir + '/components/styles.scss',
+      src: themeDir + '/components/style.scss',
       dest: themeDir + '/dist/',
       flattenDestOutput: true,
       lint: {

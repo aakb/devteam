@@ -1,10 +1,14 @@
 name: ITK DEVTEAM theme
 type: theme
 description: 'The ITK DEVTEAM theme.'
+base theme: stable
 
 libraries:
-  - devteam/styling
-  - devteam/hamburger-menu
+  - devteam/global
+
+# CKEditor stylesheet loads in wysiwyg to give content editors a better experience
+ckeditor_stylesheets:
+  - dist/style.css
 
 regions:
   header: 'Header'
