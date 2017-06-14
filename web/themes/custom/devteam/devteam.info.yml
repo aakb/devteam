@@ -12,18 +12,25 @@ regions:
   footer: 'Footer'
 
 component-libraries:
-  layouts:
+  base:
     paths:
-      - source/_layouts
-  elements:
+      - components/_patterns/00-base
+  atoms:
     paths:
-      - source/_patterns/00-elements
-  modules:
+      - components/_patterns/01-atoms
+  molecules:
     paths:
-      - source/_patterns/01-modules
-  components:
+      - components/_patterns/02-molecules
+  organisms:
     paths:
-      - source/_patterns/02-components
+      - components/_patterns/03-organisms
+  templates:
+    paths:
+      - components/_patterns/04-templates
+  pages:
+    paths:
+      - components/_patterns/05-pages
 
 version: '1.0.0-beta1'
 core: '8.x'
+

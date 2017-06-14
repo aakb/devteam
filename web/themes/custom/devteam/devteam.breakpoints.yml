@@ -1,0 +1,16 @@
+# Breakpoints - change based on site need
+devteam.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'
+devteam.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+devteam.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+devteam.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+devteam.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'

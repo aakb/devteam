@@ -1,0 +1,10 @@
+{% embed "@base/layouts/grid.twig" with {state: "has-spacing" } %}
+  {% block content %}
+    {% for box in shortcuts %}
+      <article class="grid--item">
+        {% include "molecules-box" %}
+      </article>
+    {% endfor %}
+  {% endblock %}
+{% endembed %}
+

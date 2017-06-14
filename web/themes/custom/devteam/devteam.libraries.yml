@@ -1,11 +1,19 @@
-styling:
-  version: VERSION
+global:
   css:
     theme:
-      source/css/styles.css: { media: screen }
-hamburger-menu:
-  version: VERSION
+      dist/style.css: {}
   js:
-    source/assets/js/hamburger-menu.js: {}
-  dependencies:
-      - core/jquery
+    dist/scripts.js: {}
+
+# Examples of Library syntax
+# typekit:
+#   header: true
+#   js:
+#     //use.typekit.net/TYPEKIT_ID.js: { every_page: true }
+
+# COMPONENT_NAME:
+#   css:
+#     component:
+#       source/_patterns/02-molecules/COMPONENT_NAME/COMPONENT_NAME/COMPONENT_NAME.js: {}
+#   js:
+#     source/_patterns/02-molecules/COMPONENT_NAME/COMPONENT_NAME/COMPONENT_NAME.js: {}
