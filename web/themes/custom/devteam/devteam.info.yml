@@ -12,7 +12,9 @@ ckeditor_stylesheets:
 
 regions:
   header: 'Header'
+  frontpage_quote: 'Frontpage quote'
   content: 'Content'
+  frontpage_cases: 'Frontpage cases'
   footer: 'Footer'
 
 component-libraries:

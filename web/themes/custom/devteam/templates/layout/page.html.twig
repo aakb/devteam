@@ -52,13 +52,19 @@
     {% endblock %}
   {% endembed %}
 {% endif %}
-{% if page.content %}
-  {% embed "@base/layouts/base.twig" %}
-    {% block content %}
+{% embed "@base/layouts/base.twig" %}
+  {% block content %}
+    {% if page.frontpage_quote %}
+      {{ page.frontpage_quote }}
+    {% endif %}
+    {% if page.content %}
       {{ page.content }}
-    {% endblock %}
-  {% endembed %}
-{% endif %}
+    {% endif %}
+    {% if page.frontpage_cases %}
+      {{ page.frontpage_cases }}
+    {% endif %}
+  {% endblock %}
+{% endembed %}
 {% if page.footer %}
   {% embed "@base/layouts/footer.twig" %}
     {% block content %}

@@ -13,5 +13,9 @@
  */
 #}
 {% if content %}
-  {{ content }}
+  {% embed "@base/layouts/grid.twig" %}
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  {% endembed %}
 {% endif %}
