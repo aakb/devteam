@@ -52,6 +52,13 @@
     {% endblock %}
   {% endembed %}
 {% endif %}
+{% if page.content %}
+  {% embed "@base/layouts/base.twig" %}
+    {% block content %}
+      {{ page.content }}
+    {% endblock %}
+  {% endembed %}
+{% endif %}
 {% if page.footer %}
   {% embed "@base/layouts/footer.twig" %}
     {% block content %}
