@@ -99,7 +99,7 @@
       baseDir: './',
       startPath: themeDir + 'pattern-lab/public/',
       // Uncomment below if using a specific local url
-      domain: 'devteam.vm',
+      //domain: 'devteam.vm',
       openBrowserAtStart: true,
       browser: "google chrome",
       reloadDelay: 50,
