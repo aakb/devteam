@@ -2,21 +2,21 @@
   "shortcuts": [
     {
       "iconColor": "is-black",
-      "icon": "elements-tools",
+      "icon": "atoms-tools",
       "title": "Box 1",
       "content": "Fictum,  deserunt mollit anim laborum astutumque!",
       "link": "#"
     },
     {
       "iconColor": "is-black",
-      "icon": "elements-box",
+      "icon": "atoms-box",
       "title": "Box 2",
       "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
       "link": "#"
     },
     {
       "iconColor": "is-black",
-      "icon": "elements-coffee",
+      "icon": "atoms-coffee",
       "title": "Box 3",
       "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
       "link": "#"

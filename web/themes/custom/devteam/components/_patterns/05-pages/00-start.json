@@ -29,7 +29,7 @@
     {
       "class": "",
       "iconColor": "is-black",
-      "icon": "elements-tools",
+      "icon": "atoms-tools",
       "title": "Services",
       "content": "Se hvad vores hold af dedikerede nørder kan hjælpe dig med!",
       "link": "link.pages-services"
@@ -37,7 +37,7 @@
     {
       "class": "",
       "iconColor": "is-black",
-      "icon": "elements-box",
+      "icon": "atoms-box",
       "title": "Produkter",
       "content": "Vi har en række gennemtestede produkter på hylden. Klar til at blive taget i brug!",
       "link": "link.pages-produkter"
@@ -45,7 +45,7 @@
     {
       "class": "",
       "iconColor": "is-black",
-      "icon": "elements-coffee",
+      "icon": "atoms-coffee",
       "title": "Om os",
       "content": "Mød menneskerne bag koden, se girafferne og besøg os til en kop kaffe.",
       "link": "link.pages-om-os"

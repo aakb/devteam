@@ -26,7 +26,7 @@
       {
         "class": "has-spacing",
         "iconColor": "is-black",
-        "icon": "elements-tools",
+        "icon": "atoms-tools",
         "title": "Udvikling",
         "content": "Fictum, deserunt mollit anim laborum astutumque!",
         "link": "link.pages-services-udvikling"
@@ -34,7 +34,7 @@
       {
         "class": "has-spacing",
         "iconColor": "is-black",
-        "icon": "elements-box",
+        "icon": "atoms-box",
         "title": "Design",
         "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
         "link": "link.pages-services-design"

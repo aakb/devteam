@@ -1,6 +1,6 @@
 {% embed "@base/layouts/footer-column.twig" %}
   {% block title %}{{ footerContactLabel }}{% endblock %}
   {% block content %}
-    {{ footerContactContent }}
+    {{ footerContactContent|raw }}
   {% endblock %}
 {% endembed %}
