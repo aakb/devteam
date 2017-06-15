@@ -1,24 +1,3 @@
 {% include "@organisms/header.twig" %}
-{% embed "@base/layouts/main.twig" %}
-  {% block content %}
-    {% embed "@base/layouts/grid.twig" %}
-      {% block content %}
-        {% embed "page-content.twig" %}
-          {% block header %}{{ content.title }}{% endblock %}
-          {% block lead %}{{ content.lead }}{% endblock %}
-          {% block content %}{{ content.content|raw }}{% endblock %}
-        {% endembed %}
-      {% endblock %}
-    {% endembed %}
-    {% embed "@base/layouts/grid.twig" with {state: "has-spacing" } %}
-      {% block content %}
-        {% for box in employees %}
-          <article class="grid--item">
-            {% include "@molecules-box-info" %}
-          </article>
-        {% endfor %}
-      {% endblock %}
-    {% endembed %}
-  {% endblock %}
-{% endembed %}
+{% include "templates-services" %}
 {% include "@organisms/footer.twig" %}

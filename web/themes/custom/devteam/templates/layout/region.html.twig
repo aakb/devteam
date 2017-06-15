@@ -13,7 +13,7 @@
  */
 #}
 {% if content %}
-  {% embed "@base/layouts/grid.twig" %}
+  {% embed "@base/layouts/grid.twig" with {state: "has-spacing", header: true }%}
     {% block content %}
       {{ content }}
     {% endblock %}
