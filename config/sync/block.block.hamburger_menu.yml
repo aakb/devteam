@@ -11,7 +11,7 @@ dependencies:
 id: hamburger_menu
 theme: devteam
 region: header
-weight: 0
+weight: -1
 provider: null
 plugin: 'system_menu_block:main'
 settings:
