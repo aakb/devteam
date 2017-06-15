@@ -12,6 +12,10 @@
  * @see template_preprocess_region()
  */
 #}
-{#{% include "@organisms/header.twig" %}#}
 
-{% include "@organisms/header.twig" %}
+
+{% if content %}
+  <div class="grid has-spacing">
+    {{ content }}
+  </div>
+{% endif %}

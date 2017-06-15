@@ -25,12 +25,23 @@
  * @see template_preprocess_block()
  */
 #}
+{%
+  set classes = [
+    'grid--inner',
+  ]
+%}
+{% if label %}
+  {% set classes = classes|merge(['has-header']) %}
+{% endif %}
+
+
 {{ title_prefix }}
 {% if label %}
-  <h2{{ title_attributes.addClass('heading-2') }}>{{ label }}</h2>
+  <h2{{ title_attributes.addClass('is-big') }}>{{ label }}</h2>
 {% endif %}
 {{ title_suffix }}
-{% block content %}
-  {{ content }}
-{% endblock %}
-
+<div {{ attributes.addClass(classes) }}>
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

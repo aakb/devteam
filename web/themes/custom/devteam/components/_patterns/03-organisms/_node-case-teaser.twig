@@ -71,4 +71,12 @@
  */
 #}
 
-{% include "@organisms/_node-case-teaser.twig" %}
+<a href="{{ url }}" title="{{ label }}" class="box has-color has-spacing">
+  <div class="box--inner">
+    <h2 class="box--header">{{ label }}</h2>
+    <p class="box--content">{{ content }}</p>
+    <span class="box--link">{% include "@atoms/05-icons/_arrow-right.twig" with {iconColor: 'is-white', iconSize: 'is-small'} %}</span>
+  </div>
+</a>
+
+

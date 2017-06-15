@@ -49,7 +49,6 @@
   {{ page.header }}
 
   <main role="main" class="main">
-    <div class="main-content">
     {% block content %}
       {% if page.content %}
         {{ page.content }}
@@ -61,7 +60,6 @@
         {{ page.frontpage_cases }}
       {% endif %}
     {% endblock %}
-    </div>
   </main>
 
   {{ page.footer }}

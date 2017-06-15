@@ -72,10 +72,10 @@
 #}
 
 <a href="{{ url }}" title="{{ label }}" class="box">
-  {% include "@atoms/05-icons/_lightbulb.twig" with {iconColor: 'black', iconSize: 'is-large'} %}
+  {% include "@atoms/05-icons/_lightbulb.twig" with {iconColor: 'is-black', iconSize: 'is-large'} %}
   <div class="box--inner">
     <h2 class="box--header">{{ label }}</h2>
     <p class="box--content">{{ content }}</p>
-    <span class="box--link">{% include "@atoms/05-icons/_arrow-right.twig" with {iconColor: 'black', iconSize: 'is-small'} %}</span>
+    <span class="box--link">{% include "@atoms/05-icons/_arrow-right.twig" with {iconColor: 'is-black', iconSize: 'is-small'} %}</span>
   </div>
 </a>

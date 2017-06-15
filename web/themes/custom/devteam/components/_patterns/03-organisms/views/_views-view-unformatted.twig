@@ -15,4 +15,12 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
-{% include "@organisms/views/_views-view-unformatted.twig" %}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+
+{% for row in rows %}
+  <div class="grid--item">
+    {{ row.content }}
+  </div>
+{% endfor %}
