@@ -43,4 +43,51 @@
  * @see html.html.twig
  */
 #}
-{% include "@pages/_page.twig" %}
+
+<div class="layout-container">
+
+  {% if page.header %}
+    {# Render Drupal blocks in header region #}
+    {% embed "@organisms/header.twig" %}
+      {% block content %}
+        {{ page.header }}
+      {% endblock %}
+    {% endembed %}
+  {% else %}
+    {# Render Pattern Lab #}
+    {% include "@organisms/header.twig" %}
+  {% endif %}
+
+  <main role="main" class="main">
+    <div class="main-content">
+    {% block content %}
+      {% if page.content %}
+        {{ page.content }}
+      {% endif %}
+      {% if page.frontpage_quote %}
+        {{ page.frontpage_quote }}
+      {% endif %}
+      {% if page.frontpage_services %}
+        {{ page.frontpage_services }}
+      {% endif %}
+      {% if page.frontpage_cases %}
+        {{ page.frontpage_cases }}
+      {% endif %}
+    {% endblock %}
+    </div>
+  </main>
+
+  {% if page.footer %}
+    {# Render Drupal blocks in footer region #}
+    {% embed "@organisms/footer.twig" %}
+      {% block content %}
+        {{ page.footer }}
+      {% endblock %}
+    {% endembed %}
+  {% else %}
+    {# Render Pattern Lab #}
+    {% include "@organisms/footer.twig" %}
+  {% endif %}
+  
+
+</div>{# /.layout-container #}
