@@ -46,14 +46,7 @@
 
 <div class="layout-container">
 
-  {% if page.header %}
-
-        {{ page.header }}
-
-  {% else %}
-    {# Render Pattern Lab #}
-    {% include "@organisms/header.twig" %}
-  {% endif %}
+  {{ page.header }}
 
   <main role="main" class="main">
     <div class="main-content">
@@ -71,14 +64,6 @@
     </div>
   </main>
 
-  {% if page.footer %}
-
-        {{ page.footer }}
-
-  {% else %}
-    {# Render Pattern Lab #}
-    {% include "@organisms/footer.twig" %}
-  {% endif %}
-  
+  {{ page.footer }}
 
 </div>{# /.layout-container #}
