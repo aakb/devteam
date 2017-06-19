@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: fUDNcSYKNw6cTMPsX3G9VhsUGov5yUe6_TBHbcnZHyo
 id: content
-label: Indhold
+label: Content
 module: node
 description: 'Find og håndtér indhold.'
 tag: default
@@ -278,8 +278,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Udgivet
+            format_custom_false: 'Ikke udgivet'
           plugin_id: field
           entity_type: node
           entity_field: status
@@ -534,7 +534,7 @@ display:
           entity_type: node
           entity_field: langcode
       sorts: {  }
-      title: Indhold
+      title: Content
       empty:
         area_text_custom:
           id: area_text_custom
@@ -578,14 +578,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Indhold
+        title: Content
         description: ''
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Indhold
+        title: Content
         description: 'Find og håndtér indhold'
         menu_name: admin
         weight: -10
