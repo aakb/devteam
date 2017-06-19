@@ -1,0 +1,20 @@
+uuid: 1f14b4ca-1bdf-4bc6-bb60-95a9f113a948
+langcode: da
+status: true
+dependencies:
+  module:
+    - itk_admin_links
+  theme:
+    - devteam
+id: itkadminlinks
+theme: devteam
+region: content
+weight: -3
+provider: null
+plugin: itk_admin_links
+settings:
+  id: itk_admin_links
+  label: 'ITK Admin links'
+  provider: itk_admin_links
+  label_display: '0'
+visibility: {  }

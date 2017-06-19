@@ -1,0 +1,24 @@
+uuid: 77febd19-9ecf-4e1d-91c0-0ee8849d3971
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.devteam_frontpage
+  module:
+    - views
+  theme:
+    - devteam
+id: devteam_frontpage_block
+theme: devteam
+region: frontpage_cases
+weight: -3
+provider: null
+plugin: 'views_block:devteam_frontpage-block_1'
+settings:
+  id: 'views_block:devteam_frontpage-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

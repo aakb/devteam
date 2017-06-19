@@ -1,0 +1,24 @@
+uuid: b560674f-c4f2-4bfa-92b8-da1c3ab5f6c9
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.devteam_frontpage
+  module:
+    - views
+  theme:
+    - stark
+id: views_block__devteam_frontpage_block_1
+theme: stark
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:devteam_frontpage-block_1'
+settings:
+  id: 'views_block:devteam_frontpage-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
