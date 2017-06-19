@@ -47,12 +47,9 @@
 <div class="layout-container">
 
   {% if page.header %}
-    {# Render Drupal blocks in header region #}
-    {% embed "@organisms/header.twig" %}
-      {% block content %}
+
         {{ page.header }}
-      {% endblock %}
-    {% endembed %}
+
   {% else %}
     {# Render Pattern Lab #}
     {% include "@organisms/header.twig" %}
@@ -78,12 +75,9 @@
   </main>
 
   {% if page.footer %}
-    {# Render Drupal blocks in footer region #}
-    {% embed "@organisms/footer.twig" %}
-      {% block content %}
+
         {{ page.footer }}
-      {% endblock %}
-    {% endembed %}
+
   {% else %}
     {# Render Pattern Lab #}
     {% include "@organisms/footer.twig" %}

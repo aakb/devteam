@@ -14,6 +14,7 @@ regions:
   header: 'Header'
   frontpage_quote: 'Frontpage quote'
   content: 'Content'
+  frontpage_services: 'Frontpage services'
   frontpage_cases: 'Frontpage cases'
   footer: 'Footer'
 

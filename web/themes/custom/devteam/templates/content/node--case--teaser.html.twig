@@ -70,7 +70,10 @@
  *   in different view modes.
  */
 #}
-<article{{ attributes }}>
+
+{% include "@organisms/boxes/cases.twig" %}
+
+{#<article{{ attributes }}>
 
   {{ title_prefix }}
   {% if not page %}
@@ -95,3 +98,4 @@
   </div>
 
 </article>
+#}
