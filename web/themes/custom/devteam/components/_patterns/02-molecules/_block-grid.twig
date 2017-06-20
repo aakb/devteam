@@ -25,4 +25,23 @@
  * @see template_preprocess_block()
  */
 #}
-{% include "@molecules/_block-grid.twig" %}
+{%
+  set classes = [
+    'grid--inner',
+  ]
+%}
+{% if label %}
+  {% set classes = classes|merge(['has-header']) %}
+{% endif %}
+
+
+{{ title_prefix }}
+{% if label %}
+  <h2{{ title_attributes.addClass('is-big') }}>{{ label }}</h2>
+{% endif %}
+{{ title_suffix }}
+<div {{ attributes.addClass(classes).removeClass('views-element-container') }}>
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>
