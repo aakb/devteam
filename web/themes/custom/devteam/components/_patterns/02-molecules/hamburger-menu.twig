@@ -7,7 +7,7 @@
 <nav class="hamburger-menu">
   <ul class="hamburger-menu--links">
     <li class="hamburger-menu--group">
-    {% for item in hamburgermenuItems %}
+    {% for item in items %}
       <a href="{{ item.url }}" class="hamburger-menu--link{{ item.in_active_trail ? " is-active" }}">{{ item.title }}</a>
     {% endfor %}
     </li>

@@ -3,7 +3,7 @@ global:
     theme:
       dist/style.css: {}
   js:
-    dist/scripts.js: {}
+    components/assets/js/hamburger-menu.js: {}
 
 # Examples of Library syntax
 # typekit:
