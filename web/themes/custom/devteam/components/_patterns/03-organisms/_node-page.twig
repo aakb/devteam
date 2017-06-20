@@ -71,10 +71,12 @@
  */
 #}
 <article{{ attributes }}>
-  <div class="text">  
-    <h1{{ title_attributes.addClass('heading-1 is-title') }}>
-      {{ label }}
-    </h1>
+  <div class="text">
+    {{ title_prefix }}
+      <h1{{ title_attributes.addClass('heading-1 is-title') }}>
+        {{ label }}
+      </h1>
+    {{ title_suffix }}
     <p class="text--lead">
       {{ content.field_lead }}
     </p>
