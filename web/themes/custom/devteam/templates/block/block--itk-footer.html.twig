@@ -25,4 +25,5 @@
  * @see template_preprocess_block()
  */
 #}
-{% include "@molecules/footer-contact.twig" with {footerContactLabel: content.field_footer_block_title, footerContactContent: content|without('field_footer_block_title')} %}
+
+{% include "@molecules/_block-footer.twig" %}

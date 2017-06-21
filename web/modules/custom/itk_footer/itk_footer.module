@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Add template for widget.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function itk_footer_theme($existing, $type, $theme, $path) {
+  return array(
+    'itk_footer_contact' => array(
+      'variables' => ['variables' => NULL],
+    ),
+    'itk_footer_bottom' => array(
+      'variables' => ['variables' => NULL],
+    ),
+  );
+}

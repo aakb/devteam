@@ -13,16 +13,8 @@
  */
 #}
 
-<footer class="footer">
-  <div class="footer--content">
-    {% if content %}
-        {{ content }}
-    {% endif %}
-  </div>
-  <div class="footer--bottom">
-    {% block bottom %}
-      <p>- en del af Aarhus Kommune</p>
-      <div class="footer--logo">{% include "@atoms/03-images/aarhus-logo.twig" %}</div>
-    {% endblock %}
-  </div>
-</footer>
+<div class="footer--content">
+  {% if content %}
+    {{ content }}
+  {% endif %}
+</div>

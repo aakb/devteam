@@ -16,6 +16,7 @@ regions:
   content: 'Content'
   frontpage_cases: 'Frontpage cases'
   footer: 'Footer'
+  footer_bottom: 'Footer bottom'
 
 component-libraries:
   base:

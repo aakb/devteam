@@ -45,23 +45,25 @@
 #}
 
 <div class="layout-container">
-
-  {{ page.header }}
-
+  <header class="header" role="banner">
+    {{ page.header }}
+  </header>
   <main role="main" class="main">
     {% block content %}
-      {% if page.content %}
-        {{ page.content }}
-      {% endif %}
       {% if page.frontpage_quote %}
         {{ page.frontpage_quote }}
+      {% endif %}
+      {% if page.content %}
+        {{ page.content }}
       {% endif %}
       {% if page.frontpage_cases %}
         {{ page.frontpage_cases }}
       {% endif %}
     {% endblock %}
   </main>
-
-  {{ page.footer }}
+  <footer class="footer">
+    {{ page.footer }}
+    {{ page.footer_bottom }}
+  </footer>
 
 </div>{# /.layout-container #}
