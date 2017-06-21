@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:devteam_frontpage-block_1'
 settings:
   id: 'views_block:devteam_frontpage-block_1'
-  label: ''
+  label: Cases
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: Cases
   items_per_page: none
 visibility:
   request_path:
