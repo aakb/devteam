@@ -1,4 +1,4 @@
-{% embed "@pages/_page.twig" %}
+{% include "@organisms/header.twig" %}
   {% block content %}
     {% embed "@base/layouts/grid.twig" %}
       {% block content %}
@@ -19,4 +19,4 @@
       {% endblock %}
     {% endembed %}
   {% endblock %}
-{% endembed %}
+{% include "@organisms/footer.twig" %}
