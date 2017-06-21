@@ -54,12 +54,6 @@ class ITKFooterContentForm extends FormBase {
       '#open' => TRUE,
     );
 
-    $form['wrapper_contact']['itk_footer_contact_header'] = array(
-      '#title' => t('Header'),
-      '#type' => 'textfield',
-      '#default_value' => $config->get('itk_footer_contact_header'),
-      '#weight' => '1',
-    );
     $form['wrapper_contact']['itk_footer_contact'] = array(
       '#title' => t('Text'),
       '#type' => 'text_format',
@@ -96,7 +90,6 @@ class ITKFooterContentForm extends FormBase {
     $this->getBaseConfig()->setMultiple(array(
       'itk_footer_text' => $form_state->getValue('itk_footer_text'),
       'itk_footer_contact' => $form_state->getValue('itk_footer_contact')['value'],
-      'itk_footer_contact_header' => $form_state->getValue('itk_footer_contact_header'),
     ));
 
     drupal_flush_all_caches();
