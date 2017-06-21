@@ -50,11 +50,11 @@
 
   <main role="main" class="main">
     {% block content %}
-      {% if page.content %}
-        {{ page.content }}
-      {% endif %}
       {% if page.frontpage_quote %}
         {{ page.frontpage_quote }}
+      {% endif %}
+      {% if page.content %}
+        {{ page.content }}
       {% endif %}
       {% if page.frontpage_cases %}
         {{ page.frontpage_cases }}
