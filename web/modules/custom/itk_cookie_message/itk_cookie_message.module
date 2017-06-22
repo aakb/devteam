@@ -13,8 +13,8 @@ use \Drupal\Core\Language\LanguageInterface;
  */
 function itk_cookie_message_theme($existing, $type, $theme, $path) {
   return [
-    'itk_cookie_message_block' => [
-      'template' => 'itk-cookie-message-block',
+    'itk_cookie_message' => [
+      'template' => 'itk-cookie-message',
       'variables' => [ 'variables' => NULL ],
     ],
   ];

@@ -4,16 +4,6 @@ global:
       dist/style.css: {}
   js:
     components/assets/js/hamburger-menu.js: {}
-
-# Examples of Library syntax
-# typekit:
-#   header: true
-#   js:
-#     //use.typekit.net/TYPEKIT_ID.js: { every_page: true }
-
-# COMPONENT_NAME:
-#   css:
-#     component:
-#       source/_patterns/02-molecules/COMPONENT_NAME/COMPONENT_NAME/COMPONENT_NAME.js: {}
-#   js:
-#     source/_patterns/02-molecules/COMPONENT_NAME/COMPONENT_NAME/COMPONENT_NAME.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

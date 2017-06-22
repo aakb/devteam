@@ -4,5 +4,4 @@ interface translation project: itk_admin_links
 interface translation server pattern: profiles/itkore/modules/itk_admin_links/translations/itk_admin_links.%language.po
 package: ITK
 type: module
-version: 1.0
 core: 8.x

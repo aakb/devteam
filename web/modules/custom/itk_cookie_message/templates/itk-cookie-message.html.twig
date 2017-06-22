@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Display of cookie message.
+ *
+ * Available variables:
+ * - variables: Available variables in this template.
+ *   - text: The cookie warning message.
+ *   - read_more_url: A URL to a read more page.
+ *   - read_more_text: A text for te read more link.
+ *   - accept_button_text: A text for the accept button.
+ */
+#}
+
+<div id="js-cookieterms" class="js-cookieterms cookie-message">
+  <div class="cookies--inner">
+    <span class="cookies--text">{{ variables.text }}.
+    {% if not (variables.read_more_url is empty or variables.read_more_text is empty) %}
+    <a href="{{ variables.read_more_url }}">{{ variables.read_more_text }}</a>.
+    {% endif %}
+    </span>
+    <span class="cookies--agree">
+      <span id="js-cookieterms-agree" class="js-cookieterms-agree cookieterms--button button">{{ variables.accept_button_text }}</span>
+    </span>
+  </div>
+</div>

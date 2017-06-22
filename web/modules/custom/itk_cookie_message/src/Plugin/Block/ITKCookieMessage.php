@@ -27,7 +27,7 @@ class ITKCookieMessage extends BlockBase {
 
     return [
       '#type' => 'markup',
-      '#theme' => 'itk_cookie_message_block',
+      '#theme' => 'itk_cookie_message',
       '#variables' => [
         'text' => $settings['text'],
         'read_more_url' => $settings['read_more_url'],

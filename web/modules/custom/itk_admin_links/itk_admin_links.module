@@ -6,6 +6,8 @@
 
 /**
  * Implements hook_theme().
+ *
+ * Theme implementation for admin links block.
  */
 function itk_admin_links_theme($existing, $type, $theme, $path) {
   return array(
