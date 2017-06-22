@@ -71,11 +71,26 @@
  */
 #}
 
-<a href="{{ url }}" title="{{ label }}" class="box">
-  {% include "@atoms/05-icons/_lightbulb.twig" with {iconColor: 'black', iconSize: 'is-large'} %}
-  <div class="box--inner">
-    <h2 class="box--header">{{ label }}</h2>
-    <p class="box--content">{{ content }}</p>
-    <span class="box--link">{% include "@atoms/05-icons/_arrow-right.twig" with {iconColor: 'black', iconSize: 'is-small'} %}</span>
+<article class="box-info has-color">
+  {% if content.field_profile_image %}
+    <div class="box-info--image">
+      {{ content.field_profile_image }}
+    </div>
+  {% endif %}
+  <div class="box-info--inner">
+    <h2 class="box-info--header has-color">{{ label }}</h2>
+    {% if content.field_job_title %}
+      <p class="box-info--position">{{ content.field_job_title }}</p>
+    {% endif %}
+    {% if content.body %}
+      <p class="box-info--about has-separator">{{ content.body }}</p>
+    {% endif %}
+    {% if content.field_email %}
+    {{ content.field_email }}
+      {#<a href="mailto:{{ content.field_email }}" class="box-info--email has-separator">{{ content.field_email }}</a>#}
+    {% endif %}
+    {% if content.field_field_phone %}
+      <a href="tel:{{ content.field_field_phone }}" class="box-info--phone">{{ content.field_field_phone }}</a>
+    {% endif %}
   </div>
-</a>
+</article>
