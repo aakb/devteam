@@ -37,13 +37,14 @@
  */
 #}
 
+
 {% if label_hidden %}
   {% for item in items %}
-    <a href="mailto:{{ item.content }}" class="box-info--email has-separator">{{ item.content }}</a>
+    <a href="tel:{{ item.content }}" class="box-info--phone">{{ item.content }}</a>
   {% endfor %}
 {% else %}
     {{ label }}
     {% for item in items %}
-      <a href="mailto:{{ item.content }}" class="box-info--email has-separator">{{ item.content }}</a>
+      <a href="tel:{{ item.content }}" class="box-info--phone">{{ item.content }}</a>
     {% endfor %}
 {% endif %}
