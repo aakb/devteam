@@ -1,0 +1,25 @@
+@import "../../fonts/raleway/Raleway";
+@import "../../fonts/bitter/Bitter";
+
+$font-size-small:  85%;
+$font-size-medium: 100%;
+$font-size-large:  150%;
+$font-size-xlarge: 200%;
+
+$font-family:             "Arial", sans-serif;
+$font-family-secondary:   "Georgia", serif;
+
+$font-light:              "Raleway-Light", $font-family;
+$font-light-italic:       "Raleway-LightItalic", $font-family;
+$font-regular:            "Raleway", $font-family;
+$font-italic:             "Raleway-Italic", $font-family;
+$font-semibold:           "Raleway-Semibold", $font-family;
+$font-semibold-italic:    "Raleway-SemiboldItalic", $font-family;
+$font-bold:               "Raleway-Bold", $font-family;
+$font-bold-italic:        "Raleway-BoldItalic", $font-family;
+
+$font-secondary-regular:  "Bitter", $font-family-secondary;
+$font-secondary-italic:   "Bitter", $font-family-secondary;
+$font-secondary-bold:     "Bitter", $font-family-secondary;
+
+$font:                    1em/1.5 $font-regular, $font-family;

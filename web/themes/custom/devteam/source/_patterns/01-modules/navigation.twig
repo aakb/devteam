@@ -1,7 +1,0 @@
-<nav class="navigation">
-  {% for item in navigationItems %}
-    <a href="{{ item.url }}" title="{{ item.title }}" class="navigation--item{{ item.in_active_trail ? " is-active" }}">
-      <span>{{ item.title }}</span>
-    </a>
-  {% endfor %}
-</nav>

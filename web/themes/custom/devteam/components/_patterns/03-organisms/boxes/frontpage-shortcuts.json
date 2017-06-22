@@ -1,0 +1,25 @@
+{
+  "shortcuts": [
+    {
+      "iconColor": "is-black",
+      "icon": "atoms-tools",
+      "title": "Box 1",
+      "content": "Fictum,  deserunt mollit anim laborum astutumque!",
+      "link": "#"
+    },
+    {
+      "iconColor": "is-black",
+      "icon": "atoms-box",
+      "title": "Box 2",
+      "content": "Curabitur blandit tempus ardua ridiculus sed magna.",
+      "link": "#"
+    },
+    {
+      "iconColor": "is-black",
+      "icon": "atoms-coffee",
+      "title": "Box 3",
+      "content": "Phasellus laoreet lorem vel dolor tempus vehicula.",
+      "link": "#"
+    }
+  ]
+}

@@ -21,12 +21,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_lead:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false

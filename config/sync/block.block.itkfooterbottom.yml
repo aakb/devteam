@@ -1,0 +1,20 @@
+uuid: 14fea39f-13b4-4bc9-b2f3-9c29e82c7ae1
+langcode: da
+status: true
+dependencies:
+  module:
+    - itk_footer
+  theme:
+    - devteam
+id: itkfooterbottom
+theme: devteam
+region: footer_bottom
+weight: -4
+provider: null
+plugin: itk_footer_bottom
+settings:
+  id: itk_footer_bottom
+  label: 'ITK footer bottom'
+  provider: itk_footer
+  label_display: '0'
+visibility: {  }

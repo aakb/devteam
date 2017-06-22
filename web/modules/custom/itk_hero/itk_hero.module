@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Add template for widget.
+ */
+
+/**
+ * Implements hook_theme().
+ *
+ * Theme implementation for ITK Hero block.
+ */
+function itk_hero_theme($existing, $type, $theme, $path) {
+  return [
+    'itk_hero' => [
+      'template' => 'itk-hero',
+      'variables' => ['variables' => NULL],
+    ],
+  ];
+}

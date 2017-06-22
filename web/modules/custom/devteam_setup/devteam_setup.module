@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file
+ *
+ * General modifications of the default drupal setup. Minor site specific
+ * modifications that don't require a full module implementation.
+ */
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
+
+/**
+ * Implements hook_node_access().
+ *
+ * Limit access to "employee" content page for direct view. It's are
+ * used in entity references and hence only need to be blocked for view by it's
+ * "/node" url.
+ */
+function devteam_setup_node_access(NodeInterface $node, $op, AccountInterface $account) {
+  $current_uri = \Drupal::request()->getRequestUri();
+  $type = $node->bundle();
+  if ($type == 'employee' && substr($current_uri, 0, 5 ) == '/node') {
+    if ($op == 'view') {
+      if ($account->id() == 0) {
+        return AccessResult::forbidden();
+      }
+      return AccessResult::allowedIf($account->hasPermission('administer nodes'));
+    }
+  }
+}

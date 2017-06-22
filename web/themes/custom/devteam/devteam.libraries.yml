@@ -1,11 +1,9 @@
-styling:
-  version: VERSION
+global:
   css:
     theme:
-      source/css/styles.css: { media: screen }
-hamburger-menu:
-  version: VERSION
+      dist/style.css: {}
   js:
-    source/assets/js/hamburger-menu.js: {}
+    components/assets/js/hamburger-menu.js: {}
   dependencies:
-      - core/jquery
+    - core/drupal
+    - core/jquery

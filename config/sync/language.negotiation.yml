@@ -5,6 +5,7 @@ url:
   prefixes:
     da: ''
     '': null
+    en: ''
   domains:
     da: ''
 selected_langcode: site_default

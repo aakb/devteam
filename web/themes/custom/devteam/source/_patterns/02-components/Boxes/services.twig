@@ -1,9 +1,0 @@
-{% embed "grid.twig" with {state: "has-spacing" } %}
-  {% block content %}
-    {% for box in services.service %}
-      <article class="grid--item">
-        {% include "modules-box" %}
-      </article>
-    {% endfor %}
-  {% endblock %}
-{% endembed %}

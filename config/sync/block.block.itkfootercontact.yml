@@ -1,0 +1,20 @@
+uuid: fe682269-630a-445b-bf77-d5f6d2a28afd
+langcode: da
+status: true
+dependencies:
+  module:
+    - itk_footer
+  theme:
+    - devteam
+id: itkfootercontact
+theme: devteam
+region: footer
+weight: -5
+provider: null
+plugin: itk_footer_contact
+settings:
+  id: itk_footer_contact
+  label: Kontakt
+  provider: itk_footer
+  label_display: visible
+visibility: {  }

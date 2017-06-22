@@ -1,0 +1,20 @@
+uuid: cb919248-fa6f-46ec-89f8-c49e17c51be2
+langcode: da
+status: true
+dependencies:
+  module:
+    - itk_cookie_message
+  theme:
+    - devteam
+id: itkcookiemessage
+theme: devteam
+region: content
+weight: 0
+provider: null
+plugin: itk_cookie_message
+settings:
+  id: itk_cookie_message
+  label: 'ITK cookie message'
+  provider: itk_cookie_message
+  label_display: '0'
+visibility: {  }

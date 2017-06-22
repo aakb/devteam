@@ -1,4 +1,9 @@
 <?php
+/**
+ * @file
+ * 
+ * Update hooks for modifying site during db updates.
+ */
 
 /**
  * Cleanup deleted modules.

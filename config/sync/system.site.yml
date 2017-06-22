@@ -4,8 +4,8 @@ mail: brstj@aarhus.dk
 slogan: ''
 page:
   403: ''
-  404: /node/2
-  front: /node
+  404: ''
+  front: /front
 admin_compact_mode: false
 weight_select_max: 100
 langcode: da

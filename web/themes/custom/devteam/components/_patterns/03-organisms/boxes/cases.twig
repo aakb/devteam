@@ -1,0 +1,14 @@
+{% embed "@base/layouts/grid.twig" with {state: "has-spacing", header: true } %}
+  {% block header %}
+    {% if cases.header %}
+      <h2 class="is-big">{{ cases.header }}</h2>
+    {% endif %}
+  {% endblock %}
+  {% block content %}
+    {% for box in cases.case %}
+      <article class="grid--item">
+        {% include "@molecules/box.twig" %}
+      </article>
+    {% endfor %}
+  {% endblock %}
+{% endembed %}

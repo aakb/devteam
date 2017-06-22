@@ -11,14 +11,14 @@ dependencies:
 id: footercases
 theme: devteam
 region: footer
-weight: 0
+weight: -4
 provider: null
 plugin: 'system_menu_block:footer-cases'
 settings:
   id: 'system_menu_block:footer-cases'
-  label: 'Footer: Cases'
+  label: Cases
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 1
 visibility: {  }

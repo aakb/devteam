@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "name": "$color-orange",
+      "value": "#ff6620"
+    },
+    {
+      "name": "$color-green",
+      "value": "#00a485"
+    },
+    {
+      "name": "$color-dark-blue",
+      "value": "#002f2f"
+    },
+    {
+      "name": "$color-blue",
+      "value": "#006084"
+    },
+    {
+      "name": "$color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "$color-gray-lighter",
+      "value": "#f1f1f1"
+    },
+    {
+      "name": "$color-gray-light",
+      "value": "#d2d2d2"
+    },
+    {
+      "name": "$color-gray-dark",
+      "value": "#9c9c9c"
+    },
+    {
+      "name": "$color-gray-darker",
+      "value": "#6f6f6f"
+    },
+    {
+      "name": "$color-gray-darkest",
+      "value": "#3a3a3a"
+    },
+    {
+      "name": "$color-black",
+      "value": "#181715"
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$</code> in <code>.//components/_base/_colors.scss</code>"
+  }
+}

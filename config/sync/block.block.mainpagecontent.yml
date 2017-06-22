@@ -1,0 +1,20 @@
+uuid: 2bd7420c-51d7-49ff-a2e0-e2a2c01a51ff
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+id: mainpagecontent
+theme: stark
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
