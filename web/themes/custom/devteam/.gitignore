@@ -1,6 +1,3 @@
-# Ignore compiled files.
-dist
-
 # Pattern Lab (ignored initially)
 pattern-lab
 
