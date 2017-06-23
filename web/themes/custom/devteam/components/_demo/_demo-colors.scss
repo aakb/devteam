@@ -9,17 +9,15 @@ $demo-colors: (
   "gray-dark":    $color-gray-dark,
   "gray-darker":  $color-gray-darker,
   "gray-darkest": $color-gray-darkest,
-  "black":        $color-black,
+  "black":        $color-black
 );
 
 @function demo-color($demo-color-key) {
   $demo-color: map-get($demo-colors, $demo-color-key);
-
   @if $demo-color {
     @return $demo-color;
   }
-
-  @warn "Key `#{$demo-color-key}` not found in $colors.";
+  @warn "Key `#{$demo-color-key}` not found in $demo-colors.";
   @return null;
 }
 

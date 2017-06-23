@@ -1,7 +1,7 @@
 {
   "logoAlt": "ITK DEVTEAM - en del af Aarhus Kommune",
   "logoLink": "link.pages-start",
-  "navigationItems": [
+  "items": [
     {
       "title": "Start",
       "url": "link.pages-start",
