@@ -25,6 +25,8 @@
 /* Layouts */
 @import "_patterns/00-base/layouts/grid";
 
+/* Buttons */
+@import "_patterns/01-atoms/02-buttons/button";
 
 /* Images */
 @import "_patterns/01-atoms/03-images/aarhus-logo";
@@ -51,6 +53,7 @@
 @import "_patterns/02-molecules/link-list/link-list";
 @import "_patterns/02-molecules/logo";
 @import "_patterns/02-molecules/navigation";
+@import "_patterns/02-molecules/cookie-message";
 
 
 /* organisms */

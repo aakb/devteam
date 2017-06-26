@@ -1,0 +1,39 @@
+//sizes map
+$btn-sizes: (
+    sm: (
+        padding: 5px 15px
+    ),
+    md: (
+        padding: 15px 30px
+    ),
+    lg: (
+        padding: 20px 40px
+    )
+);
+a.btn,a:visited.btn,a:active.btn,
+.btn{
+    
+    text-align: center;
+
+    // each size defined in $btn-sizes
+    @each $size-key, $size-value in $btn-sizes {
+        &.btn-#{$size-key} {
+            padding: map-get(map-get($btn-sizes, $size-value), padding);
+        }
+    }
+
+    // each color defined in _base/_colors
+    @each $color-key, $color-value in $colors {
+        &.btn-#{$color-key} {
+            color: $color-white;
+            text-decoration: none;
+            background-color: #{$color-value};
+            transition: background-color .4s ease-out;
+            &:hover {
+                background-color: darken($color-value, 5%);
+                transition: background-color .2s ease-in;
+            }
+        }
+        
+    }
+}

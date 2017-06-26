@@ -11,3 +11,17 @@ $color-gray-dark:       #9c9c9c;
 $color-gray-darker:     #6f6f6f;
 $color-gray-darkest:    #3a3a3a;
 $color-black:           #181715;
+
+$colors: (
+  "orange":       $color-orange,
+  "green":        $color-green,
+  "dark-blue":    $color-dark-blue,
+  "blue":         $color-blue,
+  "gray-white":   $color-white,
+  "gray-lighter": $color-gray-light,
+  "gray-light":   $color-gray-light,
+  "gray-dark":    $color-gray-dark,
+  "gray-darker":  $color-gray-darker,
+  "gray-darkest": $color-gray-darkest,
+  "black":        $color-black
+);
