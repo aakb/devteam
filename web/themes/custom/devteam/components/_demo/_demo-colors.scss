@@ -12,14 +12,7 @@ $demo-colors: (
   "black":        $color-black
 );
 
-@function demo-color($demo-color-key) {
-  $demo-color: map-get($demo-colors, $demo-color-key);
-  @if $demo-color {
-    @return $demo-color;
-  }
-  @warn "Key `#{$demo-color-key}` not found in $demo-colors.";
-  @return null;
-}
+
 
 .demo-colors {
   display: flex;
@@ -58,7 +51,8 @@ $demo-colors: (
   @each $color-key, $color-value in $demo-colors {
     &--swatch {
       &.is-#{$color-key} {
-        background-color: demo-color(#{$color-key});
+        background-color: #{$color-value};
+        
       }
     }
 
@@ -69,7 +63,7 @@ $demo-colors: (
         }
 
         &:after {
-          content: "#{demo-color($color-key)}";
+          content: "#{$color-value}";
         }
       }
     }
