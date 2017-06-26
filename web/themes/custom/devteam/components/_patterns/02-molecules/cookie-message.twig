@@ -1,0 +1,16 @@
+<div class="cookie-message js-cookieterms">
+  <p>{{ content.text }}</p>
+  <a href="{{ content.readMoreLink }}" title="{{ content.readMoreText }}" class="cookie-message--link">{{ content.readMoreText }}</a>.
+  {% include "@atoms/02-buttons/button.twig"
+    with { 
+      content: {
+        "btntext": "Accepter cookies",
+        "title": "Accepter cookies",
+        "href": "#",
+        "color": "green",
+        "size": "sm"
+      },
+      jsClass: "js-cookieterms-agree"
+      }
+  %}
+</div>

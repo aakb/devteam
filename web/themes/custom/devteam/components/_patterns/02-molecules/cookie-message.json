@@ -1,0 +1,14 @@
+{
+  "content": {
+    "text": "Vi bruger cookies for at forbedre brugeroplevelsen.",
+    "readMoreText": "Læs mere om brugen af cookies",
+    "readMoreLink": "#",
+    "button": {
+      "btntext": "Accepter cookies",
+      "title": "Accepter cookies",
+      "color": "green",
+      "href": "#",
+      "size": "sm"
+    }
+  }
+}
