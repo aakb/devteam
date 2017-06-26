@@ -87,12 +87,12 @@
       mode: {
         css: {
           bust: false,
-          dest: '../../img/svg',
+          dest: '../../../img/svg',
           prefix: '@mixin sprite-%s',
           render: {
             scss: {
-              dest: '../components/_patterns/01-atoms/05-icons/_icon_sprite.scss',
-              template: 'node_modules/emulsify-gulp/gulp-tasks/svg-icons/sprite.scss.handlebars'
+              dest: '/components/_patterns/01-atoms/05-icons/_icon_sprite.scss',
+              template: './gulp-tasks/svg-icons/sprite.scss.handlebars'
             }
           }
         }
