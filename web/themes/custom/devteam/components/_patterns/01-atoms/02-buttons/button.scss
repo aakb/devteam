@@ -16,9 +16,14 @@ a.btn,a:visited.btn,a:active.btn,
     text-align: center;
 
     // each size defined in $btn-sizes
+
+    @function btn-size($size-name, $size-value) {
+        // map inception
+        @return map-get(map-get($btn-sizes, $size-name), $size-value);
+    }
     @each $size-key, $size-value in $btn-sizes {
         &.btn-#{$size-key} {
-            padding: map-get(map-get($btn-sizes, $size-value), padding);
+            padding: btn-size(sm, padding);
         }
     }
 
