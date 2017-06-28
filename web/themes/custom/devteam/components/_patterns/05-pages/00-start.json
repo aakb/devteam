@@ -1,29 +1,6 @@
 {
-  "navigationItems": [
-    {
-      "in_active_trail": true
-    },
-    {
-      "in_active_trail": false
-    },
-    {
-      "in_active_trail": false
-    },
-    {
-      "in_active_trail": false
-    },
-    {
-      "in_active_trail": false
-    }
-  ],
-  "headings": {
-    "class": "is-quote",
-    "headings": [
-      {
-        "type": "h2",
-        "heading": "Vi laver brugervenlige open source løsninger til OS2 og Aarhus Kommune"
-      }
-    ]
+  "variables": {
+    "itk_hero_lead": "Vi laver brugervenlige open source løsninger til OS2 og Aarhus Kommune"
   },
   "shortcuts": [
     {
@@ -76,5 +53,7 @@
         "link": "link.pages-case-os2loop"
       }
     ]
-  }
+  },
+  "footerContactLabel": "Kontakt",
+  "footerContactContent": "<p>ITK DEVTEAM</p><p>Dokk1, niveau 2.2</p><p>Hack Kampmanns Plads 2</p><p>8000 Aarhus C</p><p><a href='link.pages-om-os'>Se hvem vi er</a></p>"
 }
