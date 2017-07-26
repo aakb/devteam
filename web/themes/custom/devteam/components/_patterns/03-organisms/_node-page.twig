@@ -70,20 +70,24 @@
  *   in different view modes.
  */
 #}
-<article{{ attributes }}>
-  <div class="text">
-    {{ title_prefix }}
-      <h1{{ title_attributes.addClass('heading-1 is-title') }}>
-        {{ label }}
-      </h1>
-    {{ title_suffix }}
-    <p class="text--lead">
-      {{ content.field_lead }}
-    </p>
-    <div class="text--content" {{ content_attributes }}>
-      {{ content }}
+
+<article{{ attributes.addClass('grid') }}>
+  <div class="grid--inner">
+    <div class="grid">
+      <div class="text">
+        {{ title_prefix }}
+        <h1{{ title_attributes.addClass('heading-1 is-title') }}>
+          {{ label }}
+        </h1>
+        {{ title_suffix }}
+        <p class="text--lead">
+          {{ content.field_lead }}
+        </p>
+        <div class="text--content" {{ content_attributes }}>
+          {{ content|without('field_reference') }}
+        </div>
+      </div>
     </div>
   </div>
 </article>
-
-
+{{ content.field_reference }}

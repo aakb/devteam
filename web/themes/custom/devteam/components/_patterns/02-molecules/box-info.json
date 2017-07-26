@@ -1,7 +1,7 @@
 {
   "box": {
     "class": "has-color",
-    "image": "/assets/styleguide/sg-1-1-500x500.png",
+    "image": "/components/assets/styleguide/sg-1-1-500x500.png",
     "title": "Box info",
     "position": "Position",
     "email": "mail@example.com",

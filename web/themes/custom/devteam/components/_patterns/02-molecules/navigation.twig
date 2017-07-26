@@ -19,17 +19,31 @@
  */
 #}
 
-{%
-set classes = [
-  'navigation--item'|clean_class
-]
-%}
+{% set classes = ['navigation--item'|clean_class] %}
+
 <nav class="navigation">
   {% for item in items %}
-    {% if item.is_active == TRUE %}
+    {% if item.in_active_trail == TRUE %}
       {% set classes = classes|merge(['is-active']) %}
+
     {% endif %}
-   {{ link(item.title, item.url, {'class':classes} ) }}
+
+    {# TODO: Active state on navigation is not working #}
+
+    {% embed "@atoms/06-link/link.twig"
+      with {
+        "link_base_class": 'navigation--item',
+        "link_url": item.url,
+        "link_content": item.title,
+        "link_is_active": classes
+      }
+    %}
+      {% block link_content %}
+        {{ link_content }}
+        {#{{ link(item.title, item.url, {'class':classes} ) }}#}
+      {% endblock %}
+    {% endembed %}
+
+   
  {% endfor %}
 </nav>
-

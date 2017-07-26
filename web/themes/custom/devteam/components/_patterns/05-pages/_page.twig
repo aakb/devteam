@@ -54,10 +54,14 @@
         {{ page.frontpage_quote }}
       {% endif %}
       {% if page.content %}
-        {{ page.content }}
+        <div class="grid has-spacing">
+          {{ page.content }}
+        </div>
       {% endif %}
       {% if page.frontpage_cases %}
-        {{ page.frontpage_cases }}
+        <div class="grid has-spacing">
+          {{ page.frontpage_cases }}
+        </div>
       {% endif %}
     {% endblock %}
   </main>

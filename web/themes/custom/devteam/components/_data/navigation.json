@@ -1,31 +1,31 @@
 {
   "logoAlt": "ITK DEVTEAM - en del af Aarhus Kommune",
   "logoLink": "link.pages-start",
-  "navigationItems": [
+  "items": [
     {
       "title": "Start",
       "url": "link.pages-start",
-      "in_active_trail": false
+      "is_active": false
     },
     {
       "title": "Services",
       "url": "link.pages-services",
-      "in_active_trail": false
+      "is_active": false
     },
     {
       "title": "Produkter",
       "url": "link.pages-produkter",
-      "in_active_trail": false
+      "is_active": false
     },
     {
       "title": "Cases",
       "url": "link.pages-cases",
-      "in_active_trail": false
+      "is_active": false
     },
     {
       "title": "Om os",
       "url": "link.pages-om-os",
-      "in_active_trail": false
+      "is_active": false
     }
   ]
 }

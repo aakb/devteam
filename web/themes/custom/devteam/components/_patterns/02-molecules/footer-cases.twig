@@ -19,7 +19,20 @@
  */
 #}
 <div class="footer--column">
-  {% for item in items %}
-  <p>{{ link(item.title, item.url) }}</p>
-  {% endfor %}
+{% embed "@base/layouts/footer-column.twig" %}
+  {% block title %}{{ footerCasesLabel }}{% endblock %}
+  {% block content %}
+    {% for item in items %}
+      <p>
+        {% include "@atoms/06-link/link.twig"
+          with {
+            "link_base_class": 'footer-case',
+            "link_url": item.url,
+            "link_content": item.title
+          }
+        %}
+      </p>
+    {% endfor %}
+  {% endblock %}
+{% endembed %}
 </div>

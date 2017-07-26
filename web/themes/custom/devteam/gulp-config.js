@@ -10,11 +10,11 @@
       themeDir + '/js/**/*.js',
       themeDir + '/components/_patterns/**/*.js'
     ],
-    dist_js: themeDir + '/dist',
+    dist_js: themeDir + '/js',
     sass: themeDir,
-    img: themeDir + '/images',
-    dist_css: themeDir + '/dist/css',
-    dist_img: themeDir + '/dist/img',
+    icons: themeDir + '/img',
+    dist_css: themeDir + '/css',
+    dist_img: themeDir + '/img',
     pattern_lab: themeDir + '/pattern-lab/public'
   };
 
@@ -31,7 +31,7 @@
     cssConfig: {
       enabled: true,
       src: themeDir + '/components/style.scss',
-      dest: themeDir + '/dist/',
+      dest: themeDir + '/css',
       flattenDestOutput: true,
       lint: {
         enabled: false,
@@ -47,7 +47,7 @@
       includePaths: (['./node_modules']),
       sassdoc: {
         enabled: true,
-        dest: themeDir + '/dist/sassdoc',
+        dest: themeDir + '/docs/sassdoc',
         verbose: false,
         sort: [
           'file',
@@ -55,6 +55,24 @@
           'line'
         ]
       }
+    },
+    demoConfig: {
+      enabled: true,
+      src: themeDir + '/components/demo.scss',
+      dest: themeDir + '/css',
+      flattenDestOutput: true,
+      lint: {
+        enabled: false,
+        failOnError: true
+      },
+      sourceComments: false,
+      sourceMapEmbed: false,
+      outputStyle: 'expanded',
+      autoPrefixerBrowsers: [
+        'last 2 versions',
+        '- IE >= 9'
+      ],
+      includePaths: (['./node_modules'])
     },
     iconConfig: {
       shape: {
@@ -69,12 +87,12 @@
       mode: {
         css: {
           bust: false,
-          dest: '../../dist',
+          dest: '../../../img/svg',
           prefix: '@mixin sprite-%s',
           render: {
             scss: {
-              dest: '../components/_patterns/01-atoms/05-icons/_icon_sprite.scss',
-              template: 'node_modules/emulsify-gulp/gulp-tasks/svg-icons/sprite.scss.handlebars'
+              dest: '/components/_patterns/01-atoms/05-icons/_icon_sprite.scss',
+              template: './gulp-tasks/svg-icons/sprite.scss.handlebars'
             }
           }
         }

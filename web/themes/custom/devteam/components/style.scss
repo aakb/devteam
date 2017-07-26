@@ -25,6 +25,8 @@
 /* Layouts */
 @import "_patterns/00-base/layouts/grid";
 
+/* Buttons */
+@import "_patterns/01-atoms/02-buttons/button";
 
 /* Images */
 @import "_patterns/01-atoms/03-images/aarhus-logo";
@@ -36,13 +38,14 @@
 @import "_patterns/01-atoms/04-text/headings-with-link";
 @import "_patterns/01-atoms/04-text/fieldsets";
 @import "_patterns/01-atoms/04-text/inline-elements";
-@import "_patterns/01-atoms/04-text/links";
 @import "_patterns/01-atoms/04-text/text";
-
+@import "_patterns/01-atoms/quote";
 
 /* Icons */
 @import "_patterns/01-atoms/05-icons/00-icons";
 
+/* Links */
+@import "_patterns/01-atoms/06-link/link";
 
 /* molecules */
 @import "_patterns/02-molecules/box";
@@ -51,9 +54,10 @@
 @import "_patterns/02-molecules/link-list/link-list";
 @import "_patterns/02-molecules/logo";
 @import "_patterns/02-molecules/navigation";
+@import "_patterns/02-molecules/cookie-message";
 
 
 /* organisms */
 @import "_patterns/03-organisms/header";
 @import "_patterns/03-organisms/footer";
-@import "_patterns/03-organisms/frontpage-quote";
+
