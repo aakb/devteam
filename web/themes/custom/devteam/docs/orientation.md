@@ -1,17 +1,14 @@
 ## Orientation
 
-- `components/_patterns/` - All components are filed here from smallest (atoms) to largest (pages). Each component contains it's own Twig template as well as the asset files for that component. It may also contain sample data (yml/json) as well as a documentation file for annotations (markdown).
+- `components/_patterns/` - All components are filed here from smallest (atoms) to largest (pages). 
 - `components/_patterns/00-base` - For top-level needs such as sass variables/mixins, global javascript, etc.
 - `images/icons/src/` - any single SVGs here are automatically combined into an SVG sprite via a gulp task. See `components/_patterns/01-atoms/04-images/icons.md` in Pattern Lab for instructions.
-- `dist/sassdoc/` - View this path in a browser to see documentation for all Sass mixins thanks to [SassDoc](http://sassdoc.com).
+- `docs/sassdoc/` - View this path in a browser to see documentation for all Sass mixins thanks to [SassDoc](http://sassdoc.com).
 
 ### CSS
 
-This starterkit automatically compiles SCSS files from anywhere in the `components/_patterns` directory, so that you can organize your SCSS files right alongside your Twig files. There are a few things to keep in mind with this approach:
-
 - Use the `_UNDERSCORE-FIRST.scss` syntax to make sure Sass files get compiled in the expected order.
 - Default patterns use BEM syntax. While not required, an approach that keeps your CSS as modular as possible is highly recommended. By doing so, you "component-ize" your styles and the easier it will be to add/remove components without impacting the rest of the project.
-- All pattern SCSS is imported into a single file `components/_patterns/style.scss` and compiled by the Gulp task into `dist/style.css`.
 
 ### JS
 

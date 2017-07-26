@@ -1,5 +1,6 @@
 {
-  "footerCases": [
+  "footerCasesLabel": "Cases",
+  "items": [
     {
       "title": "Grundsalg Aarhus",
       "link": "link.pages-cases-grundsalg-aarhus"

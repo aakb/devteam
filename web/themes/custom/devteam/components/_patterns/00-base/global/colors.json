@@ -43,6 +43,10 @@
     {
       "name": "$color-black",
       "value": "#181715"
+    },
+    {
+      "name": "$colors",
+      "value": "("
     }
   ],
   "meta": {

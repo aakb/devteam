@@ -1,0 +1,9 @@
+{
+  "content": {
+    "btntext": "Button text",
+    "href": "#",
+    "title": "Button title",
+    "color": "green",
+    "size": "sm"
+  }
+}
