@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "931a9fccf4d5c4f19f44df33faac6863",
+    "content-hash": "e385cbf72fe67657cb85b2466ae73d68",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2164,7 +2164,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce-8.x-1.6.zip",
-                "reference": null,
+                "reference": "8.x-1.6",
                 "shasum": "973fc92959dc31b16e33114852b8c26ec050ba7c"
             },
             "require": {
@@ -2257,6 +2257,31 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
             }
+        },
+        {
+            "name": "drupal/itk_cookie_message",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itk-dev/cookiemessage-d8.git",
+                "reference": "3428312a95ecf9dc117e16457f3f208dc513eaa4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itk-dev/cookiemessage-d8/zipball/3428312a95ecf9dc117e16457f3f208dc513eaa4",
+                "reference": "3428312a95ecf9dc117e16457f3f208dc513eaa4",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.etek.dk/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a cookie message block and configuration pages",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2018-01-22T10:23:13+00:00"
         },
         {
             "name": "drupal/itk_media_entity",
