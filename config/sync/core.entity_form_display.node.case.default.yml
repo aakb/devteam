@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.case.body
+    - field.field.node.case.field_content_image
     - field.field.node.case.field_lead
     - field.field.node.case.field_reference
+    - image.style.thumbnail
     - node.type.case
   module:
+    - image
     - text
 id: node.case.default
 targetEntityType: node
@@ -16,15 +19,23 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_lead:
+  field_content_image:
     weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_lead:
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -32,7 +43,7 @@ content:
     type: string_textfield
     region: content
   field_reference:
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
@@ -42,11 +53,18 @@ content:
     region: content
   promote:
     type: boolean_checkbox
-    weight: 4
+    weight: 5
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: 0
@@ -54,6 +72,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 6
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

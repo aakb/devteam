@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.case.body
+    - field.field.node.case.field_content_image
     - field.field.node.case.field_lead
     - field.field.node.case.field_reference
+    - image.style.content_image
     - node.type.case
   module:
+    - image
     - text
     - user
 id: node.case.default
@@ -18,12 +21,21 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_content_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: content_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_lead:
-    weight: 102
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
@@ -31,7 +43,7 @@ content:
     type: string
     region: content
   field_reference:
-    weight: 103
+    weight: 3
     label: hidden
     settings:
       view_mode: teaser
@@ -39,10 +51,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   langcode: true
+  links: true

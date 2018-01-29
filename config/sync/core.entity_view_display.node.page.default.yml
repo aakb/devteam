@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_content_image
     - field.field.node.page.field_icon
     - field.field.node.page.field_lead
     - field.field.node.page.field_reference
+    - image.style.content_image
     - node.type.page
   module:
+    - image
     - text
     - user
 _core:
@@ -21,12 +24,21 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_lead:
+  field_content_image:
     weight: 0
+    label: hidden
+    settings:
+      image_style: content_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_lead:
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -34,7 +46,7 @@ content:
     type: string
     region: content
   field_reference:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       view_mode: teaser

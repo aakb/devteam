@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_content_image
     - field.field.node.page.field_icon
     - field.field.node.page.field_lead
     - field.field.node.page.field_reference
+    - image.style.thumbnail
     - node.type.page
   module:
+    - image
     - svg_image_field
     - text
 _core:
@@ -20,15 +23,23 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_content_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_icon:
-    weight: 2
+    weight: 3
     settings:
       progress_indicator: throbber
       preview_image_max_width: 300
@@ -37,7 +48,7 @@ content:
     type: svg_image_field_widget
     region: content
   field_lead:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -45,7 +56,7 @@ content:
     type: string_textfield
     region: content
   field_reference:
-    weight: 5
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -57,7 +68,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
     third_party_settings: {  }
     region: content
   title:
@@ -68,6 +86,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  url_redirects:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   langcode: true
